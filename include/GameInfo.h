@@ -1,6 +1,7 @@
 #ifndef GAMEINFO_H
 #define GAMEINFO_H
 
+#include <QSize>
 #include <QString>
 #include <QPixmap>
 
@@ -28,5 +29,8 @@ struct GameInfo {
 };
 
 Q_DECLARE_METATYPE(GameInfo)
+
+#define DefaultCoverSize QSize(356,500)
+
 
 #endif // GAMEINFO_H

@@ -25,7 +25,7 @@ public slots:
 private:
     QDir& m_root;
 
-    bool readField(const QSettings& inf, const QString& fieldName, QGenericArgument fieldValue);
+    bool readField(const QSettings& inf, const QString& dirName, const QString& fieldName, QGenericArgument fieldValue);
 
 private slots:
     void loadGame(QString dirName);

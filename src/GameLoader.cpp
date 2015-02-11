@@ -50,7 +50,7 @@ void GameLoader::loadGame(QString dirName) {
         };
 
         for (unsigned i = 0; i < (sizeof(fields) / sizeof(struct Field)); i++) {
-            if (!readField(inf, fields[i].fieldName, fields[i].fieldValue)) {
+            if (!readField(inf, dirName, fields[i].fieldName, fields[i].fieldValue)) {
                 if (fields[i].required) {
 //                    qDebug() << "Required field: " << fields[i].fieldName;
                     return;
@@ -65,10 +65,7 @@ void GameLoader::loadGame(QString dirName) {
     }
 }
 
-bool GameLoader::readField(const QSettings& inf, const QString& fieldName, QGenericArgument fieldValue) {
-    if (!inf.contains(fieldName))
-        return false;
-
+bool GameLoader::readField(const QSettings& inf, const QString& dirName, const QString& fieldName, QGenericArgument fieldValue) {
     QVariant var = inf.value(fieldName);
 
     int typeId = QMetaType::type(fieldValue.name());
@@ -76,20 +73,38 @@ bool GameLoader::readField(const QSettings& inf, const QString& fieldName, QGene
         case QMetaType::QString:
             {
                 QString tmp = var.value<QString>();
+                if (tmp.isEmpty())
+                    return false;
+
                 QMetaType::construct(typeId, fieldValue.data(), &tmp);
             }
 
             break;
         case QMetaType::QPixmap:
-            qDebug() << "QPixmap not yet supported";
-            return false;
-        case QMetaType::Int:
             {
-                int tmp = var.value<int>();
+                QPixmap tmp(QString("%1/%2/%3").arg(m_root.absolutePath()).arg(dirName).arg(var.value<QString>()));
+                if (tmp.isNull()) {
+                    tmp = QPixmap(":/DefaultCover");
+                } else if (tmp.size() != DefaultCoverSize) {
+                    tmp = tmp.scaled(DefaultCoverSize);
+                }
+
+                Q_ASSERT(!tmp.isNull());
+
                 QMetaType::construct(typeId, fieldValue.data(), &tmp);
             }
 
-        break;
+            break;
+        case QMetaType::Int:
+            {
+                int tmp = var.value<int>();
+                if (tmp <= 0)
+                    return false;
+
+                QMetaType::construct(typeId, fieldValue.data(), &tmp);
+            }
+
+            break;
         default:
             return false;
     }

@@ -23,4 +23,5 @@ HEADERS  += include/GameSelector.h \
 
 FORMS    += forms/GameSelector.ui
 
-RESOURCES += rccs/GameSelector.qrc
+RESOURCES += \
+    rccs/gameselector.qrc

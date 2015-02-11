@@ -17,7 +17,7 @@ class GameSelector : public QWidget {
     Q_OBJECT
 
 public:
-    explicit GameSelector(QWidget *parent = 0);
+    explicit GameSelector(const QString& root, QWidget *parent = 0);
     virtual ~GameSelector();
 
 private slots:
