@@ -1,49 +1,34 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <QObject>
-#include <QPixmap>
-#include <QDir>
-#include "Genre.h"
-#include "GameInfo.h"
+#include <QLabel>
+#include <GameInfo.h>
 
-#define SELECTED_DIRNAME "Xbox360"
-
-class Game : public QObject {
+class Game : public QLabel {
     Q_OBJECT
 
 public:
-    explicit Game(QDir& root, const QString& dirName, QObject* parent = 0);
-    ~Game();
+    explicit Game(GameInfo info, QWidget *parent = 0);
+    virtual ~Game();
 
-    bool isSelected() const {
-        return (m_dirName == SELECTED_DIRNAME);
-    }
-
-    const QString& dirName() const { return m_dirName; }
-    bool invalid() const { return m_invalid; }
-
-    const struct GameInfo& info() const { return m_info; }
     const QString& name() const { return m_info.name; }
     const QString& diskName() const { return m_info.diskName; }
     const QPixmap& cover() const { return m_info.cover; }
+
+    bool hasGenre() const { return (m_info.options & HAS_GENRE); }
     const QString& genre() const { return m_info.genre; }
+
+    bool hasDeveloper() const { return (m_info.options & HAS_DEVELOPER); }
     const QString& developer() const { return m_info.developer; }
+
+    bool hasPublisher() const { return (m_info.options & HAS_PUBLISHER); }
     const QString& publisher() const { return m_info.publisher; }
+
+    bool hasYear() const { return (m_info.options & HAS_YEAR); }
     int year() const { return m_info.year; }
 
-signals:
-
-public slots:
-//    void load();
-//    bool select();
-//    bool unselect();
-
 private:
-    QDir m_root;
-    QString m_dirName;
-    bool m_invalid;
-    struct GameInfo m_info;
+    GameInfo m_info;
 
 };
 

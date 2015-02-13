@@ -18,7 +18,7 @@ GameSelector::GameSelector(const QString& root, QWidget *parent) :
     QObject::connect(&m_loader, SIGNAL(gameLoaded(GameInfo)), this, SLOT(createGame(GameInfo)));
     QObject::connect(&m_loader, SIGNAL(loadingFinished()), this, SLOT(show()));
 
-    m_loader.load();
+    QMetaObject::invokeMethod(&m_loader, "load", Qt::QueuedConnection);
 }
 
 GameSelector::~GameSelector() {
@@ -26,16 +26,6 @@ GameSelector::~GameSelector() {
 }
 
 void GameSelector::createGame(GameInfo info) {
-    qDebug() << "Game: ";
-    qDebug() << "  Name: " << info.name;
-    qDebug() << "  DiskName: " << info.diskName;
-    qDebug() << "  Cover: " << info.cover;
-    qDebug() << "  Genre: " << info.genre;
-    qDebug() << "  Developer: " << info.developer;
-    qDebug() << "  Publisher: " << info.publisher;
-    qDebug() << "  Year: " << info.year;
-
-
-    ui->widget->setPixmap(info.cover);
-    this->repaint();
+    Game* g = new Game(info, this);
+    ui->gameList->addGame(g);
 }

@@ -1,9 +1,3 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2015-02-09T12:25:48
-#
-#-------------------------------------------------
-
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -14,12 +8,16 @@ TEMPLATE = app
 INCLUDEPATH += include
 
 SOURCES += src/main.cpp \
-        src/GameSelector.cpp \
-        src/GameLoader.cpp
+    src/GameSelector.cpp \
+    src/GameLoader.cpp \
+    src/Game.cpp \
+    src/GameList.cpp
 
 HEADERS  += include/GameSelector.h \
     include/GameInfo.h \
-    include/GameLoader.h
+    include/GameLoader.h \
+    include/Game.h \
+    include/GameList.h
 
 FORMS    += forms/GameSelector.ui
 

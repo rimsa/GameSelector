@@ -42,7 +42,7 @@ void GameLoader::loadGame(QString dirName) {
         } fields[] = {
             { "Name", Q_ARG(QString, info.name), true, 0 },
             { "DiskName", Q_ARG(QString, info.diskName), true, 0 },
-            { "Cover", Q_ARG(QPixmap, info.cover), false, HAS_COVER },
+            { "Cover", Q_ARG(QPixmap, info.cover), true, 0 },
             { "Genre", Q_ARG(QString, info.genre), false, HAS_GENRE },
             { "Developer", Q_ARG(QString, info.developer), false, HAS_DEVELOPER },
             { "Publisher", Q_ARG(QString, info.publisher), false, HAS_PUBLISHER },
