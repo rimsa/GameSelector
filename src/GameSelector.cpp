@@ -16,7 +16,7 @@ GameSelector::GameSelector(const QString& root, QWidget *parent) :
     ui->setupUi(this);
 
     QObject::connect(&m_loader, SIGNAL(gameLoaded(GameInfo)), this, SLOT(createGame(GameInfo)));
-    QObject::connect(&m_loader, SIGNAL(loadingFinished()), this, SLOT(show()));
+    QObject::connect(&m_loader, SIGNAL(loadingFinished()), this, SLOT(show()), Qt::QueuedConnection);
 
     QMetaObject::invokeMethod(&m_loader, "load", Qt::QueuedConnection);
 }
@@ -26,6 +26,6 @@ GameSelector::~GameSelector() {
 }
 
 void GameSelector::createGame(GameInfo info) {
-    Game* g = new Game(info, this);
+    Game* g = new Game(info);
     ui->gameList->addGame(g);
 }

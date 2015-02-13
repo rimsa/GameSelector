@@ -11,13 +11,15 @@ SOURCES += src/main.cpp \
     src/GameSelector.cpp \
     src/GameLoader.cpp \
     src/Game.cpp \
-    src/GameList.cpp
+    src/GameList.cpp \
+    src/GameComparator.cpp
 
 HEADERS  += include/GameSelector.h \
     include/GameInfo.h \
     include/GameLoader.h \
     include/Game.h \
-    include/GameList.h
+    include/GameList.h \
+    include/GameComparator.h
 
 FORMS    += forms/GameSelector.ui
 
