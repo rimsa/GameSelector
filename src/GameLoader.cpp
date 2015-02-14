@@ -26,43 +26,48 @@ void GameLoader::load() {
 }
 
 void GameLoader::loadGame(QString dirName) {
-    QDir file(QString("%1/%2/game.inf").arg(m_root.absolutePath()).arg(dirName));
-    if (!file.exists()) {
-        struct GameInfo info;
-        info.options = 0;
+    QFile gameDesc(QString("%1%2%3%2game.inf")
+            .arg(m_root.path())
+            .arg(QDir::separator())
+            .arg(dirName));
+    if (!gameDesc.exists())
+        return;
 
-        QSettings inf(file.absolutePath(), QSettings::IniFormat, this);
-        inf.beginGroup("Game");
+    struct GameInfo info;
+    info.dirName = dirName;
+    info.options = 0;
 
-        struct Field {
-            QString fieldName;
-            QGenericArgument fieldValue;
-            bool required;
-            GameInfoOptions option;
-        } fields[] = {
-            { "Name", Q_ARG(QString, info.name), true, 0 },
-            { "DiskName", Q_ARG(QString, info.diskName), true, 0 },
-            { "Cover", Q_ARG(QPixmap, info.cover), true, 0 },
-            { "Genre", Q_ARG(QString, info.genre), false, HAS_GENRE },
-            { "Developer", Q_ARG(QString, info.developer), false, HAS_DEVELOPER },
-            { "Publisher", Q_ARG(QString, info.publisher), false, HAS_PUBLISHER },
-            { "Year", Q_ARG(int, info.year), false, HAS_YEAR }
-        };
+    QSettings inf(gameDesc.fileName(), QSettings::IniFormat, this);
+    inf.beginGroup("Game");
 
-        for (unsigned i = 0; i < (sizeof(fields) / sizeof(struct Field)); i++) {
-            if (!readField(inf, dirName, fields[i].fieldName, fields[i].fieldValue)) {
-                if (fields[i].required) {
+    struct Field {
+        QString fieldName;
+        QGenericArgument fieldValue;
+        bool required;
+        GameInfoOptions option;
+    } fields[] = {
+        { "Name", Q_ARG(QString, info.name), true, 0 },
+        { "DiskName", Q_ARG(QString, info.diskName), true, 0 },
+        { "Cover", Q_ARG(QPixmap, info.cover), true, 0 },
+        { "Genre", Q_ARG(QString, info.genre), false, HAS_GENRE },
+        { "Developer", Q_ARG(QString, info.developer), false, HAS_DEVELOPER },
+        { "Publisher", Q_ARG(QString, info.publisher), false, HAS_PUBLISHER },
+        { "Year", Q_ARG(int, info.year), false, HAS_YEAR }
+    };
+
+    for (unsigned i = 0; i < (sizeof(fields) / sizeof(struct Field)); i++) {
+        if (!readField(inf, dirName, fields[i].fieldName, fields[i].fieldValue)) {
+            if (fields[i].required) {
 //                    qDebug() << "Required field: " << fields[i].fieldName;
-                    return;
-                }
-            } else {
-                info.options |= fields[i].option;
+                return;
             }
+        } else {
+            info.options |= fields[i].option;
         }
-
-        emit gameLoaded(info);
-        inf.endGroup();
     }
+
+    emit gameLoaded(info);
+    inf.endGroup();
 }
 
 bool GameLoader::readField(const QSettings& inf, const QString& dirName, const QString& fieldName, QGenericArgument fieldValue) {

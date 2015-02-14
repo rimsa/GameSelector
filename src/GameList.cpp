@@ -1,4 +1,5 @@
 #include <QDebug>
+
 #include <QLayout>
 #include <QtAlgorithms>
 
@@ -17,6 +18,13 @@ GameList::~GameList() {
 
 void GameList::addGame(Game* g) {
     m_games.push_back(g);
+
+    m_updated = false;
+    this->update();
+}
+
+void GameList::addGames(QList<Game*> games) {
+    m_games.append(games);
 
     m_updated = false;
     this->update();

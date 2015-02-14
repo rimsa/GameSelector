@@ -2,6 +2,7 @@
 #define GAMELIST_H
 
 #include <QWidget>
+
 #include <GameComparator.h>
 
 class Game;
@@ -15,8 +16,11 @@ public:
 
 public slots:
     void addGame(Game* g);
+    void addGames(QList<Game*> games);
+
     void removeGame(Game* g);
     void removeAllGames();
+
     void orderBy(GameComparator::OrderType type = GameComparator::ByName);
 
 protected:

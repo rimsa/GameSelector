@@ -1,6 +1,7 @@
 #ifndef GAMEINFO_H
 #define GAMEINFO_H
 
+#include <QDir>
 #include <QSize>
 #include <QString>
 #include <QPixmap>
@@ -16,6 +17,8 @@ Q_DECLARE_FLAGS(GameInfoOptions, GameInfoOption)
 Q_DECLARE_OPERATORS_FOR_FLAGS(GameInfoOptions)
 
 struct GameInfo {
+    QString dirName;
+
     QString name;
     QString diskName;
     QPixmap cover;
@@ -29,7 +32,7 @@ struct GameInfo {
 
 Q_DECLARE_METATYPE(GameInfo)
 
+#define DefaultSelectedGameDir "XBox360"
 #define DefaultCoverSize QSize(356,500)
-
 
 #endif // GAMEINFO_H

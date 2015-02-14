@@ -1,10 +1,16 @@
+#include <QDebug>
+
 #include <QApplication>
 #include <GameSelector.h>
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
-    GameSelector w(argc == 2 ? argv[1] : ".");
 
+    QDir root = (argc == 2 ? QDir(argv[1]) : QDir::current());
+    if (!root.exists())
+        qDebug() << "Invalid directory";
+
+    GameSelector w(root);
     Q_UNUSED(w);
 
     return a.exec();

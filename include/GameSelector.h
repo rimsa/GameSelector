@@ -19,17 +19,23 @@ class GameSelector : public QWidget {
     Q_OBJECT
 
 public:
-    explicit GameSelector(const QString& root, QWidget *parent = 0);
+    explicit GameSelector(QDir& root, QWidget *parent = 0);
     virtual ~GameSelector();
+
+public slots:
+    bool selectGame(Game* g);
+    bool unselectGame(Game* g);
 
 private:
     Ui::GameSelector *ui;
-    QDir m_root;
+    QDir& m_root;
     GameLoader m_loader;
     GameList m_list;
+    Game* m_selected;
 
 private slots:
     void createGame(GameInfo info);
+    void showError(const QString& msg);
 
 };
 
