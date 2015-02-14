@@ -2,6 +2,7 @@
 #define GAME_H
 
 #include <QDir>
+#include <QEvent>
 #include <QLabel>
 #include <QPushButton>
 
@@ -9,6 +10,7 @@
 
 class Game : public QPushButton {
     Q_OBJECT
+    Q_PROPERTY(bool selected READ isSelected WRITE changeSelection NOTIFY selectedChanged)
 
 public:
     Game(GameInfo info, QWidget *parent = 0);
@@ -38,15 +40,18 @@ public:
 public slots:
     void select();
     void unselect();
+    void changeSelection(bool mode);
 
 signals:
     void selected(Game*);
     void unselected(Game*);
+    void selectedChanged(bool mode);
 
 private:
     GameInfo m_info;
     bool m_selected;
 
+    void updateStyleSheet();
 };
 
 #endif // GAME_H
