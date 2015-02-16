@@ -6,8 +6,8 @@
 #include <QList>
 #include <QWidget>
 
-#include <GameList.h>
-#include <GameLoader.h>
+#include <GameSelector/loader/GameLoader.h>
+#include <GameSelector/widgets/GameList.h>
 
 namespace Ui {
     class GameSelector;

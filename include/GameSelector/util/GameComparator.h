@@ -1,7 +1,7 @@
 #ifndef GAMECOMPARATOR_H
 #define GAMECOMPARATOR_H
 
-#include <GameSort.h>
+#include <GameSelector/util/GameSort.h>
 
 class Game;
 

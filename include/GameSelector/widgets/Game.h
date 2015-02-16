@@ -6,7 +6,7 @@
 #include <QLabel>
 #include <QPushButton>
 
-#include <GameInfo.h>
+#include <GameSelector/util/GameInfo.h>
 
 class Game : public QPushButton {
     Q_OBJECT

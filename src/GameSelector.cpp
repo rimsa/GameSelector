@@ -5,8 +5,9 @@
 #include <QMetaObject>
 #include <QMessageBox>
 
-#include <GameSelector.h>
-#include <Game.h>
+#include <GameSelector/GameSelector.h>
+#include <GameSelector/widgets/Game.h>
+
 #include "ui_GameSelector.h"
 
 GameSelector::GameSelector(QDir& root, QWidget *parent) :

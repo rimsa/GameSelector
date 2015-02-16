@@ -3,7 +3,7 @@
 
 #include <QObject>
 
-#include <GameInfo.h>
+#include <GameSelector/util/GameInfo.h>
 
 class Game;
 

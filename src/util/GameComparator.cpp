@@ -1,6 +1,5 @@
-#include "include/GameComparator.h"
-
-#include <Game.h>
+#include <GameSelector/util/GameComparator.h>
+#include <GameSelector/widgets/Game.h>
 
 GameComparator::GameComparator(GameSort::OrderType type) :
     m_type(type) {

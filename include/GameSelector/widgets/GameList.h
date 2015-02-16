@@ -3,8 +3,8 @@
 
 #include <QWidget>
 
-#include <GameFilter.h>
-#include <GameSort.h>
+#include <GameSelector/util/GameFilter.h>
+#include <GameSelector/util/GameSort.h>
 
 class Game;
 

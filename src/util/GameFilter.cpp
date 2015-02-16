@@ -1,7 +1,7 @@
 #include <QMutableListIterator>
 
-#include <Game.h>
-#include <GameFilter.h>
+#include <GameSelector/util/GameFilter.h>
+#include <GameSelector/widgets/Game.h>
 
 GameFilter::GameFilter(QObject* parent) :
     QObject(parent),

@@ -1,7 +1,7 @@
 #include <QDebug>
 
 #include <QApplication>
-#include <GameSelector.h>
+#include <GameSelector/GameSelector.h>
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);

@@ -2,7 +2,8 @@
 
 #include <QIcon>
 #include <QStyle>
-#include <Game.h>
+
+#include <GameSelector/widgets/Game.h>
 
 Game::Game(GameInfo info, QWidget *parent) :
     QPushButton(parent),

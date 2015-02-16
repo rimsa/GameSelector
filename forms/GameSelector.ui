@@ -118,7 +118,7 @@
   <customwidget>
    <class>GameList</class>
    <extends>QWidget</extends>
-   <header location="global">GameList.h</header>
+   <header location="global">GameSelector/widgets/GameList.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

@@ -1,8 +1,8 @@
 #include <QtAlgorithms>
 
-#include <Game.h>
-#include <GameSort.h>
-#include <GameComparator.h>
+#include <GameSelector/util/GameComparator.h>
+#include <GameSelector/util/GameSort.h>
+#include <GameSelector/widgets/Game.h>
 
 GameSort::GameSort(OrderType type, QObject* parent) :
     QObject(parent),

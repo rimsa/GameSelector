@@ -2,9 +2,8 @@
 
 #include <QLayout>
 
-#include <Game.h>
-#include <GameList.h>
-#include <GameSort.h>
+#include <GameSelector/widgets/Game.h>
+#include <GameSelector/widgets/GameList.h>
 
 GameList::GameList(QWidget* parent) :
     QWidget(parent),

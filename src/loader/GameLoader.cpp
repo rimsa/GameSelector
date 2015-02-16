@@ -5,8 +5,8 @@
 #include <QGenericArgument>
 #include <cstdlib>
 
-#include <GameInfo.h>
-#include <GameLoader.h>
+#include <GameSelector/loader/GameLoader.h>
+#include <GameSelector/util/GameInfo.h>
 
 GameLoader::GameLoader(QDir& root, QObject *parent) :
     QObject(parent), m_root(root) {
