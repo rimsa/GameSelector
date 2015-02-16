@@ -3,7 +3,8 @@
 
 #include <QWidget>
 
-#include <GameComparator.h>
+#include <GameFilter.h>
+#include <GameSort.h>
 
 class Game;
 
@@ -15,23 +16,27 @@ public:
     ~GameList();
 
 public slots:
+    GameFilter& filter() { return m_filter; }
+    GameSort& sort() { return m_sort; }
+
     void addGame(Game* g);
     void addGames(QList<Game*> games);
 
     void removeGame(Game* g);
     void removeAllGames();
 
-    void orderBy(GameComparator::OrderType type = GameComparator::ByName);
-
 protected:
     virtual void showEvent(QShowEvent* event);
 
 private:
     QList<Game*> m_games;
+
     bool m_updated;
-    GameComparator::OrderType m_order;
+    GameFilter m_filter;
+    GameSort m_sort;
 
 private slots:
+    void markUpdate();
     void updateGames();
 
 };

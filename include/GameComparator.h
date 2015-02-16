@@ -1,28 +1,19 @@
 #ifndef GAMECOMPARATOR_H
 #define GAMECOMPARATOR_H
 
+#include <GameSort.h>
+
 class Game;
 
 class GameComparator {
 public:
-    enum OrderType {
-        ByName,
-        ByGenre,
-        ByDeveloper,
-        ByPublisher,
-        ByYear
-    };
-
-    GameComparator(OrderType type = ByName);
+    GameComparator(GameSort::OrderType type);
     virtual ~GameComparator();
-
-    OrderType type() const { return m_type; }
-    void setType(OrderType type) { m_type = type; }
 
     bool operator()(const Game* a, const Game* b) const;
 
 private:
-    OrderType m_type;
+    GameSort::OrderType m_type;
 
 };
 

@@ -1,7 +1,8 @@
-#include <Game.h>
-#include <GameComparator.h>
+#include "include/GameComparator.h"
 
-GameComparator::GameComparator(OrderType type) :
+#include <Game.h>
+
+GameComparator::GameComparator(GameSort::OrderType type) :
     m_type(type) {
 }
 
@@ -10,15 +11,15 @@ GameComparator::~GameComparator() {
 
 bool GameComparator::operator()(const Game* a, const Game* b) const {
     switch (m_type) {
-        case GameComparator::ByName:
+        case GameSort::ByName:
             return a->name() < b->name();
-        case GameComparator::ByGenre:
+        case GameSort::ByGenre:
             return a->genre() < b->genre();
-        case GameComparator::ByDeveloper:
+        case GameSort::ByDeveloper:
             return a->developer() < b->developer();
-        case GameComparator::ByPublisher:
+        case GameSort::ByPublisher:
             return a->publisher() < b->publisher();
-        case GameComparator::ByYear:
+        case GameSort::ByYear:
             return a->year() < b->year();
         default:
             Q_ASSERT(!"Invalid comparator type");

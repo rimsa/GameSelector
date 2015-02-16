@@ -7,10 +7,13 @@
 #include <QPixmap>
 
 enum GameInfoOption {
-    HAS_GENRE     = 0x01,
-    HAS_DEVELOPER = 0x02,
-    HAS_PUBLISHER = 0x04,
-    HAS_YEAR      = 0x08
+    HAS_NAME      = 0x01,
+    HAS_DISKNAME  = 0x02,
+    HAS_COVER     = 0x04,
+    HAS_GENRE     = 0x08,
+    HAS_DEVELOPER = 0x10,
+    HAS_PUBLISHER = 0x20,
+    HAS_YEAR      = 0x40
 };
 
 Q_DECLARE_FLAGS(GameInfoOptions, GameInfoOption)

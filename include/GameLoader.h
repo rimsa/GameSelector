@@ -12,7 +12,7 @@ class GameLoader : public QObject {
     Q_OBJECT
 
 public:
-    explicit GameLoader(QDir& root, QObject *parent = 0);
+    GameLoader(QDir& root, QObject *parent = 0);
     virtual ~GameLoader();
 
 signals:

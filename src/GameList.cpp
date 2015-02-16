@@ -1,16 +1,19 @@
 #include <QDebug>
 
 #include <QLayout>
-#include <QtAlgorithms>
 
 #include <Game.h>
 #include <GameList.h>
-#include <GameComparator.h>
+#include <GameSort.h>
 
 GameList::GameList(QWidget* parent) :
     QWidget(parent),
     m_updated(true),
-    m_order(GameComparator::ByName) {
+    m_filter(this),
+    m_sort(GameSort::ByName, this) {
+
+    QObject::connect(&m_filter, SIGNAL(filterChanged()), this, SLOT(markUpdate()));
+    QObject::connect(&m_sort, SIGNAL(typeChanged(GameSort::OrderType)), this, SLOT(markUpdate()));
 }
 
 GameList::~GameList() {
@@ -19,38 +22,25 @@ GameList::~GameList() {
 void GameList::addGame(Game* g) {
     m_games.push_back(g);
 
-    m_updated = false;
-    this->update();
+    this->markUpdate();
 }
 
 void GameList::addGames(QList<Game*> games) {
     m_games.append(games);
 
-    m_updated = false;
-    this->update();
+    this->markUpdate();
 }
 
 void GameList::removeGame(Game* g) {
     m_games.removeAll(g);
 
-    m_updated = false;
-    this->updateGames();
+    this->markUpdate();
 }
 
 void GameList::removeAllGames() {
     m_games.clear();
 
-    m_updated = false;
-    this->updateGames();
-}
-
-void GameList::orderBy(GameComparator::OrderType type) {
-    if (m_order != type) {
-        m_order = type;
-
-        m_updated = false;
-        this->updateGames();
-    }
+    this->markUpdate();
 }
 
 void GameList::showEvent(QShowEvent* event) {
@@ -59,27 +49,45 @@ void GameList::showEvent(QShowEvent* event) {
     this->updateGames();
 }
 
+void GameList::markUpdate() {
+    m_updated = false;
+
+    QMetaObject::invokeMethod(this, "updateGames", Qt::QueuedConnection);
+}
+
 void GameList::updateGames() {
+    // If already updated, no need to recompute.
     if (m_updated)
         return;
 
+    // Only compute list if visible,
+    // otherwise postpone it until
+    // the widget is visible.
     if (!this->isVisible())
         return;
 
-    // Remover todos os jogos.
+    // Remove all games from the layout.
     QLayoutItem* item;
     while ((item = this->layout()->takeAt(0)) != 0) {
         if (qobject_cast<Game*>(item->widget()))
             delete item;
     }
 
-    // Ordenar todos os jogos.
-    qSort(m_games.begin(), m_games.end(), GameComparator(m_order));
+    // Build a new list with all the games.
+    QList<Game*> displayGames(m_games);
 
-    // Colocar todos os jogos de volta no layout.
-    foreach (Game* g, m_games)
+    // Filter the games by the selected criterias.
+    m_filter.applyFilter(displayGames);
+
+    // Sort the games according to witch criteria.
+    m_sort.sort(displayGames);
+
+    // From this new list, put the games
+    // back to the layout.
+    foreach (Game* g, displayGames)
         this->layout()->addWidget(g);
 
-    // Atualizar o estado informando que está atualizado.
+    // Mark the state as updated so no
+    // unnecessary computations are performed.
     m_updated = true;
 }
