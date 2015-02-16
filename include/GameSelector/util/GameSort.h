@@ -27,7 +27,7 @@ public:
     void setType(OrderType type);
 
 public slots:
-    void sort(QList<Game*> games);
+    void sort(QList<Game*>& games);
 
 signals:
     void typeChanged(GameSort::OrderType type);

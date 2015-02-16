@@ -20,7 +20,7 @@ void GameSort::setType(OrderType type) {
     }
 }
 
-void GameSort::sort(QList<Game*> games) {
+void GameSort::sort(QList<Game*>& games) {
     // Ordering using Quick Sort.
     qSort(games.begin(), games.end(), GameComparator(m_type));
 }

@@ -96,13 +96,13 @@ void GameFilter::unsetYear() {
     }
 }
 
-void GameFilter::applyFilter(QList<Game*> games) {
+void GameFilter::applyFilter(QList<Game*>& games) {
     // Filtering by name if present.
     if (this->hasName()) {
         QMutableListIterator<Game*> it(games);
         while (it.hasNext()) {
             Game* g = it.next();
-            if (!g->name().contains(this->name()))
+            if (!g->name().contains(this->name(), Qt::CaseInsensitive))
                 it.remove();
         }
     }
@@ -112,7 +112,8 @@ void GameFilter::applyFilter(QList<Game*> games) {
         QMutableListIterator<Game*> it(games);
         while (it.hasNext()) {
             Game* g = it.next();
-            if (g->genre() != this->genre())
+            if (!g->hasGenre() ||
+                g->genre().compare(this->genre(), Qt::CaseInsensitive))
                 it.remove();
         }
     }
@@ -122,7 +123,8 @@ void GameFilter::applyFilter(QList<Game*> games) {
         QMutableListIterator<Game*> it(games);
         while (it.hasNext()) {
             Game* g = it.next();
-            if (g->developer() != this->developer())
+            if (!g->hasDeveloper() ||
+                g->developer().compare(this->developer(), Qt::CaseInsensitive))
                 it.remove();
         }
     }
@@ -132,7 +134,8 @@ void GameFilter::applyFilter(QList<Game*> games) {
         QMutableListIterator<Game*> it(games);
         while (it.hasNext()) {
             Game* g = it.next();
-            if (g->publisher() != this->publisher())
+            if (!g->hasPublisher() ||
+                g->publisher().compare(this->publisher(), Qt::CaseInsensitive))
                 it.remove();
         }
     }
@@ -142,7 +145,7 @@ void GameFilter::applyFilter(QList<Game*> games) {
         QMutableListIterator<Game*> it(games);
         while (it.hasNext()) {
             Game* g = it.next();
-            if (g->year() != this->year())
+            if (!g->hasYear() || g->year() != this->year())
                 it.remove();
         }
     }

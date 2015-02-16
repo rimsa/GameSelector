@@ -45,7 +45,7 @@ public slots:
     void setYear(int year);
     void unsetYear();
 
-    void applyFilter(QList<Game*> games);
+    void applyFilter(QList<Game*>& games);
 
 signals:
     void filterChanged();
