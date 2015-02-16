@@ -2,6 +2,7 @@
 #define GAMELIST_H
 
 #include <QWidget>
+#include <QScrollArea>
 
 #include <GameSelector/util/GameFilter.h>
 #include <GameSelector/util/GameSort.h>
@@ -34,6 +35,9 @@ private:
     bool m_updated;
     GameFilter m_filter;
     GameSort m_sort;
+
+    QScrollArea m_scrollArea;
+    QWidget m_viewport;
 
 private slots:
     void markUpdate();
