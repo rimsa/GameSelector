@@ -1,6 +1,7 @@
 #ifndef GAMELIST_H
 #define GAMELIST_H
 
+#include <QEvent>
 #include <QWidget>
 #include <QScrollArea>
 
@@ -16,6 +17,17 @@ public:
     GameList(QWidget* parent = 0);
     ~GameList();
 
+    bool eventFilter(QObject* watched, QEvent* event);
+
+    QList<Game*> allGames() const { return m_allGames; }
+    QList<Game*> displayGames() const { return m_displayGames; }
+
+    int count() const { return m_allGames.count(); }
+    int displayCount() const { return m_displayGames.count(); }
+
+    Game* game() const;
+    int gameIndex() const { return m_index; }
+
 public slots:
     GameFilter& filter() { return m_filter; }
     GameSort& sort() { return m_sort; }
@@ -24,13 +36,25 @@ public slots:
     void addGames(QList<Game*> games);
 
     void removeGame(Game* g);
-    void removeAllGames();
+    void removeGames();
+
+    void setGame(Game* g, bool force = false);
+    void setGameByIndex(int index, bool force = false);
+
+    void previousGame();
+    void nextGame();
+
+signals:
+    void gameIndexChanged(int index);
+    void gameChanged(Game* game);
 
 protected:
     virtual void showEvent(QShowEvent* event);
 
 private:
-    QList<Game*> m_games;
+    QList<Game*> m_allGames;
+    QList<Game*> m_displayGames;
+    int m_index;
 
     bool m_updated;
     GameFilter m_filter;
