@@ -23,8 +23,8 @@ GameList::GameList(QWidget* parent) :
     QBoxLayout* viewportLayout = new QHBoxLayout;
     viewportLayout->setSpacing(DefaultGameSpacing);
     viewportLayout->setContentsMargins(0, 0, 0, 0);
-    m_viewport.setMinimumSize(QSize(0, 500));
-    m_viewport.setMaximumSize(QSize(16777215, 500));
+    m_viewport.setMinimumSize(QSize(0, DefaultCoverSize.height()));
+    m_viewport.setMaximumSize(QSize(16777215, DefaultCoverSize.height()));
     //m_viewport.setFixedSize(DefaultCoverSize);
     m_viewport.setLayout(viewportLayout);
     m_viewport.installEventFilter(this);

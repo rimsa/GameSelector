@@ -36,6 +36,7 @@ struct GameInfo {
 Q_DECLARE_METATYPE(GameInfo)
 
 #define DefaultSelectedGameDir "XBox360"
-#define DefaultCoverSize QSize(356,500)
+
+#define DefaultCoverSize QSize(214,300)
 
 #endif // GAMEINFO_H
