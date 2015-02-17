@@ -88,11 +88,16 @@ bool GameLoader::readField(const QSettings& inf, const QString& dirName, const Q
         case QMetaType::QPixmap:
             {
                 QPixmap tmp(QString("%1/%2/%3").arg(m_root.absolutePath()).arg(dirName).arg(var.value<QString>()));
+
+                // If the image is not loaded
+                // the default black cover
                 if (tmp.isNull()) {
                     tmp = QPixmap(":/DefaultCover");
-                } else if (tmp.size() != DefaultCoverSize) {
-                    tmp = tmp.scaled(DefaultCoverSize);
                 }
+
+                // Scale the image if necessary.
+                if (tmp.size() != DefaultCoverSize)
+                    tmp = tmp.scaled(DefaultCoverSize, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
 
                 Q_ASSERT(!tmp.isNull());
 
