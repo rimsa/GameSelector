@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file alias="DefaultCover">defaultcover.png</file>
-    </qresource>
-</RCC>

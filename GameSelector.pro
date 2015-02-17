@@ -30,4 +30,4 @@ HEADERS  += \
 FORMS    += forms/GameSelector.ui
 
 RESOURCES += \
-    rccs/gameselector.qrc
+    rccs/GameSelector.qrc

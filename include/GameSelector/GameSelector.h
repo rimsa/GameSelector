@@ -37,6 +37,9 @@ private slots:
     void createGame(GameInfo info);
     void showError(const QString& msg);
 
+    void updateGameInfo(Game* game);
+    void updateGameIndex(int index);
+
 };
 
 #endif // GAMESELECTOR_H

@@ -18,9 +18,6 @@ Game::Game(GameInfo info, QWidget *parent) :
     this->setIcon(QIcon(info.cover));
     this->setIconSize(DefaultCoverSize);
     this->setFixedSize(DefaultCoverSize);
-
-    this->setStyleSheet("* { border: none; outline: none; }" \
-                        "* [selected=\"true\"] { border: 10px solid red; } ");
 }
 
 Game::~Game() {

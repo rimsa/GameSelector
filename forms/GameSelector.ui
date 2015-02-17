@@ -6,50 +6,670 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>214</width>
-    <height>300</height>
+    <width>635</width>
+    <height>371</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>GameSelector</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <property name="styleSheet">
+   <string notr="true">* { background-color: white; }</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
    <property name="spacing">
-    <number>0</number>
+    <number>25</number>
    </property>
    <property name="leftMargin">
-    <number>0</number>
+    <number>10</number>
    </property>
    <property name="topMargin">
-    <number>0</number>
+    <number>10</number>
    </property>
    <property name="rightMargin">
-    <number>0</number>
+    <number>10</number>
    </property>
    <property name="bottomMargin">
-    <number>0</number>
+    <number>10</number>
    </property>
    <item>
-    <widget class="GameList" name="gameList" native="true">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
+    <layout class="QVBoxLayout" name="leftLayout">
+     <property name="spacing">
+      <number>0</number>
      </property>
-     <property name="minimumSize">
-      <size>
-       <width>214</width>
-       <height>300</height>
-      </size>
+     <item>
+      <layout class="QHBoxLayout" name="navigationLayout">
+       <property name="spacing">
+        <number>35</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="leftArrow">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>25</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>25</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">* { border: none; outline: none; }</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../rccs/GameSelector.qrc">
+           <normaloff>:/LeftArrow</normaloff>:/LeftArrow</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>128</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="GameList" name="gameList" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>214</width>
+           <height>302</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>214</width>
+           <height>302</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid black;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="rightArrow">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>25</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>25</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">* { border: none; outline: none; }</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../rccs/GameSelector.qrc">
+           <normaloff>:/RightArrow</normaloff>:/RightArrow</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>128</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="gameIndex">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="rightLayout">
+     <property name="spacing">
+      <number>0</number>
      </property>
-     <property name="maximumSize">
-      <size>
-       <width>214</width>
-       <height>300</height>
-      </size>
-     </property>
-    </widget>
+     <item>
+      <widget class="QGroupBox" name="gameInfo">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>250</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox { background-color: white; border: 2px solid gray; border-radius: 5px; margin-top: 1ex; } QGroupBox::title  { subcontrol-origin: margin; subcontrol-position: top center; padding: 0 3px; background-color: white; }
+</string>
+       </property>
+       <property name="title">
+        <string>Game Information</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="nameDesc" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="spacing">
+            <number>2</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="nameLabel">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="nameValue">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="indent">
+              <number>20</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="nameLine">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>4</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>4</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: gray;</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::HLine</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+          <zorder>nameLabel</zorder>
+          <zorder>nameValue</zorder>
+          <zorder>nameLine</zorder>
+          <zorder>nameLabel</zorder>
+          <zorder>nameValue</zorder>
+          <zorder>nameLine</zorder>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="genreDesc" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>2</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="genreLabel">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Genre</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="genreValue">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="indent">
+              <number>20</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="genreLine">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>4</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>4</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: gray;</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::HLine</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="developerDesc" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="spacing">
+            <number>2</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="developerLabel">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Developer</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="developerValue">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="indent">
+              <number>20</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="developerLine">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>4</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>4</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: gray;</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::HLine</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="publisherDesc" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="spacing">
+            <number>2</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="publisherLabel">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Publisher</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="publisherValue">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="indent">
+              <number>20</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="publisherLine">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>4</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>4</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: gray;</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::HLine</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="yearDesc" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <property name="spacing">
+            <number>2</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="yearLabel">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Year</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="yearValue">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="indent">
+              <number>20</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="yearLine">
+             <property name="styleSheet">
+              <string notr="true">color: gray;</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::HLine</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="selectedDesc" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <property name="spacing">
+            <number>2</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="selectedLabel">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Selected</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="selectedValue">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="indent">
+              <number>20</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="selectedLine">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>4</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>4</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: gray;</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::HLine</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>0</width>
+         <height>16</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
    </item>
   </layout>
  </widget>
@@ -60,8 +680,85 @@
    <extends>QWidget</extends>
    <header location="global">GameSelector/widgets/GameList.h</header>
    <container>1</container>
+   <slots>
+    <signal>gameIndexChanged(int)</signal>
+    <signal>gameChanged(Game*)</signal>
+    <slot>previousGame()</slot>
+    <slot>nextGame()</slot>
+   </slots>
   </customwidget>
  </customwidgets>
- <resources/>
- <connections/>
+ <resources>
+  <include location="../rccs/GameSelector.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>leftArrow</sender>
+   <signal>clicked()</signal>
+   <receiver>gameList</receiver>
+   <slot>previousGame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>154</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>153</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rightArrow</sender>
+   <signal>clicked()</signal>
+   <receiver>gameList</receiver>
+   <slot>nextGame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>347</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>285</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gameList</sender>
+   <signal>gameIndexChanged(int)</signal>
+   <receiver>GameSelector</receiver>
+   <slot>updateGameIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>207</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>408</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gameList</sender>
+   <signal>gameChanged(Game*)</signal>
+   <receiver>GameSelector</receiver>
+   <slot>updateGameInfo(Game*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>164</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>139</x>
+     <y>452</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>updateGameInfo(Game*)</slot>
+  <slot>updateGameIndex(int)</slot>
+ </slots>
 </ui>

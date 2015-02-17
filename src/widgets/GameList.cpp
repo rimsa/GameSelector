@@ -32,7 +32,6 @@ GameList::GameList(QWidget* parent) :
     m_scrollArea.setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     m_scrollArea.setMinimumSize(DefaultCoverSize);
     m_scrollArea.setMaximumSize(DefaultCoverSize);
-    m_scrollArea.setStyleSheet("background-color: white;");
     m_scrollArea.setFrameShape(QFrame::NoFrame);
     m_scrollArea.setFrameShadow(QFrame::Plain);
     m_scrollArea.setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -90,9 +89,13 @@ bool GameList::eventFilter(QObject* watched, QEvent* event) {
     return false;
 }
 
-Game* GameList::game() const {
-    return (m_index >= 0 && this->displayCount() ?
-                m_displayGames[m_index] : 0);
+Game* GameList::gameByIndex(int index) const {
+    return (index >= 0 && this->displayCount() ?
+                m_displayGames[index] : 0);
+}
+
+int GameList::indexByGame(Game* game) const {
+    return m_displayGames.indexOf(game);
 }
 
 void GameList::addGame(Game* g) {

@@ -25,8 +25,11 @@ public:
     int count() const { return m_allGames.count(); }
     int displayCount() const { return m_displayGames.count(); }
 
-    Game* game() const;
+    Game* game() const { return gameByIndex(m_index); }
     int gameIndex() const { return m_index; }
+
+    Game* gameByIndex(int index) const;
+    int indexByGame(Game* game) const;
 
 public slots:
     GameFilter& filter() { return m_filter; }

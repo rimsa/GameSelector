@@ -23,6 +23,9 @@ GameSelector::GameSelector(QDir& root, QWidget *parent) :
     QObject::connect(&m_loader, SIGNAL(loadingFinished()), this, SLOT(show()), Qt::QueuedConnection);
 
     QMetaObject::invokeMethod(&m_loader, "load", Qt::QueuedConnection);
+
+    this->adjustSize();
+    this->setFixedSize(this->size());
 }
 
 GameSelector::~GameSelector() {
@@ -62,6 +65,9 @@ bool GameSelector::selectGame(Game* g) {
     }
 
     m_selected = g;
+
+    // Update game information.
+    this->updateGameInfo(m_selected);
 
     return true;
 }
@@ -114,4 +120,25 @@ void GameSelector::showError(const QString& msg) {
                                 tr("%1\n\nThe application will be closed!").arg(msg),
                                 QMessageBox::Ok);
     qApp->exit();
+}
+
+void GameSelector::updateGameInfo(Game* game) {
+    if (game) {
+        ui->nameValue->setText(game->name());
+        ui->genreValue->setText(game->hasGenre() ? game->genre() : "");
+        ui->developerValue->setText(game->hasDeveloper() ? game->developer() : "");
+        ui->publisherValue->setText(game->hasPublisher() ? game->publisher() : "");
+        ui->yearValue->setText(game->hasYear() ? QString::number(game->year()) : "");
+        ui->selectedValue->setText(game->isSelected() ? tr("Yes") : tr("No"));
+    } else {
+        ui->nameValue->setText("");
+        ui->genreValue->setText("");
+        ui->developerValue->setText("");
+        ui->publisherValue->setText("");
+        ui->yearValue->setText("");
+    }
+}
+
+void GameSelector::updateGameIndex(int index) {
+    ui->gameIndex->setText(index < 0 ? "" : QString("%1/%2").arg(index+1).arg(ui->gameList->displayCount()));
 }
