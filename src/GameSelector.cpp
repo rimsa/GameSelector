@@ -67,7 +67,8 @@ bool GameSelector::selectGame(Game* g) {
     m_selected = g;
 
     // Update game information.
-    this->updateGameInfo(m_selected);
+    if (m_selected == ui->gameList->game())
+        this->updateGameInfo(m_selected);
 
     return true;
 }
@@ -136,7 +137,13 @@ void GameSelector::updateGameInfo(Game* game) {
         ui->developerValue->setText("");
         ui->publisherValue->setText("");
         ui->yearValue->setText("");
+
+        ui->leftArrow->setDisabled(true);
+        ui->rightArrow->setDisabled(true);
     }
+
+    ui->leftArrow->setEnabled(ui->gameList->hasPrevious());
+    ui->rightArrow->setEnabled(ui->gameList->hasNext());
 }
 
 void GameSelector::updateGameIndex(int index) {

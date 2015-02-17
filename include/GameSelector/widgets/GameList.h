@@ -31,6 +31,9 @@ public:
     Game* gameByIndex(int index) const;
     int indexByGame(Game* game) const;
 
+    bool hasPrevious() const { return ((m_index - 1) >= 0 && this->displayCount() > 0); }
+    bool hasNext() const { return ((m_index + 1) < this->displayCount()); }
+
 public slots:
     GameFilter& filter() { return m_filter; }
     GameSort& sort() { return m_sort; }
