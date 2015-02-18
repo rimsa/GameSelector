@@ -22,6 +22,7 @@ public:
     const QString& name() const { return m_info.name; }
     const QString& diskName() const { return m_info.diskName; }
     const QPixmap& cover() const { return m_info.cover; }
+    bool arcade() const { return m_info.arcade; }
 
     bool hasGenre() const { return (m_info.options & HAS_GENRE); }
     const QString& genre() const { return m_info.genre; }

@@ -49,6 +49,7 @@ void GameLoader::loadGame(QString dirName) {
         { "Name", Q_ARG(QString, info.name), true, 0 },
         { "DiskName", Q_ARG(QString, info.diskName), true, 0 },
         { "Cover", Q_ARG(QPixmap, info.cover), true, 0 },
+        { "Arcade", Q_ARG(bool, info.arcade), true, 0 },
         { "Genre", Q_ARG(QString, info.genre), false, HAS_GENRE },
         { "Developer", Q_ARG(QString, info.developer), false, HAS_DEVELOPER },
         { "Publisher", Q_ARG(QString, info.publisher), false, HAS_PUBLISHER },
@@ -121,6 +122,20 @@ bool GameLoader::readField(const QSettings& inf, const QString& dirName, const Q
                 float tmp = var.value<float>();
                 if (tmp <= 0.0)
                     return false;
+
+                QMetaType::construct(typeId, fieldValue.data(), &tmp);
+            }
+
+            break;
+        case QMetaType::Bool:
+            {
+                bool tmp = false;
+
+                QString val = var.value<QString>();
+                if (val.compare("yes", Qt::CaseInsensitive) == 0 ||
+                    val.compare("true", Qt::CaseInsensitive) == 0 ||
+                    val.compare("1", Qt::CaseInsensitive))
+                    tmp = true;
 
                 QMetaType::construct(typeId, fieldValue.data(), &tmp);
             }

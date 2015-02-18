@@ -28,6 +28,23 @@ void GameFilter::unsetName() {
     }
 }
 
+void GameFilter::setArcade(bool arcade) {
+    if (m_arcade != arcade || !(m_options & HAS_ARCADE)) {
+        m_arcade = arcade;
+        m_options |= HAS_ARCADE;
+
+        emit filterChanged();
+    }
+}
+
+void GameFilter::unsetArcade() {
+    if (m_options & HAS_ARCADE) {
+        m_options &= ~HAS_ARCADE;
+
+        emit filterChanged();
+    }
+}
+
 void GameFilter::setGenre(const QString& genre) {
     if (!genre.isEmpty() && m_genre != genre) {
         m_genre = genre;
@@ -119,6 +136,16 @@ void GameFilter::applyFilter(QList<Game*>& games) {
         while (it.hasNext()) {
             Game* g = it.next();
             if (!g->name().contains(this->name(), Qt::CaseInsensitive))
+                it.remove();
+        }
+    }
+
+    // Filtering by arcade if present.
+    if (this->hasArcade()) {
+        QMutableListIterator<Game*> it(games);
+        while (it.hasNext()) {
+            Game* g = it.next();
+            if (g->arcade() != this->arcade())
                 it.remove();
         }
     }
