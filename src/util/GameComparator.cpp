@@ -20,6 +20,8 @@ bool GameComparator::operator()(const Game* a, const Game* b) const {
             return a->publisher() < b->publisher();
         case GameSort::ByYear:
             return a->year() < b->year();
+        case GameSort::BySize:
+            return a->size() < b->size();
         default:
             Q_ASSERT(!"Invalid comparator type");
             return false;

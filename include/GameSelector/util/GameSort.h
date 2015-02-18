@@ -16,7 +16,8 @@ public:
         ByGenre,
         ByDeveloper,
         ByPublisher,
-        ByYear
+        ByYear,
+        BySize,
     };
     friend class GameComparator;
 
