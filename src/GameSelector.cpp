@@ -137,9 +137,7 @@ void GameSelector::updateGameInfo(Game* game) {
         ui->developerValue->setText("");
         ui->publisherValue->setText("");
         ui->yearValue->setText("");
-
-        ui->leftArrow->setDisabled(true);
-        ui->rightArrow->setDisabled(true);
+        ui->selectedValue->setText("");
     }
 
     ui->leftArrow->setEnabled(ui->gameList->hasPrevious());
