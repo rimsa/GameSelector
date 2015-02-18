@@ -2,8 +2,9 @@
 Name = "Asura's Wrath"
 DiskName = "AsurasWrath"
 Cover = "asuraswrath.png"
-Genre = Fight
-Developer = 
-Publisher = 
-Year =
+Genre = "Action"
+Arcade = No
+Developer = "CyberConnect2"
+Publisher = "Capcom"
+Year = 2012
 Size = 6.10

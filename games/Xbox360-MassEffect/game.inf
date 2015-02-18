@@ -2,8 +2,9 @@
 Name = "Mass Effect"
 DiskName = "MassEffect"
 Cover = "masseffect.png"
-Genre = RPG
-Developer = 
-Publisher = 
-Year =
+Genre = "Third-Person Shooter"
+Arcade = No
+Developer = "BioWare"
+Publisher = "Microsoft Game Studios"
+Year = 2007
 Size = 6.83

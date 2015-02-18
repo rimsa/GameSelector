@@ -1,9 +1,10 @@
 [Game]
-Name = "Magic 2013"
+Name = "Magic: The Gathering – Duels of the Planeswalkers 2013"
 DiskName = "Magic2013"
 Cover = "magic2013.png"
-Genre = Arcade
-Developer = 
-Publisher = 
-Year =
+Genre = "Collectible Card Game"
+Arcade = Yes
+Developer = "Stainless Games"
+Publisher = "Wizards of the Coast"
+Year = 2012
 Size = 1.27

@@ -2,8 +2,9 @@
 Name = "SSX"
 DiskName = "SSX"
 Cover = "ssx.png"
-Genre = Racing
-Developer = 
-Publisher = 
-Year =
+Genre = "Sports"
+Arcade = No
+Developer = "EA Canada"
+Publisher = "EA Sports"
+Year = 2012
 Size = 3.68

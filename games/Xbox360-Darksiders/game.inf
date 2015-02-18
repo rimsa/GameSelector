@@ -2,8 +2,9 @@
 Name = "Darksiders"
 DiskName = "Darksiders"
 Cover = "darksiders.png"
-Genre = Adventure
-Developer = 
-Publisher = 
-Year =
+Genre = "RPG"
+Arcade = No
+Developer = "Vigil Games"
+Publisher = "THQ"
+Year = 2010
 Size = 6.60

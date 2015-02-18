@@ -2,8 +2,9 @@
 Name = "Assassin's Creed II"
 DiskName = "AssassinsCreedII"
 Cover = "assassinscreedii.png"
-Genre = Adventure
-Developer = 
-Publisher = 
-Year =
+Genre = "Adventure"
+Arcade = No
+Developer = "Ubisoft Montreal"
+Publisher = "Ubisoft"
+Year = 2009
 Size = 5.19

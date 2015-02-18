@@ -1,9 +1,10 @@
 [Game]
-Name = "Halo Reach"
+Name = "Halo: Reach"
 DiskName = "HaloReach"
 Cover = "haloreach.png"
-Genre = Shooter
-Developer = 
-Publisher = 
-Year =
+Genre = "First-Person Shooter"
+Arcade = No
+Developer = "Bungie"
+Publisher = "Microsoft Game Studios"
+Year = 2010
 Size = 6.60

@@ -1,0 +1,10 @@
+[Game]
+Name = "Lego The Lord of the Rings"
+DiskName = "LegoTheLordoftheRings"
+Cover = "legothelordoftherings.png"
+Genre = "Action-Adventure"
+Arcade = No
+Developer = "Traveller's Tales"
+Publisher = "Warner Bros. Interactive Entertainment"
+Year = 2012
+Size = 5.87

@@ -1,9 +1,10 @@
 [Game]
-Name = "Ascend Hand of Kul"
+Name = "Ascend: Hand of Kul"
 DiskName = "AscendHandofKul"
 Cover = "ascendhandofkul.png"
-Genre = Arcade
-Developer = 
-Publisher = 
-Year =
+Genre = "RPG"
+Arcade = Yes
+Developer = "Signal Studios"
+Publisher = "Microsoft Studios"
+Year = 2013
 Size = 1.83

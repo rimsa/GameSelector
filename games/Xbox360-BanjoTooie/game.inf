@@ -1,9 +1,10 @@
 [Game]
-Name = "Banjo Tooie"
+Name = "Banjo-Tooie"
 DiskName = "BanjoTooie"
 Cover = "banjotooie.png"
-Genre = Arcade
-Developer = 
-Publisher = 
-Year =
+Genre = "Platform"
+Arcade = Yes
+Developer = "4J Studios"
+Publisher = "Microsoft Game Studios"
+Year = 2009
 Size = 0.10

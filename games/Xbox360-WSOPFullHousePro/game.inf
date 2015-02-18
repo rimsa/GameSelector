@@ -1,9 +1,10 @@
 [Game]
-Name = "WSOP Full House Pro"
+Name = "World Series of Poker: Full House Pro"
 DiskName = "WSOPFullHousePro"
 Cover = "wsopfullhousepro.png"
-Genre = Arcade
-Developer = 
-Publisher = 
-Year =
+Genre = "Card Game"
+Arcade = Yes
+Developer = "Pipeworks Software"
+Publisher = "Microsoft Game Studios"
+Year = 2013
 Size = 1.10

@@ -2,8 +2,9 @@
 Name = "Sleeping Dogs"
 DiskName = "SleepingDogs"
 Cover = "sleepingdogs.png"
-Genre = Adventure
-Developer = 
-Publisher = 
-Year =
+Genre = "Adventure"
+Arcade = No
+Developer = "United Front Games"
+Publisher = "Square Enix"
+Year = 2012
 Size = 6.02

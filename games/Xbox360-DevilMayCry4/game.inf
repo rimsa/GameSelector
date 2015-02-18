@@ -2,8 +2,9 @@
 Name = "Devil May Cry 4"
 DiskName = "DevilMayCry4"
 Cover = "devilmaycry4.png"
-Genre = Adventure
-Developer = 
-Publisher = 
-Year =
+Genre = "Hack and Slash"
+Arcade = No
+Developer = "Capcom"
+Publisher = "Capcom"
+Year = 2008
 Size = 6.48

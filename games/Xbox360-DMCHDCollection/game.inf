@@ -1,9 +1,10 @@
 [Game]
-Name = "DMC HD Collection"
+Name = "Devil May Cry: HD Collection"
 DiskName = "DMCHDCollection"
 Cover = "dmchdcollection.png"
-Genre = Adventure
-Developer = 
-Publisher = 
-Year =
+Genre = "Hack and Slash"
+Arcade = No
+Developer = "Capcom"
+Publisher = "Capcom"
+Year = 2012
 Size = 6.63

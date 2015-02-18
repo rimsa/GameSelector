@@ -2,8 +2,9 @@
 Name = "Motocross Madness"
 DiskName = "MotocrossMadness"
 Cover = "motocrossmadness.png"
-Genre = Arcade
-Developer = 
-Publisher = 
-Year =
+Genre = "Racing"
+Arcade = Yes
+Developer = "Bongfish"
+Publisher = "Microsoft Studios"
+Year = 2013
 Size = 1.48

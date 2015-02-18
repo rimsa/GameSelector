@@ -1,9 +1,10 @@
 [Game]
-Name = "Red Faction Guerrilla"
+Name = "Red Faction: Guerrilla"
 DiskName = "RedFactionGuerrilla"
 Cover = "redfactionguerrilla.png"
-Genre = Shooter
-Developer = 
-Publisher = 
-Year =
+Genre = "Shooter"
+Arcade = No
+Developer = "Volition, Inc."
+Publisher = "THQ"
+Year = 2009
 Size = 6.40

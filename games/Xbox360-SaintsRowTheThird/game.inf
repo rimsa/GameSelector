@@ -1,9 +1,10 @@
 [Game]
-Name = "Saints Row The Third"
+Name = "Saints Row: The Third"
 DiskName = "SaintsRowTheThird"
 Cover = "saintsrowthethird.png"
-Genre = Adventure
-Developer = 
-Publisher = 
-Year =
+Genre = "Action-Adventure"
+Arcade = No
+Developer = "Volition"
+Publisher = "THQ"
+Year = 2011
 Size = 6.86

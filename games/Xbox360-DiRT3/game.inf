@@ -2,8 +2,9 @@
 Name = "DiRT 3"
 DiskName = "DiRT3"
 Cover = "dirt3.png"
-Genre = Racing
-Developer = 
-Publisher = 
-Year =
+Genre = "Racing"
+Arcade = No
+Developer = "Codemasters Southam"
+Publisher = "Codemasters"
+Year = 2011
 Size = 6.03

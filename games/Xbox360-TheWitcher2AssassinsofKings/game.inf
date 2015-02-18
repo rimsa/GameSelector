@@ -1,9 +1,10 @@
 [Game]
-Name = "The Witcher 2 Assassins of Kings"
+Name = "The Witcher 2: Assassins of Kings"
 DiskName = "TheWitcher2AssassinsofKings"
 Cover = "thewitcher2assassinsofkings.png"
-Genre = RPG
-Developer = 
-Publisher = 
-Year =
+Genre = "Action RPG, Hack and Slash"
+Arcade = No
+Developer = "CD Projekt RED"
+Publisher = "Bandai Namco Games"
+Year = 2011
 Size = 7.75

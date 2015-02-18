@@ -2,8 +2,9 @@
 Name = "Crimson Alliance"
 DiskName = "CrimsonAlliance"
 Cover = "crimsonalliance.png"
-Genre = Arcade
-Developer = 
-Publisher = 
-Year =
+Genre = "RPG"
+Arcade = Yes
+Developer = "Certain Affinity"
+Publisher = "Microsoft Studios"
+Year = 2011
 Size = 0.98

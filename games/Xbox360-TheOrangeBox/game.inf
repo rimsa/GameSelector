@@ -2,8 +2,9 @@
 Name = "The Orange Box"
 DiskName = "TheOrangeBox"
 Cover = "theorangebox.png"
-Genre = Strategy
-Developer = 
-Publisher = 
-Year =
+Genre = "First-Person Shooter, Puzzle"
+Arcade = No
+Developer = "Valve Corporation"
+Publisher = "Valve Corporation"
+Year = 2007
 Size = 3.92

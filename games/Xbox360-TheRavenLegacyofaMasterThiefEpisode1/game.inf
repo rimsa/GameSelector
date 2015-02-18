@@ -1,9 +1,10 @@
 [Game]
-Name = "The Raven Legacy of a Master Thief Episode 1"
+Name = "The Raven: Legacy of a Master Thief (Episode 1)"
 DiskName = "TheRavenLegacyofaMasterThiefEpisode1"
 Cover = "theravenlegacyofamasterthiefepisode1.png"
-Genre = Arcade
-Developer = 
-Publisher = 
-Year =
+Genre = "Adventure"
+Arcade = Yes
+Developer = "King Art"
+Publisher = "Nordic Games Publishing"
+Year = 2013
 Size = 2.59

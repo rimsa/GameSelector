@@ -2,8 +2,9 @@
 Name = "A World of Keflings"
 DiskName = "AWorldofKeflings"
 Cover = "aworldofkeflings.png"
-Genre = Arcade
-Developer = 
-Publisher = 
-Year =
+Genre = "City Building"
+Arcade = Yes
+Developer = "NinjaBee"
+Publisher = "Microsoft Studios"
+Year = 2008
 Size = 0.16

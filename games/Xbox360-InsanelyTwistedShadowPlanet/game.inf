@@ -2,8 +2,9 @@
 Name = "Insanely Twisted Shadow Planet"
 DiskName = "InsanelyTwistedShadowPlanet"
 Cover = "insanelytwistedshadowplanet.png"
-Genre = Arcade
-Developer = 
-Publisher = 
-Year =
+Genre = "Multi-Directional Shooter"
+Arcade = Yes
+Developer = "Shadow Planet Productions"
+Publisher = "Microsoft Studios"
+Year = 2011
 Size = 0.58

@@ -1,9 +1,10 @@
 [Game]
-Name = "XCOM Enemy Unknown"
+Name = "XCOM: Enemy Unknown"
 DiskName = "XCOMEnemyUnknown"
 Cover = "xcomenemyunknown.png"
-Genre = Arcade
-Developer = 
-Publisher = 
-Year =
+Genre = "Turn-based Tactics, Tactical RPG"
+Arcade = No
+Developer = "Firaxis Games"
+Publisher = "2K Games"
+Year = 2012
 Size = 7.08

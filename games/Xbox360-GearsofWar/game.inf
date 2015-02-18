@@ -2,8 +2,9 @@
 Name = "Gears of War"
 DiskName = "GearsofWar"
 Cover = "gearsofwar.png"
-Genre = Shooter
-Developer = 
-Publisher = 
-Year =
+Genre = "Third-Person Shooter"
+Arcade = No
+Developer = "Epic Games"
+Publisher = "Microsoft Studios"
+Year = 2006
 Size = 6.27

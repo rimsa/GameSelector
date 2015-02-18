@@ -2,8 +2,9 @@
 Name = "Charlie Murder"
 DiskName = "CharlieMurder"
 Cover = "charliemurder.png"
-Genre = Arcade
-Developer = 
-Publisher = 
-Year =
+Genre = "RPG"
+Arcade = Yes
+Developer = "Ska Studios"
+Publisher = "Microsoft Game Studios"
+Year = 2013
 Size = 0.37

@@ -1,9 +1,10 @@
 [Game]
-Name = "Brothers A Tale of Two Sons"
+Name = "Brothers: A Tale of Two Sons"
 DiskName = "BrothersATaleofTwoSons"
 Cover = "brothersataleoftwosons.png"
-Genre = Arcade
-Developer = 
-Publisher = 
-Year =
+Genre = "Adventure"
+Arcade = Yes
+Developer = "Starbreeze Studios"
+Publisher = "505 Games"
+Year = 2013
 Size = 0.67

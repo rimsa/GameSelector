@@ -1,9 +1,10 @@
 [Game]
-Name = "Prince of Persia The Forgotten Sands"
+Name = "Prince of Persia: The Forgotten Sands"
 DiskName = "PrinceofPersiaTheForgottenSands"
 Cover = "princeofpersiatheforgottensands.png"
-Genre = Platform
-Developer = 
-Publisher = 
-Year =
+Genre = "Platform"
+Arcade = No
+Developer = "Ubisoft Montreal/Quebec/Singapore/Casablanca"
+Publisher = "Ubisoft"
+Year = 2010
 Size = 4.59

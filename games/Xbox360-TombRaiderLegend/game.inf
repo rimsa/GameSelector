@@ -1,9 +1,10 @@
 [Game]
-Name = "Tomb Raider Legend"
+Name = "Tomb Raider: Legend"
 DiskName = "TombRaiderLegend"
 Cover = "tombraiderlegend.png"
-Genre = Adventure
-Developer = 
-Publisher = 
-Year =
+Genre = "Action-Adventure"
+Arcade = No
+Developer = "Crystal Dynamics"
+Publisher = "Eidos Interactive"
+Year = 2006
 Size = 6.55

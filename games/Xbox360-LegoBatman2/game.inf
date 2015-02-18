@@ -1,0 +1,10 @@
+[Game]
+Name = "Lego Batman 2: DC Super Heroes"
+DiskName = "LegoBatman2"
+Cover = "legobatman2.png"
+Genre = "Action-Adventure"
+Arcade = No
+Developer = "Traveller's Tales"
+Publisher = "Warner Bros. Interactive Entertainment"
+Year = 2012
+Size = 4.11

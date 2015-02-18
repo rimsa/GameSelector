@@ -2,8 +2,9 @@
 Name = "Dead Island"
 DiskName = "DeadIsland"
 Cover = "deadisland.png"
-Genre = RPG
-Developer = 
-Publisher = 
-Year =
+Genre = "Survival"
+Arcade = No
+Developer = "Techland"
+Publisher = "Deep Silver"
+Year = 2011
 Size = 3.86

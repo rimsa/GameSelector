@@ -2,8 +2,9 @@
 Name = "Mirror's Edge"
 DiskName = "MirrorsEdge"
 Cover = "mirrorsedge.png"
-Genre = Platform
-Developer = 
-Publisher = 
-Year =
+Genre = "Platform"
+Arcade = No
+Developer = "EA Digital Illusions CE"
+Publisher = "Electronic Arts"
+Year = 2008
 Size = 5.46

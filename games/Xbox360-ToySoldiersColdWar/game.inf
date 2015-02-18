@@ -1,9 +1,10 @@
 [Game]
-Name = "Toy Soldiers Cold War"
+Name = "Toy Soldiers: Cold War"
 DiskName = "ToySoldiersColdWar"
 Cover = "toysoldierscoldwar.png"
-Genre = Arcade
-Developer = 
-Publisher = 
-Year =
+Genre = "Action, Strategy"
+Arcade = Yes
+Developer = "Signal Studios"
+Publisher = "Microsoft Studios"
+Year = 2011
 Size = 0.95

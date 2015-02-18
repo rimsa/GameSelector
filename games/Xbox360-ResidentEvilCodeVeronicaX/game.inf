@@ -1,9 +1,10 @@
 [Game]
-Name = "Resident Evil: Code Veronica X"
+Name = "Resident Evil Code: Veronica X"
 DiskName = "ResidentEvilCodeVeronicaX"
 Cover = "residentevilcodeveronicax.png"
-Genre = Survival
-Developer = 
-Publisher = 
-Year =
+Genre = "Survival"
+Arcade = No
+Developer = "Capcom Production Studio 4"
+Publisher = "Capcom"
+Year = 2000
 Size = 1.83

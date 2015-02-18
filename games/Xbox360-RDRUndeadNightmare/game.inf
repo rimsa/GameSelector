@@ -1,0 +1,10 @@
+[Game]
+Name = "Red Dead Redemption: Undead Nightmare"
+DiskName = "RDRUndeadNightmare"
+Cover = "rdrundeadnightmare.png"
+Genre = "Action-Adventure"
+Arcade = No
+Developer = "Rockstar San Diego/North"
+Publisher = "Rockstar Games"
+Year = 2010
+Size = 1.67

@@ -2,8 +2,9 @@
 Name = "BattleBlock Theater"
 DiskName = "BattleBlockTheater"
 Cover = "battleblocktheater.png"
-Genre = Arcade
-Developer = 
-Publisher = 
-Year =
+Genre = "Platform"
+Arcade = Yes
+Developer = "The Behemoth"
+Publisher = "Microsoft Studios"
+Year = 2013
 Size = 1.16

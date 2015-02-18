@@ -1,0 +1,10 @@
+[Game]
+Name = "Doritos Crash Course 2"
+DiskName = "DoritosCrashCourse2"
+Cover = "doritoscrashcourse2.png"
+Genre = "Platform"
+Arcade = Yes
+Developer = "Behaviour Santiago"
+Publisher = "Microsoft Studios"
+Year = 2013
+Size = 0.34
