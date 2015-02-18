@@ -566,7 +566,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QWidget" name="selectedDesc" native="true">
+         <widget class="QWidget" name="sizeDesc" native="true">
           <layout class="QVBoxLayout" name="verticalLayout_7">
            <property name="spacing">
             <number>2</number>
@@ -584,7 +584,7 @@
             <number>0</number>
            </property>
            <item>
-            <widget class="QLabel" name="selectedLabel">
+            <widget class="QLabel" name="sizeLabel">
              <property name="font">
               <font>
                <weight>75</weight>
@@ -592,12 +592,12 @@
               </font>
              </property>
              <property name="text">
-              <string>Selected</string>
+              <string>Size</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="selectedValue">
+            <widget class="QLabel" name="sizeValue">
              <property name="text">
               <string/>
              </property>
@@ -607,7 +607,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QFrame" name="selectedLine">
+            <widget class="QFrame" name="sizeLine">
              <property name="minimumSize">
               <size>
                <width>0</width>

@@ -29,6 +29,9 @@ public:
     bool hasYear() const { return m_options & HAS_YEAR; }
     int year() const { return m_year; }
 
+    bool hasSize() const { return m_options & HAS_SIZE; }
+    int size() const { return m_size; }
+
 public slots:
     void setName(const QString& name);
     void unsetName();
@@ -45,6 +48,9 @@ public slots:
     void setYear(int year);
     void unsetYear();
 
+    void setSize(int size);
+    void unsetSize();
+
     void applyFilter(QList<Game*>& games);
 
 signals:
@@ -56,6 +62,7 @@ private:
     QString m_developer;
     QString m_publisher;
     int m_year;
+    float m_size;
 
     GameInfoOptions m_options;
 

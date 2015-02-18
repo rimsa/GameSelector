@@ -35,6 +35,9 @@ public:
     bool hasYear() const { return (m_info.options & HAS_YEAR); }
     int year() const { return m_info.year; }
 
+    bool hasSize() const { return (m_info.options & HAS_SIZE); }
+    float size() const { return m_info.size; }
+
     bool isSelected() const { return m_selected; }
 
 public slots:

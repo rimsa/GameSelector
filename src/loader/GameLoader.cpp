@@ -52,7 +52,8 @@ void GameLoader::loadGame(QString dirName) {
         { "Genre", Q_ARG(QString, info.genre), false, HAS_GENRE },
         { "Developer", Q_ARG(QString, info.developer), false, HAS_DEVELOPER },
         { "Publisher", Q_ARG(QString, info.publisher), false, HAS_PUBLISHER },
-        { "Year", Q_ARG(int, info.year), false, HAS_YEAR }
+        { "Year", Q_ARG(int, info.year), false, HAS_YEAR },
+        { "Size", Q_ARG(float, info.size), false, HAS_SIZE },
     };
 
     for (unsigned i = 0; i < (sizeof(fields) / sizeof(struct Field)); i++) {
@@ -109,6 +110,16 @@ bool GameLoader::readField(const QSettings& inf, const QString& dirName, const Q
             {
                 int tmp = var.value<int>();
                 if (tmp <= 0)
+                    return false;
+
+                QMetaType::construct(typeId, fieldValue.data(), &tmp);
+            }
+
+            break;
+        case QMetaType::Float:
+            {
+                float tmp = var.value<float>();
+                if (tmp <= 0.0)
                     return false;
 
                 QMetaType::construct(typeId, fieldValue.data(), &tmp);

@@ -13,7 +13,8 @@ enum GameInfoOption {
     HAS_GENRE     = 0x08,
     HAS_DEVELOPER = 0x10,
     HAS_PUBLISHER = 0x20,
-    HAS_YEAR      = 0x40
+    HAS_YEAR      = 0x40,
+    HAS_SIZE      = 0x80
 };
 
 Q_DECLARE_FLAGS(GameInfoOptions, GameInfoOption)
@@ -29,6 +30,7 @@ struct GameInfo {
     QString developer;
     QString publisher;
     int year;
+    float size;
 
     GameInfoOptions options;
 };

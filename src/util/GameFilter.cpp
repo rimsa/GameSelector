@@ -96,6 +96,22 @@ void GameFilter::unsetYear() {
     }
 }
 
+void GameFilter::setSize(int size) {
+    if (size > 0 && m_size != size) {
+        m_size = size;
+        m_options |= HAS_SIZE;
+
+        emit filterChanged();
+    }
+}
+
+void GameFilter::unsetSize() {
+    if (m_options & HAS_SIZE) {
+        m_options &= ~HAS_SIZE;
+
+        emit filterChanged();
+    }
+}
 void GameFilter::applyFilter(QList<Game*>& games) {
     // Filtering by name if present.
     if (this->hasName()) {
@@ -146,6 +162,16 @@ void GameFilter::applyFilter(QList<Game*>& games) {
         while (it.hasNext()) {
             Game* g = it.next();
             if (!g->hasYear() || g->year() != this->year())
+                it.remove();
+        }
+    }
+
+    // Filtering by size if present.
+    if (this->hasSize()) {
+        QMutableListIterator<Game*> it(games);
+        while (it.hasNext()) {
+            Game* g = it.next();
+            if (!g->hasSize() || g->size() != this->size())
                 it.remove();
         }
     }

@@ -130,14 +130,16 @@ void GameSelector::updateGameInfo(Game* game) {
         ui->developerValue->setText(game->hasDeveloper() ? game->developer() : "");
         ui->publisherValue->setText(game->hasPublisher() ? game->publisher() : "");
         ui->yearValue->setText(game->hasYear() ? QString::number(game->year()) : "");
-        ui->selectedValue->setText(game->isSelected() ? tr("Yes") : tr("No"));
+        ui->sizeValue->setText(game->hasSize() ? QString("%1 GB").arg(game->size()) : "");
+        // ui->selectedValue->setText(game->isSelected() ? tr("Yes") : tr("No"));
     } else {
         ui->nameValue->setText("");
         ui->genreValue->setText("");
         ui->developerValue->setText("");
         ui->publisherValue->setText("");
         ui->yearValue->setText("");
-        ui->selectedValue->setText("");
+        ui->sizeValue->setText("");
+        // ui->selectedValue->setText("");
     }
 
     ui->leftArrow->setEnabled(ui->gameList->hasPrevious());
