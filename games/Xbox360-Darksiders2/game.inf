@@ -2,8 +2,8 @@
 Name = "Darksiders 2"
 DiskName = "Darksiders2"
 Cover = "darksiders2.png"
-Genre = "RPG"
 Arcade = No
+Genre = "RPG"
 Developer = "Vigil Games"
 Publisher = "THQ"
 Year = 2012

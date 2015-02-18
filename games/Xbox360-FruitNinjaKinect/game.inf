@@ -2,8 +2,8 @@
 Name = "Fruit Ninja Kinect"
 DiskName = "FruitNinjaKinect"
 Cover = "fruitninjakinect.png"
-Genre =
 Arcade = Yes
+Genre =
 Developer = "Halfbrick Studios"
 Publisher = 
 Year = 2011

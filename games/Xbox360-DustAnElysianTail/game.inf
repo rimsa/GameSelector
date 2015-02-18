@@ -2,8 +2,8 @@
 Name = "Dust: An Elysian Tail"
 DiskName = "DustAnElysianTail"
 Cover = "dustanelysiantail.png"
-Genre = "RPG"
 Arcade = Yes
+Genre = "RPG"
 Developer = "Humble Hearts"
 Publisher = "Microsoft Studios"
 Year = 2012

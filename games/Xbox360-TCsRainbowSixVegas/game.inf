@@ -2,8 +2,8 @@
 Name = "Tom Clancy's Rainbow Six: Vegas"
 DiskName = "TCsRainbowSixVegas"
 Cover = "tcsrainbowsixvegas.png"
-Genre = "Tactical Shooter, First-Person Shooter"
 Arcade = No
+Genre = "Tactical Shooter, First-Person Shooter"
 Developer = "Ubisoft Montreal"
 Publisher = "Ubisoft"
 Year = 2006

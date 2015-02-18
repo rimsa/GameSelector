@@ -2,8 +2,8 @@
 Name = "Crysis"
 DiskName = "Crysis"
 Cover = "crysis.png"
-Genre = "First-Person Shooter"
 Arcade = No
+Genre = "First-Person Shooter"
 Developer = "Crytek Frankfurt"
 Publisher = "Electronic Arts"
 Year = 2011

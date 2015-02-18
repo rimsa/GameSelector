@@ -2,8 +2,8 @@
 Name = "Dead Island"
 DiskName = "DeadIsland"
 Cover = "deadisland.png"
-Genre = "Survival"
 Arcade = No
+Genre = "Survival"
 Developer = "Techland"
 Publisher = "Deep Silver"
 Year = 2011

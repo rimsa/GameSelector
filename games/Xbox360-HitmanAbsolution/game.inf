@@ -2,8 +2,8 @@
 Name = "Hitman: Absolution"
 DiskName = "HitmanAbsolution"
 Cover = "hitmanabsolution.png"
-Genre = "Stealth"
 Arcade = No
+Genre = "Stealth"
 Developer = "IO Interactive"
 Publisher = "Square Enix"
 Year = 2012

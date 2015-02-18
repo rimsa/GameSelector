@@ -2,8 +2,8 @@
 Name = "Ace Combat: Assault Horizon"
 DiskName = "AceCombatAssaultHorizon"
 Cover = "acecombatassaulthorizon.png"
-Genre = "Combat Flight Simulator"
 Arcade = No
+Genre = "Combat Flight Simulator"
 Developer = "Namco"
 Publisher = "Namco Bandai Games"
 Year = 2011

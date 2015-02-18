@@ -2,8 +2,8 @@
 Name = "Fable III"
 DiskName = "FableIII"
 Cover = "fableiii.png"
-Genre = "RPG"
 Arcade = No
+Genre = "RPG"
 Developer = "Lionhead Studios"
 Publisher = "Microsoft Game Studios"
 Year = 2010

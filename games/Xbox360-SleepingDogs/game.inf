@@ -2,8 +2,8 @@
 Name = "Sleeping Dogs"
 DiskName = "SleepingDogs"
 Cover = "sleepingdogs.png"
-Genre = "Adventure"
 Arcade = No
+Genre = "Adventure"
 Developer = "United Front Games"
 Publisher = "Square Enix"
 Year = 2012

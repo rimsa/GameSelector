@@ -2,8 +2,8 @@
 Name = "Soul Calibur V"
 DiskName = "SoulCaliburV"
 Cover = "soulcaliburv.png"
-Genre = "Fighting"
 Arcade = No
+Genre = "Fighting"
 Developer = "Project Soul"
 Publisher = "Namco Bandai Games"
 Year = 2012

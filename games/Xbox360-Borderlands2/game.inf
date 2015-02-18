@@ -2,8 +2,8 @@
 Name = "Borderlands 2"
 DiskName = "Borderlands2"
 Cover = "borderlands2.png"
-Genre = "First-Person Shooter"
 Arcade = No
+Genre = "First-Person Shooter"
 Developer = "Gearbox Software"
 Publisher = "2K Games"
 Year = 2012

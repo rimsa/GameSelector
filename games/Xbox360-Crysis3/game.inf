@@ -2,8 +2,8 @@
 Name = "Crysis 3"
 DiskName = "Crysis3"
 Cover = "crysis3.png"
-Genre = "First-Person Shooter"
 Arcade = No
+Genre = "First-Person Shooter"
 Developer = "Crytek UK/Frankfurt"
 Publisher = "Electronic Arts"
 Year = 2013

@@ -2,8 +2,8 @@
 Name = "Happy Wars"
 DiskName = "HappyWars"
 Cover = "happywars.png"
-Genre = "Action"
 Arcade = Yes
+Genre = "Action"
 Developer = "Toylogic"
 Publisher = "Microsoft Studios"
 Year = 2012

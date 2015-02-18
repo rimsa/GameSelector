@@ -2,8 +2,8 @@
 Name = "Perfect Dark Zero"
 DiskName = "PerfectDarkZero"
 Cover = "perfectdarkzero.png"
-Genre = "First-Person Shooter"
 Arcade = No
+Genre = "First-Person Shooter"
 Developer = "Rare"
 Publisher = "Microsoft Game Studios"
 Year = 2005

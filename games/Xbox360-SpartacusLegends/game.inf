@@ -2,8 +2,8 @@
 Name = "Spartacus Legends"
 DiskName = "SpartacusLegends"
 Cover = "spartacuslegends.png"
-Genre = "Fighting"
 Arcade = Yes
+Genre = "Fighting"
 Developer = "Kung Fu Factory"
 Publisher = "Ubisoft"
 Year = 2013

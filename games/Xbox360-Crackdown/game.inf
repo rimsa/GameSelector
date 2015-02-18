@@ -2,8 +2,8 @@
 Name = "Crackdown"
 DiskName = "Crackdown"
 Cover = "crackdown.png"
-Genre = "Third-Person Shooter"
 Arcade = No
+Genre = "Third-Person Shooter"
 Developer = "Realtime Worlds"
 Publisher = "Microsoft Game Studios"
 Year = 2007

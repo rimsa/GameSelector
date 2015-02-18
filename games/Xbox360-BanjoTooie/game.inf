@@ -2,8 +2,8 @@
 Name = "Banjo-Tooie"
 DiskName = "BanjoTooie"
 Cover = "banjotooie.png"
-Genre = "Platform"
 Arcade = Yes
+Genre = "Platform"
 Developer = "4J Studios"
 Publisher = "Microsoft Game Studios"
 Year = 2009

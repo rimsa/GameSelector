@@ -2,8 +2,8 @@
 Name = "Dishonored"
 DiskName = "Dishonored"
 Cover = "dishonored.png"
-Genre = "Stealth"
 Arcade = No
+Genre = "Stealth"
 Developer = "Arkane Studios"
 Publisher = "Bethesda Softworks"
 Year = 2012

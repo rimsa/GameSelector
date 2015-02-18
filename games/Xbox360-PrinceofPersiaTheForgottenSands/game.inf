@@ -2,8 +2,8 @@
 Name = "Prince of Persia: The Forgotten Sands"
 DiskName = "PrinceofPersiaTheForgottenSands"
 Cover = "princeofpersiatheforgottensands.png"
-Genre = "Platform"
 Arcade = No
+Genre = "Platform"
 Developer = "Ubisoft Montreal/Quebec/Singapore/Casablanca"
 Publisher = "Ubisoft"
 Year = 2010

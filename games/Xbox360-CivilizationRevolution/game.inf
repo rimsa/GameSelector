@@ -2,8 +2,8 @@
 Name = "Civilization Revolution"
 DiskName = "CivilizationRevolution"
 Cover = "civilizationrevolution.png"
-Genre = "Strategy"
 Arcade = No
+Genre = "Strategy"
 Developer = "Firaxis Games"
 Publisher = "2K Games"
 Year = 2008

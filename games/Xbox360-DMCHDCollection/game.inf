@@ -2,8 +2,8 @@
 Name = "Devil May Cry: HD Collection"
 DiskName = "DMCHDCollection"
 Cover = "dmchdcollection.png"
-Genre = "Hack and Slash"
 Arcade = No
+Genre = "Hack and Slash"
 Developer = "Capcom"
 Publisher = "Capcom"
 Year = 2012

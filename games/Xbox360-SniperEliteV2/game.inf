@@ -2,8 +2,8 @@
 Name = "Sniper Elite V2"
 DiskName = "SniperEliteV2"
 Cover = "sniperelitev2.png"
-Genre = "Tactical Shooter, Stealth"
 Arcade = No
+Genre = "Tactical Shooter, Stealth"
 Developer = "Rebellion Oxford"
 Publisher = "505 Games"
 Year = 2012

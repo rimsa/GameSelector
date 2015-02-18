@@ -2,8 +2,8 @@
 Name = "Motocross Madness"
 DiskName = "MotocrossMadness"
 Cover = "motocrossmadness.png"
-Genre = "Racing"
 Arcade = Yes
+Genre = "Racing"
 Developer = "Bongfish"
 Publisher = "Microsoft Studios"
 Year = 2013

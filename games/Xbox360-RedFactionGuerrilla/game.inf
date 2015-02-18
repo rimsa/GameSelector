@@ -2,8 +2,8 @@
 Name = "Red Faction: Guerrilla"
 DiskName = "RedFactionGuerrilla"
 Cover = "redfactionguerrilla.png"
-Genre = "Shooter"
 Arcade = No
+Genre = "Shooter"
 Developer = "Volition, Inc."
 Publisher = "THQ"
 Year = 2009

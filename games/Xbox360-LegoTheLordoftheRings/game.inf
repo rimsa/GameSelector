@@ -2,8 +2,8 @@
 Name = "Lego The Lord of the Rings"
 DiskName = "LegoTheLordoftheRings"
 Cover = "legothelordoftherings.png"
-Genre = "Action-Adventure"
 Arcade = No
+Genre = "Action-Adventure"
 Developer = "Traveller's Tales"
 Publisher = "Warner Bros. Interactive Entertainment"
 Year = 2012

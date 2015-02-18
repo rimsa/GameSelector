@@ -2,8 +2,8 @@
 Name = "Iron Brigade"
 DiskName = "IronBrigade"
 Cover = "ironbrigade.png"
-Genre = "Tower Defense"
 Arcade = Yes
+Genre = "Tower Defense"
 Developer = "Double Fine Productions"
 Publisher = "Microsoft Studios"
 Year = 2011

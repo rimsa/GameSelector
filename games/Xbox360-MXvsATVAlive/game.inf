@@ -2,8 +2,8 @@
 Name = "MX vs. ATV Alive"
 DiskName = "MXvsATVAlive"
 Cover = "mxvsatvalive.png"
-Genre = "Racing"
 Arcade = No
+Genre = "Racing"
 Developer = "Rainbow Studios"
 Publisher = "THQ"
 Year = 2011

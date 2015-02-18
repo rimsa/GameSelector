@@ -2,8 +2,8 @@
 Name = "Far Cry 3"
 DiskName = "FarCry3"
 Cover = "farcry3.png"
-Genre = "First-Person Shooter"
 Arcade = No
+Genre = "First-Person Shooter"
 Developer = "Ubisoft Montreal"
 Publisher = "Ubisoft"
 Year = 2012

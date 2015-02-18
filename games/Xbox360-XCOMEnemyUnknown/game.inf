@@ -2,8 +2,8 @@
 Name = "XCOM: Enemy Unknown"
 DiskName = "XCOMEnemyUnknown"
 Cover = "xcomenemyunknown.png"
-Genre = "Turn-based Tactics, Tactical RPG"
 Arcade = No
+Genre = "Turn-based Tactics, Tactical RPG"
 Developer = "Firaxis Games"
 Publisher = "2K Games"
 Year = 2012

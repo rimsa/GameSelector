@@ -2,8 +2,8 @@
 Name = "Gears of War"
 DiskName = "GearsofWar"
 Cover = "gearsofwar.png"
-Genre = "Third-Person Shooter"
 Arcade = No
+Genre = "Third-Person Shooter"
 Developer = "Epic Games"
 Publisher = "Microsoft Studios"
 Year = 2006

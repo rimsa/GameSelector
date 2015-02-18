@@ -2,8 +2,8 @@
 Name = "Asura's Wrath"
 DiskName = "AsurasWrath"
 Cover = "asuraswrath.png"
-Genre = "Action"
 Arcade = No
+Genre = "Action"
 Developer = "CyberConnect2"
 Publisher = "Capcom"
 Year = 2012

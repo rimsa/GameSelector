@@ -2,8 +2,8 @@
 Name = "Dead Rising 2"
 DiskName = "DeadRising2"
 Cover = "deadrising2.png"
-Genre = "Survival"
 Arcade = No
+Genre = "Survival"
 Developer = "Blue Castle Games"
 Publisher = "Capcom"
 Year = 2010

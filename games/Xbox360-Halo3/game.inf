@@ -2,8 +2,8 @@
 Name = "Halo 3"
 DiskName = "Halo3"
 Cover = "halo3.png"
-Genre = "First-Person Shooter"
 Arcade = No
+Genre = "First-Person Shooter"
 Developer = "Bungie"
 Publisher = "Microsoft Game Studios"
 Year = 2007

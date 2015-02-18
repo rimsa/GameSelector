@@ -2,8 +2,8 @@
 Name = "Deadlight"
 DiskName = "Deadlight"
 Cover = "deadlight.png"
-Genre = "Survival"
 Arcade = Yes
+Genre = "Survival"
 Developer = "Tequila Works"
 Publisher = "Microsoft Studios"
 Year = 2012

@@ -2,8 +2,8 @@
 Name = "Mortal Kombat"
 DiskName = "MortalKombat"
 Cover = "mortalkombat.png"
-Genre = "Fighting"
 Arcade = No
+Genre = "Fighting"
 Developer = "NetherRealm Studios"
 Publisher = "Warner Bros. Interactive Entertainment"
 Year = 2011

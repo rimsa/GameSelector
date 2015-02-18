@@ -2,8 +2,8 @@
 Name = "Super Street Fighter IV: Arcade Edition"
 DiskName = "SuperStreetFighterIVArcadeEdition"
 Cover = "superstreetfighterivarcadeedition.png"
-Genre = "Fighting"
 Arcade = No
+Genre = "Fighting"
 Developer = "Dimps, Capcom"
 Publisher = "Capcom"
 Year = 2011

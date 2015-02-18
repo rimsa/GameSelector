@@ -2,8 +2,8 @@
 Name = "Alan Wake"
 DiskName = "AlanWake"
 Cover = "alanwake.png"
-Genre = "Survival"
 Arcade = No
+Genre = "Survival"
 Developer = "Remedy"
 Publisher = "Microsoft Game Studios"
 Year = 2010

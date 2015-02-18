@@ -2,8 +2,8 @@
 Name = "Shoot Many Robots"
 DiskName = "ShootManyRobots"
 Cover = "shootmanyrobots.png"
-Genre = "Shooter"
 Arcade = Yes
+Genre = "Shooter"
 Developer = "Demiurge Studios"
 Publisher = "Ubisoft"
 Year = 2012

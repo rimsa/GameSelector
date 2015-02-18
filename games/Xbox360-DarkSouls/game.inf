@@ -2,8 +2,8 @@
 Name = "Dark Souls"
 DiskName = "DarkSouls"
 Cover = "darksouls.png"
-Genre = "RPG"
 Arcade = No
+Genre = "RPG"
 Developer = "From Software"
 Publisher = "Namco Bandai Games"
 Year = 2011

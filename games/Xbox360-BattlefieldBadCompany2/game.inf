@@ -2,8 +2,8 @@
 Name = "Battlefield: Bad Company 2"
 DiskName = "BattlefieldBadCompany2"
 Cover = "battlefieldbadcompany2.png"
-Genre = "First-Person Shooter"
 Arcade = No
+Genre = "First-Person Shooter"
 Developer = "EA Digital Illusions CE"
 Publisher = "Electronic Arts"
 Year = 2010
