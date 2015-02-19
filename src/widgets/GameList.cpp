@@ -16,7 +16,7 @@ GameList::GameList(QWidget* parent) :
     m_index(-1),
     m_updated(true),
     m_filter(this),
-    m_sort(GameSort::ByName, this),
+    m_sort(GameSort::ByName, Qt::AscendingOrder, this),
     m_scrollArea(this),
     m_viewport() {
 
@@ -47,6 +47,7 @@ GameList::GameList(QWidget* parent) :
 
     QObject::connect(&m_filter, SIGNAL(filterChanged()), this, SLOT(markUpdate()));
     QObject::connect(&m_sort, SIGNAL(typeChanged(GameSort::OrderType)), this, SLOT(markUpdate()));
+    QObject::connect(&m_sort, SIGNAL(orderChanged(Qt::SortOrder)), this, SLOT(markUpdate()));
 
     this->setFixedSize(DefaultCoverSize);
 }

@@ -21,20 +21,25 @@ public:
     };
     friend class GameComparator;
 
-    GameSort(OrderType type = ByName, QObject* parent = 0);
+    GameSort(OrderType type = ByName, Qt::SortOrder order = Qt::AscendingOrder, QObject* parent = 0);
     virtual ~GameSort();
 
     OrderType type() const { return m_type; }
     void setType(OrderType type);
+
+    Qt::SortOrder order() const { return m_order; }
+    void setOrder(Qt::SortOrder order);
 
 public slots:
     void sort(QList<Game*>& games);
 
 signals:
     void typeChanged(GameSort::OrderType type);
+    void orderChanged(Qt::SortOrder order);
 
 private:
     OrderType m_type;
+    Qt::SortOrder m_order;
 
 };
 
