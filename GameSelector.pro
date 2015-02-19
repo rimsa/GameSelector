@@ -15,7 +15,6 @@ SOURCES += \
     src/util/GameSort.cpp \
     src/util/GameComparator.cpp \
     src/widgets/Game.cpp \
-    src/widgets/GameList.cpp \
     src/widgets/GameScroller.cpp
 
 HEADERS  += \
@@ -26,7 +25,6 @@ HEADERS  += \
     include/GameSelector/util/GameSort.h \
     include/GameSelector/util/GameComparator.h \
     include/GameSelector/widgets/Game.h \
-    include/GameSelector/widgets/GameList.h \
     include/GameSelector/widgets/GameScroller.h
 
 FORMS    += forms/GameSelector.ui

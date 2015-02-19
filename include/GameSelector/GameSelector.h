@@ -7,7 +7,6 @@
 #include <QWidget>
 
 #include <GameSelector/loader/GameLoader.h>
-#include <GameSelector/widgets/GameList.h>
 
 namespace Ui {
     class GameSelector;
@@ -30,7 +29,6 @@ private:
     Ui::GameSelector *ui;
     QDir& m_root;
     GameLoader m_loader;
-    GameList m_list;
     Game* m_selected;
 
 private slots:
