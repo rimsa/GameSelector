@@ -45,12 +45,13 @@ signals:
 protected:
     virtual void showEvent(QShowEvent* event);
     virtual void resizeEvent(QResizeEvent* event);
+    virtual void wheelEvent(QWheelEvent* event);
 
 private:
     QScrollArea m_scrollArea;
     QWidget m_viewport;
     QWidget m_selectionBox;
-    QPropertyAnimation m_animation;
+    QPropertyAnimation* m_animation;
     QSpacerItem* m_leftSpacer;
     QSpacerItem* m_rightSpacer;
     QTimer* m_timer;
@@ -63,7 +64,8 @@ private slots:
     void markDirty();
     void rebuild();
 
-    void updateGame();
+    void handleScrollerChange(int value);
+    void animateScroller();
 
 };
 

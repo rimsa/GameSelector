@@ -15,7 +15,7 @@
 GameScroller::GameScroller(QWidget* parent) :
     QWidget(parent),
     m_selectionBox(this),
-    m_animation(this),
+    m_animation(new QPropertyAnimation(this)),
     m_leftSpacer(new QSpacerItem(DefaultGameSpacing, 0, QSizePolicy::Fixed, QSizePolicy::Fixed)),
     m_rightSpacer(new QSpacerItem(DefaultGameSpacing, 0, QSizePolicy::Fixed, QSizePolicy::Fixed)),
     m_timer(new QTimer(this)),
@@ -67,17 +67,18 @@ GameScroller::GameScroller(QWidget* parent) :
     m_selectionBox.move(0, 0);
 
     QScrollBar* scroller = m_scrollArea.horizontalScrollBar();
+    QObject::connect(scroller, SIGNAL(valueChanged(int)), this, SLOT(handleScrollerChange(int)));
 
-    m_animation.setTargetObject(scroller);
-    m_animation.setPropertyName("value");
-    m_animation.setDuration(DefaultAnimationTime);
-    m_animation.setEasingCurve(QEasingCurve::OutBack);
+    m_animation->setTargetObject(scroller);
+    m_animation->setPropertyName("value");
+    m_animation->setDuration(DefaultAnimationTime);
+    m_animation->setEasingCurve(QEasingCurve::OutBack);
 
-    m_timer->setInterval(250);
+    m_timer->setInterval(50);
     m_timer->setSingleShot(true);
 
-    QObject::connect(scroller, SIGNAL(valueChanged(int)), m_timer, SLOT(start()));
-    QObject::connect(m_timer, SIGNAL(timeout()), this, SLOT(updateGame()));
+    QObject::connect(m_timer, SIGNAL(timeout()), this, SLOT(animateScroller()));
+    QObject::connect(this, SIGNAL(gameChanged(Game*)), this, SLOT(animateScroller()));
 }
 
 GameScroller::~GameScroller() {
@@ -166,29 +167,11 @@ void GameScroller::clear() {
 
 void GameScroller::setCurrentGameIndex(int index, bool force) {
     if (force || (m_index != index && index >= 0 && index < this->count())) {
-        // If there is an animation, stop it.
-        m_animation.stop();
+        // If the index is out of bounds, choose -1.
+        m_index = (index >= 0 && index < this->count() ? index : -1);
 
-        // Get the horizontal scrollbar.
-        QScrollBar* scroller = m_scrollArea.horizontalScrollBar();
-        if (index < 0) {
-            scroller->setValue(0);
-        } else {
-            int from = scroller->value();
-            int to = DefaultGameSpacing + (index * (DefaultCoverSize.width() + DefaultGameSpacing));
-//            QAbstractAnimation::Direction dir = index < m_index ?
-//                        QAbstractAnimation::Backward : QAbstractAnimation::Forward;
-
-            m_animation.setStartValue(from);
-            m_animation.setEndValue(to);
-//            m_animation.setDirection(dir);
-            m_animation.start();
-        }
-
-        m_index = index;
-
-        emit gameIndexChanged(index);
-        emit gameChanged(this->gameAt(index));
+        emit gameIndexChanged(m_index);
+        emit gameChanged(this->gameAt(m_index));
     }
 }
 
@@ -236,7 +219,16 @@ void GameScroller::resizeEvent(QResizeEvent* event) {
     m_selectionBox.raise();
 
     // Update game position.
-    this->updateGame();
+    this->animateScroller();
+
+    QWidget::resizeEvent(event);
+}
+
+void GameScroller::wheelEvent(QWheelEvent* event) {
+    // Start the timer event.
+    m_timer->start();
+
+    QWidget::wheelEvent(event);
 }
 
 void GameScroller::markDirty() {
@@ -274,8 +266,16 @@ void GameScroller::rebuild() {
 
     // From this new list, put the games
     // back to the layout.
-    foreach (Game* game, m_games)
+    foreach (Game* game, m_games) {
+        // Disable the game before adding it.
+        //game->setDisabled(true);
+
+        // Make it transparent for mouse events.
+        //game->setAttribute(Qt::WA_TransparentForMouseEvents);
+
+        // Add the game to the layout.
         layout->addWidget(game);
+    }
 
     // Add left spacer.
     layout->addItem(m_rightSpacer);
@@ -297,10 +297,45 @@ void GameScroller::rebuild() {
     m_dirty = false;
 }
 
-void GameScroller::updateGame() {
-    QScrollBar* scroller = m_scrollArea.horizontalScrollBar();
-    int index = (scroller->value() - DefaultGameSpacing + (DefaultCoverSize.width() / 2)) /
-                (DefaultCoverSize.width() + DefaultGameSpacing);
+void GameScroller::handleScrollerChange(int value) {
+    // As long as the timer is active,
+    // calculate the scroller last
+    // game position.
+    if (m_timer->isActive()) {
+        // Stop any animation if it is running.
+        m_animation->stop();
 
-    this->setCurrentGameIndex(index, true);
+        // Calculate the new game index and update it.
+        int index = (value - DefaultGameSpacing + (DefaultCoverSize.width() / 2)) /
+                    (DefaultCoverSize.width() + DefaultGameSpacing);
+        this->setCurrentGameIndex(index);
+
+        // Restart the timer.
+        m_timer->start();
+    }
+}
+
+void GameScroller::animateScroller() {
+    // Do not animate if the timer is active.
+    if (m_timer->isActive())
+        return;
+    // If the animation is already running, don't start over.
+    else if (m_animation->state() == QAbstractAnimation::Running)
+        return;
+
+    // Get the current index.
+    int index = this->currentGameIndex();
+
+    // Get the horizontal scrollbar.
+    QScrollBar* scroller = m_scrollArea.horizontalScrollBar();
+    if (index < 0) {
+        scroller->setValue(0);
+    } else {
+        int from = scroller->value();
+        int to = DefaultGameSpacing + (index * (DefaultCoverSize.width() + DefaultGameSpacing));
+
+        m_animation->setStartValue(from);
+        m_animation->setEndValue(to);
+        m_animation->start();
+    }
 }
