@@ -10,7 +10,7 @@
 
 class Game : public QPushButton {
     Q_OBJECT
-    Q_PROPERTY(bool selected READ isSelected WRITE changeSelection NOTIFY selectedChanged)
+    Q_PROPERTY(bool selected READ isSelected WRITE changeSelection NOTIFY selectionChanged)
 
 public:
     Game(GameInfo info, QWidget *parent = 0);
@@ -51,13 +51,18 @@ public slots:
 signals:
     void selected(Game*);
     void unselected(Game*);
-    void selectedChanged(bool mode);
+
+    void selectionChanged(bool mode);
+
+protected:
+    virtual void showEvent(QShowEvent* event);
+    virtual void resizeEvent(QResizeEvent* event);
 
 private:
     GameInfo m_info;
+    QWidget m_selectionMask;
     bool m_selected;
 
-    void updateStyleSheet();
 };
 
 #endif // GAME_H

@@ -36,6 +36,8 @@ public slots:
     void previousGame();
     void nextGame();
 
+    void updateGameSelection();
+
 signals:
     void gamesAvailableChanged();
 

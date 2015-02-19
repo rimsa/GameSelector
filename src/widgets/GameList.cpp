@@ -9,7 +9,7 @@
 #include <GameSelector/widgets/Game.h>
 #include <GameSelector/widgets/GameList.h>
 
-#define DefaultGameSpacing 0
+//#define DefaultGameSpacing 0
 
 GameList::GameList(QWidget* parent) :
     QWidget(parent),

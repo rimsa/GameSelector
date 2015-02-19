@@ -113,6 +113,7 @@ void GameSelector::createGame(GameInfo info) {
     // If the game is selected, take the appropriate actions here.
     QObject::connect(g, SIGNAL(selected(Game*)), this, SLOT(selectGame(Game*)), Qt::DirectConnection);
     QObject::connect(g, SIGNAL(unselected(Game*)), this, SLOT(unselectGame(Game*)), Qt::DirectConnection);
+    QObject::connect(g, SIGNAL(selectionChanged(bool)), ui->games, SLOT(updateGameSelection()));
 
     if (g->dirName() == DefaultSelectedGameDir)
         g->select();

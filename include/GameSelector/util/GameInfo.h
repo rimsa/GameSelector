@@ -3,6 +3,7 @@
 
 #include <QDir>
 #include <QSize>
+#include <QColor>
 #include <QString>
 #include <QPixmap>
 
@@ -40,7 +41,10 @@ struct GameInfo {
 Q_DECLARE_METATYPE(GameInfo)
 
 #define DefaultSelectedGameDir "Xbox360"
-
 #define DefaultCoverSize QSize(214,300)
+#define DefaultBorderSize   4
+#define DefaultGameSpacing 25
+#define DefaultAnimationTime 500
+#define DefaultSelectionColor QColor(Qt::green)
 
 #endif // GAMEINFO_H

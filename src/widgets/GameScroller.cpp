@@ -8,10 +8,6 @@
 #include <GameSelector/widgets/Game.h>
 #include <GameSelector/widgets/GameScroller.h>
 
-#define DefaultBorderSize   4
-#define DefaultGameSpacing 25
-#define DefaultAnimationTime 500
-
 GameScroller::GameScroller(QWidget* parent) :
     QWidget(parent),
     m_selectionBox(this),
@@ -62,7 +58,6 @@ GameScroller::GameScroller(QWidget* parent) :
     this->setLayout(thisLayout);
 
     m_selectionBox.setAttribute(Qt::WA_TransparentForMouseEvents);
-    m_selectionBox.setStyleSheet(QString("border: %1px solid white;").arg(DefaultBorderSize));
     m_selectionBox.resize(coverWithBorder);
     m_selectionBox.move(0, 0);
 
@@ -177,6 +172,9 @@ void GameScroller::setCurrentGameIndex(int index, bool force) {
         // Enable the newly updated current game.
         if (Game* game = this->currentGame())
             game->setEnabled(true);
+
+        // Update the selection border color.
+        this->updateGameSelection();
 
         emit gameIndexChanged(m_index);
         emit gameChanged(this->gameAt(m_index));
@@ -343,4 +341,15 @@ void GameScroller::animateScroller() {
         m_animation->setEndValue(to);
         m_animation->start();
     }
+}
+
+void GameScroller::updateGameSelection() {
+    Game* currentGame = this->currentGame();
+    QColor color = (currentGame && currentGame->isSelected() ? DefaultSelectionColor : QColor(Qt::white));
+    m_selectionBox.setStyleSheet(QString("border: %1px solid rgba(%2, %3, %4, %5);")
+                                    .arg(DefaultBorderSize)
+                                    .arg(color.red())
+                                    .arg(color.green())
+                                    .arg(color.blue())
+                                    .arg(color.alpha()));
 }
