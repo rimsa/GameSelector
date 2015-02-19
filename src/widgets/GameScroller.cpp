@@ -36,7 +36,7 @@ GameScroller::GameScroller(QWidget* parent) :
     m_viewport.setMinimumHeight(DefaultCoverSize.height());
     m_viewport.setMaximumHeight(DefaultCoverSize.height());
     m_viewport.setLayout(viewportLayout);
-    //m_viewport.installEventFilter(this);
+    m_viewport.installEventFilter(this);
 
     m_scrollArea.setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     m_scrollArea.setMinimumHeight(DefaultCoverSize.height());
@@ -48,7 +48,7 @@ GameScroller::GameScroller(QWidget* parent) :
     m_scrollArea.setWidgetResizable(true);
     m_scrollArea.setStyleSheet("background-color: transparent;");
     m_scrollArea.setWidget(&m_viewport);
-    //m_scrollArea.installEventFilter(this);
+    m_scrollArea.installEventFilter(this);
 
     QBoxLayout* thisLayout = new QVBoxLayout;
     thisLayout->setSpacing(0);
@@ -77,6 +77,30 @@ GameScroller::GameScroller(QWidget* parent) :
 }
 
 GameScroller::~GameScroller() {
+}
+
+bool GameScroller::eventFilter(QObject* watched, QEvent* event) {
+    switch (event->type()) {
+        case QEvent::KeyPress:
+            if (QKeyEvent* keyEvent = static_cast<QKeyEvent*>(event)) {
+                switch (keyEvent->key()) {
+                    case Qt::Key_Left:
+                        QMetaObject::invokeMethod(this, "previousGame", Qt::QueuedConnection);
+                        break;
+                    case Qt::Key_Right:
+                        QMetaObject::invokeMethod(this, "nextGame", Qt::QueuedConnection);
+                        break;
+                }
+            }
+
+            return true;
+        case QEvent::KeyRelease:
+            return true;
+        default:
+            break;
+    }
+
+    return QWidget::eventFilter(watched, event);
 }
 
 Game* GameScroller::gameAt(int index) const {

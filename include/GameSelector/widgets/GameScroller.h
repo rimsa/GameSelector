@@ -16,6 +16,8 @@ public:
     GameScroller(QWidget* parent = 0);
     virtual ~GameScroller();
 
+    virtual bool eventFilter(QObject* watched, QEvent* event);
+
     int count() const { return m_games.count(); }
     Game* gameAt(int index) const;
     int gameIndex(Game* game) const;
