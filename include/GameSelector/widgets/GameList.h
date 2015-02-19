@@ -34,10 +34,10 @@ public:
     bool hasPrevious() const { return ((m_index - 1) >= 0 && this->displayCount() > 0); }
     bool hasNext() const { return ((m_index + 1) < this->displayCount()); }
 
-public slots:
     GameFilter& filter() { return m_filter; }
     GameSort& sort() { return m_sort; }
 
+public slots:
     void addGame(Game* g);
     void addGames(QList<Game*> games);
 
