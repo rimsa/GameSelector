@@ -24,8 +24,10 @@ GameSelector::GameSelector(QDir& root, QWidget *parent) :
 
     QMetaObject::invokeMethod(&m_loader, "load", Qt::QueuedConnection);
 
+    /*
     this->adjustSize();
     this->setFixedSize(this->size());
+    */
 }
 
 GameSelector::~GameSelector() {
@@ -66,9 +68,11 @@ bool GameSelector::selectGame(Game* g) {
 
     m_selected = g;
 
+/*
     // Update game information.
     if (m_selected == ui->gameList->game())
         this->updateGameInfo(m_selected);
+*/
 
     return true;
 }
@@ -113,7 +117,7 @@ void GameSelector::createGame(GameInfo info) {
     if (g->dirName() == DefaultSelectedGameDir)
         g->select();
 
-    ui->gameList->addGame(g);
+    ui->games->addGame(g);
 }
 
 void GameSelector::showError(const QString& msg) {
@@ -124,6 +128,9 @@ void GameSelector::showError(const QString& msg) {
 }
 
 void GameSelector::updateGameInfo(Game* game) {
+    Q_UNUSED(game)
+
+    /*
     if (game) {
         ui->nameValue->setText(game->name());
         ui->genreValue->setText(game->hasGenre() ? game->genre() : "");
@@ -144,8 +151,10 @@ void GameSelector::updateGameInfo(Game* game) {
 
     ui->leftArrow->setEnabled(ui->gameList->hasPrevious());
     ui->rightArrow->setEnabled(ui->gameList->hasNext());
+    */
 }
 
 void GameSelector::updateGameIndex(int index) {
-    ui->gameIndex->setText(index < 0 ? "" : QString("%1/%2").arg(index+1).arg(ui->gameList->displayCount()));
+    Q_UNUSED(index);
+    //ui->gameIndex->setText(index < 0 ? "" : QString("%1/%2").arg(index+1).arg(ui->gameList->displayCount()));
 }
