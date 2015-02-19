@@ -167,8 +167,16 @@ void GameScroller::clear() {
 
 void GameScroller::setCurrentGameIndex(int index, bool force) {
     if (force || (m_index != index && index >= 0 && index < this->count())) {
+        // Disable previous current game.
+        if (Game* game = this->currentGame())
+            game->setDisabled(true);
+
         // If the index is out of bounds, choose -1.
         m_index = (index >= 0 && index < this->count() ? index : -1);
+
+        // Enable the newly updated current game.
+        if (Game* game = this->currentGame())
+            game->setEnabled(true);
 
         emit gameIndexChanged(m_index);
         emit gameChanged(this->gameAt(m_index));
@@ -268,10 +276,7 @@ void GameScroller::rebuild() {
     // back to the layout.
     foreach (Game* game, m_games) {
         // Disable the game before adding it.
-        //game->setDisabled(true);
-
-        // Make it transparent for mouse events.
-        //game->setAttribute(Qt::WA_TransparentForMouseEvents);
+        game->setDisabled(true);
 
         // Add the game to the layout.
         layout->addWidget(game);

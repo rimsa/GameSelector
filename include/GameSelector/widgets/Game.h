@@ -16,6 +16,8 @@ public:
     Game(GameInfo info, QWidget *parent = 0);
     virtual ~Game();
 
+    virtual bool event(QEvent* e);
+
     const QString& dirName() const { return m_info.dirName; }
     void setDirName(const QString& dirName) { Q_ASSERT(!dirName.isEmpty()); m_info.dirName = dirName; }
 

@@ -14,13 +14,24 @@ Game::Game(GameInfo info, QWidget *parent) :
     this->setCheckable(false);
 
     QObject::connect(this, SIGNAL(clicked()), this, SLOT(select()));
-
     this->setIcon(QIcon(info.cover));
     this->setIconSize(DefaultCoverSize);
     this->setFixedSize(DefaultCoverSize);
 }
 
 Game::~Game() {
+}
+
+bool Game::event(QEvent* event) {
+    switch (event->type()) {
+        case QEvent::EnabledChange:
+            this->setAttribute(Qt::WA_TransparentForMouseEvents, !this->isEnabled());
+            break;
+        default:
+            break;
+    }
+
+    return QPushButton::event(event);
 }
 
 void Game::select() {
