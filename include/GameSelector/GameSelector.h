@@ -6,6 +6,7 @@
 #include <QList>
 #include <QWidget>
 
+#include <GameSelector/util/GameSort.h>
 #include <GameSelector/loader/GameLoader.h>
 
 namespace Ui {
@@ -35,9 +36,12 @@ private:
     QDir& m_root;
     GameLoader m_loader;
     Game* m_selected;
+    QList<Game*> m_games;
+    GameSort m_sort;
 
 private slots:
     void createGame(GameInfo info);
+    void loadGames();
     void showError(const QString& msg);
 
     void updateGameInfo(Game* game);

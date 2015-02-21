@@ -15,7 +15,8 @@ GameSelector::GameSelector(QDir& root, QWidget *parent) :
     ui(new Ui::GameSelector),
     m_root(root),
     m_loader(root),
-    m_selected(0) {
+    m_selected(0),
+    m_sort(GameSort::ByName, Qt::AscendingOrder, this) {
 
     ui->setupUi(this);
 
@@ -23,6 +24,7 @@ GameSelector::GameSelector(QDir& root, QWidget *parent) :
     ui->rightButton->installEventFilter(this);
 
     QObject::connect(&m_loader, SIGNAL(gameLoaded(GameInfo)), this, SLOT(createGame(GameInfo)));
+    QObject::connect(&m_loader, SIGNAL(loadingFinished()), this, SLOT(loadGames()), Qt::QueuedConnection);
     QObject::connect(&m_loader, SIGNAL(loadingFinished()), this, SLOT(show()), Qt::QueuedConnection);
 
     QObject::connect(ui->games, SIGNAL(gameChanged(Game*)), this, SLOT(updateGameInfo(Game*)));
@@ -140,10 +142,23 @@ void GameSelector::createGame(GameInfo info) {
     QObject::connect(g, SIGNAL(unselected(Game*)), this, SLOT(unselectGame(Game*)), Qt::DirectConnection);
     QObject::connect(g, SIGNAL(selectionChanged(bool)), ui->games, SLOT(updateGameSelection()));
 
+    // Select the game if matched the default directory.
     if (g->dirName() == DefaultSelectedGameDir)
         g->select();
 
-    ui->games->addGame(g);
+    // Added to the list.
+    m_games.push_back(g);
+}
+
+void GameSelector::loadGames() {
+    // Create a new list that can be manipulated.
+    QList<Game*> displayGames(m_games);
+
+    // Putting games in order.
+    m_sort.sort(displayGames);
+
+    // Add these games to the scroller.
+    ui->games->addGames(displayGames, true);
 }
 
 void GameSelector::showError(const QString& msg) {
