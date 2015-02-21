@@ -41,7 +41,10 @@ private:
 
 private slots:
     void createGame(GameInfo info);
+
     void loadGames();
+    void updateOrder();
+
     void showError(const QString& msg);
 
     void updateGameInfo(Game* game);

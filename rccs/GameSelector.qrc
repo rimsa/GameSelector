@@ -3,5 +3,8 @@
         <file alias="DefaultCover">defaultcover.png</file>
         <file alias="LeftArrow">leftarrow.png</file>
         <file alias="RightArrow">rightarrow.png</file>
+        <file alias="UpArrow">uparrow.png</file>
+        <file alias="DownArrow">downarrow.png</file>
+        <file alias="DownIcon">downicon.png</file>
     </qresource>
 </RCC>

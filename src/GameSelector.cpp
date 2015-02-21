@@ -30,6 +30,9 @@ GameSelector::GameSelector(QDir& root, QWidget *parent) :
     QObject::connect(ui->games, SIGNAL(gameChanged(Game*)), this, SLOT(updateGameInfo(Game*)));
     QObject::connect(ui->games, SIGNAL(gameIndexChanged(int)), this, SLOT(updateGameIndex(int)));
 
+    QObject::connect(ui->orderTypeCombo, SIGNAL(currentIndexChanged(int)), this, SLOT(updateOrder()));
+    QObject::connect(ui->orderSortCombo, SIGNAL(currentIndexChanged(int)), this, SLOT(updateOrder()));
+
     QMetaObject::invokeMethod(&m_loader, "load", Qt::QueuedConnection);
 }
 
@@ -159,6 +162,46 @@ void GameSelector::loadGames() {
 
     // Add these games to the scroller.
     ui->games->addGames(displayGames, true);
+}
+
+void GameSelector::updateOrder() {
+    switch (ui->orderTypeCombo->currentIndex()) {
+        case 0:
+            m_sort.setType(GameSort::ByName);
+            break;
+        case 1:
+            m_sort.setType(GameSort::ByGenre);
+            break;
+        case 2:
+            m_sort.setType(GameSort::ByDeveloper);
+            break;
+        case 3:
+            m_sort.setType(GameSort::ByPublisher);
+            break;
+        case 4:
+            m_sort.setType(GameSort::ByYear);
+            break;
+        case 5:
+            m_sort.setType(GameSort::BySize);
+            break;
+        default:
+            Q_ASSERT("Invalid sort type");
+            break;
+    }
+
+    switch (ui->orderSortCombo->currentIndex()) {
+        case 0:
+            m_sort.setOrder(Qt::AscendingOrder);
+            break;
+        case 1:
+            m_sort.setOrder(Qt::DescendingOrder);
+            break;
+        default:
+            Q_ASSERT("Invalid sort mode");
+            break;
+    }
+
+    QMetaObject::invokeMethod(this, "loadGames", Qt::QueuedConnection);
 }
 
 void GameSelector::showError(const QString& msg) {
