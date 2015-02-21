@@ -46,7 +46,9 @@ public:
 public slots:
     void select();
     void unselect();
+
     void changeSelection(bool mode);
+    void invertSelection();
 
 signals:
     void selected(Game*);

@@ -25,7 +25,7 @@ Game::Game(GameInfo info, QWidget *parent) :
                 .arg(DefaultSelectionColor.blue()));
     m_selectionMask.hide();
 
-    QObject::connect(this, SIGNAL(clicked()), this, SLOT(select()));
+    QObject::connect(this, SIGNAL(clicked()), this, SLOT(invertSelection()));
 }
 
 Game::~Game() {
@@ -68,6 +68,10 @@ void Game::changeSelection(bool mode) {
 
         emit selectionChanged(m_selected);
     }
+}
+
+void Game::invertSelection() {
+    this->changeSelection(!m_selected);
 }
 
 void Game::showEvent(QShowEvent* event) {
