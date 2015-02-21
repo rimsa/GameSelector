@@ -25,6 +25,9 @@ public:
     int currentGameIndex() const { return m_index; }
     Game* currentGame() const;
 
+    bool hasPrevious() const { return (m_index > 0); }
+    bool hasNext() const { return (m_index < (this->count() - 1)); }
+
 public slots:
     void addGame(Game* game, bool fresh = false);
     void addGames(QList<Game*> games, bool fresh = false);

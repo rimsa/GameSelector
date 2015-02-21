@@ -19,19 +19,41 @@ GameSelector::GameSelector(QDir& root, QWidget *parent) :
 
     ui->setupUi(this);
 
+    ui->leftButton->installEventFilter(this);
+    ui->rightButton->installEventFilter(this);
+
     QObject::connect(&m_loader, SIGNAL(gameLoaded(GameInfo)), this, SLOT(createGame(GameInfo)));
     QObject::connect(&m_loader, SIGNAL(loadingFinished()), this, SLOT(show()), Qt::QueuedConnection);
 
-    QMetaObject::invokeMethod(&m_loader, "load", Qt::QueuedConnection);
+    QObject::connect(ui->games, SIGNAL(gameChanged(Game*)), this, SLOT(updateGameInfo(Game*)));
+    QObject::connect(ui->games, SIGNAL(gameIndexChanged(int)), this, SLOT(updateGameIndex(int)));
 
-    /*
-    this->adjustSize();
-    this->setFixedSize(this->size());
-    */
+    QMetaObject::invokeMethod(&m_loader, "load", Qt::QueuedConnection);
 }
 
 GameSelector::~GameSelector() {
     delete ui;
+}
+
+bool GameSelector::eventFilter(QObject* watched, QEvent* event) {
+    if (watched == ui->leftButton || watched == ui->rightButton) {
+        switch (event->type()) {
+            case QEvent::Enter:
+                if (QPushButton* button = static_cast<QPushButton*>(watched))
+                    button->setEnabled(true);
+
+                break;
+            case QEvent::Leave:
+                if (QPushButton* button = static_cast<QPushButton*>(watched))
+                    button->setEnabled(false);
+
+                break;
+            default:
+                break;
+        }
+    }
+
+    return QWidget::eventFilter(watched, event);
 }
 
 bool GameSelector::selectGame(Game* g) {
@@ -68,11 +90,9 @@ bool GameSelector::selectGame(Game* g) {
 
     m_selected = g;
 
-/*
     // Update game information.
-    if (m_selected == ui->gameList->game())
+    if (m_selected == ui->games->currentGame())
         this->updateGameInfo(m_selected);
-*/
 
     return true;
 }
@@ -103,6 +123,11 @@ bool GameSelector::unselectGame(Game* g) {
     return true;
 }
 
+void GameSelector::showEvent(QShowEvent* event) {
+    QMetaObject::invokeMethod(this, "showFullScreen", Qt::QueuedConnection);
+    return QWidget::showEvent(event);
+}
+
 void GameSelector::createGame(GameInfo info) {
     // Create a new game.
     Game* g = new Game(info);
@@ -129,33 +154,28 @@ void GameSelector::showError(const QString& msg) {
 }
 
 void GameSelector::updateGameInfo(Game* game) {
-    Q_UNUSED(game)
-
-    /*
     if (game) {
         ui->nameValue->setText(game->name());
+        ui->arcadeValue->setText(game->arcade() ? trUtf8("Yes") : trUtf8("No"));
         ui->genreValue->setText(game->hasGenre() ? game->genre() : "");
         ui->developerValue->setText(game->hasDeveloper() ? game->developer() : "");
         ui->publisherValue->setText(game->hasPublisher() ? game->publisher() : "");
         ui->yearValue->setText(game->hasYear() ? QString::number(game->year()) : "");
         ui->sizeValue->setText(game->hasSize() ? QString("%1 GB").arg(game->size()) : "");
-        // ui->selectedValue->setText(game->isSelected() ? tr("Yes") : tr("No"));
     } else {
         ui->nameValue->setText("");
+        ui->arcadeValue->setText("");
         ui->genreValue->setText("");
         ui->developerValue->setText("");
         ui->publisherValue->setText("");
         ui->yearValue->setText("");
         ui->sizeValue->setText("");
-        // ui->selectedValue->setText("");
     }
 
-    ui->leftArrow->setEnabled(ui->gameList->hasPrevious());
-    ui->rightArrow->setEnabled(ui->gameList->hasNext());
-    */
+    ui->leftButton->setVisible(ui->games->hasPrevious());
+    ui->rightButton->setVisible(ui->games->hasNext());
 }
 
 void GameSelector::updateGameIndex(int index) {
-    Q_UNUSED(index);
-    //ui->gameIndex->setText(index < 0 ? "" : QString("%1/%2").arg(index+1).arg(ui->gameList->displayCount()));
+    ui->gameIndex->setText(index < 0 ? "" : QString("%1 / %2").arg(index+1).arg(ui->games->count()));
 }

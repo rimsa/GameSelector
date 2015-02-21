@@ -134,7 +134,7 @@ bool GameLoader::readField(const QSettings& inf, const QString& dirName, const Q
                 QString val = var.value<QString>();
                 if (val.compare("yes", Qt::CaseInsensitive) == 0 ||
                     val.compare("true", Qt::CaseInsensitive) == 0 ||
-                    val.compare("1", Qt::CaseInsensitive))
+                    val.compare("1", Qt::CaseInsensitive) == 0)
                     tmp = true;
 
                 QMetaType::construct(typeId, fieldValue.data(), &tmp);
