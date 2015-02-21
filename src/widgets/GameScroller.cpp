@@ -346,9 +346,11 @@ void GameScroller::animateScroller() {
     // Do not animate if the timer is active.
     if (m_timer->isActive())
         return;
-    // If the animation is already running, don't start over.
-    else if (m_animation->state() == QAbstractAnimation::Running)
-        return;
+
+    // Stop any animation if its running.
+    // This will force the animation
+    // to start over when started again.
+    m_animation->stop();
 
     // Get the current index.
     int index = this->currentGameIndex();
@@ -361,9 +363,11 @@ void GameScroller::animateScroller() {
         int from = scroller->value();
         int to = DefaultGameSpacing + (index * (DefaultCoverSize.width() + DefaultGameSpacing));
 
-        m_animation->setStartValue(from);
-        m_animation->setEndValue(to);
-        m_animation->start();
+        if (from != to) {
+            m_animation->setStartValue(from);
+            m_animation->setEndValue(to);
+            m_animation->start();
+        }
     }
 }
 
