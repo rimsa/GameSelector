@@ -117,6 +117,7 @@ Game* GameScroller::currentGame() const {
 
 void GameScroller::addGame(Game* game, bool fresh) {
     bool changed = false;
+    Game* currentGame = this->currentGame();
 
     if (fresh) {
         if (m_games.count() > 0) {
@@ -132,12 +133,18 @@ void GameScroller::addGame(Game* game, bool fresh) {
         changed = true;
     }
 
-    if (changed)
+    if (changed) {
+        if (currentGame)
+            currentGame->setEnabled(false);
+
+        this->setCurrentGame(currentGame, true);
         emit gamesAvailableChanged();
+    }
 }
 
 void GameScroller::addGames(QList<Game*> games, bool fresh) {
     bool changed = false;
+    Game* currentGame = this->currentGame();
 
     if (fresh) {
         if (m_games.count() > 0) {
@@ -155,31 +162,55 @@ void GameScroller::addGames(QList<Game*> games, bool fresh) {
         }
     }
 
-    if (changed)
+    if (changed) {
+        if (currentGame)
+            currentGame->setEnabled(false);
+
+        this->setCurrentGame(currentGame, true);
         emit gamesAvailableChanged();
+    }
 }
 
 void GameScroller::removeGame(Game* game) {
-    if (m_games.removeAll(game) > 0)
+    Game* currentGame = this->currentGame();
+
+    if (m_games.removeAll(game) > 0) {
+        if (currentGame)
+            currentGame->setEnabled(false);
+
+        this->setCurrentGame(currentGame, true);
         emit gamesAvailableChanged();
+    }
 }
 
 void GameScroller::removeGames(QList<Game*> games) {
     bool changed = false;
+    Game* currentGame = this->currentGame();
 
     foreach (Game* game, games) {
         if (m_games.removeAll(game))
            changed = true;
     }
 
-    if (changed)
+    if (changed) {
+        if (currentGame)
+            currentGame->setEnabled(false);
+
+        this->setCurrentGame(currentGame, true);
         emit gamesAvailableChanged();
+    }
 }
 
 void GameScroller::clear() {
+    Game* currentGame = this->currentGame();
+
     if (m_games.count() > 0) {
         m_games.clear();
 
+        if (currentGame)
+            currentGame->setEnabled(false);
+
+        this->setCurrentGame(currentGame, true);
         emit gamesAvailableChanged();
     }
 }
@@ -188,7 +219,7 @@ void GameScroller::setCurrentGameIndex(int index, bool force) {
     if (force || (m_index != index && index >= 0 && index < this->count())) {
         // Disable previous current game.
         if (Game* game = this->currentGame())
-            game->setDisabled(true);
+            game->setEnabled(false);
 
         // If the index is out of bounds, choose -1.
         m_index = (index >= 0 && index < this->count() ? index : -1);
@@ -310,11 +341,11 @@ void GameScroller::rebuild() {
     // If the current game exists in the
     // the list, selected it again.
     if (m_games.contains(currentGame))
-        this->setCurrentGame(currentGame);
+        this->setCurrentGame(currentGame, true);
     // If not and there is at least
     // one game, select it.
     else if (this->count() > 0)
-        this->setCurrentGameIndex(0);
+        this->setCurrentGameIndex(0, true);
     // Otherwise, select none.
     else
         this->setCurrentGameIndex(-1, true);
