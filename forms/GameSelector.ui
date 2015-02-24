@@ -265,7 +265,7 @@ QListView {
          <number>0</number>
         </property>
         <item>
-         <widget class="QPushButton" name="leftButton">
+         <widget class="NavButton" name="leftButton">
           <property name="enabled">
            <bool>false</bool>
           </property>
@@ -752,7 +752,7 @@ QListView {
          <number>0</number>
         </property>
         <item>
-         <widget class="QPushButton" name="rightButton">
+         <widget class="NavButton" name="rightButton">
           <property name="enabled">
            <bool>false</bool>
           </property>
@@ -861,6 +861,11 @@ QListView {
     <slot>previousGame()</slot>
     <slot>nextGame()</slot>
    </slots>
+  </customwidget>
+  <customwidget>
+   <class>NavButton</class>
+   <extends>QPushButton</extends>
+   <header location="global">GameSelector/widgets/NavButton.h</header>
   </customwidget>
  </customwidgets>
  <resources>

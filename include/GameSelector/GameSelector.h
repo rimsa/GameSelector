@@ -22,8 +22,6 @@ public:
     explicit GameSelector(QDir& root, QWidget *parent = 0);
     virtual ~GameSelector();
 
-    virtual bool eventFilter(QObject* watched, QEvent* event);
-
 public slots:
     bool selectGame(Game* g);
     bool unselectGame(Game* g);

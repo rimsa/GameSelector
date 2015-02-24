@@ -20,9 +20,6 @@ GameSelector::GameSelector(QDir& root, QWidget *parent) :
 
     ui->setupUi(this);
 
-    ui->leftButton->installEventFilter(this);
-    ui->rightButton->installEventFilter(this);
-
     QObject::connect(&m_loader, SIGNAL(gameLoaded(GameInfo)), this, SLOT(createGame(GameInfo)));
     QObject::connect(&m_loader, SIGNAL(loadingFinished()), this, SLOT(loadGames()), Qt::QueuedConnection);
     QObject::connect(&m_loader, SIGNAL(loadingFinished()), this, SLOT(show()), Qt::QueuedConnection);
@@ -38,27 +35,6 @@ GameSelector::GameSelector(QDir& root, QWidget *parent) :
 
 GameSelector::~GameSelector() {
     delete ui;
-}
-
-bool GameSelector::eventFilter(QObject* watched, QEvent* event) {
-    if (watched == ui->leftButton || watched == ui->rightButton) {
-        switch (event->type()) {
-            case QEvent::Enter:
-                if (QPushButton* button = static_cast<QPushButton*>(watched))
-                    button->setEnabled(true);
-
-                break;
-            case QEvent::Leave:
-                if (QPushButton* button = static_cast<QPushButton*>(watched))
-                    button->setEnabled(false);
-
-                break;
-            default:
-                break;
-        }
-    }
-
-    return QWidget::eventFilter(watched, event);
 }
 
 bool GameSelector::selectGame(Game* g) {
