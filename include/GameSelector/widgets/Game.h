@@ -63,6 +63,7 @@ protected:
 private:
     GameInfo m_info;
     QWidget m_selectionMask;
+    QLabel m_playIcon;
     bool m_selected;
 
 };

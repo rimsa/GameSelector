@@ -6,5 +6,6 @@
         <file alias="UpArrow">uparrow.png</file>
         <file alias="DownArrow">downarrow.png</file>
         <file alias="DownIcon">downicon.png</file>
+        <file alias="PlayIcon">playicon.png</file>
     </qresource>
 </RCC>

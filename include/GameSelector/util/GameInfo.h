@@ -45,6 +45,9 @@ Q_DECLARE_METATYPE(GameInfo)
 #define DefaultBorderSize   4
 #define DefaultGameSpacing 25
 #define DefaultAnimationTime 500
-#define DefaultSelectionColor QColor(Qt::green)
+
+#define DefaultPlaySize QSize(128, 128)
+#define DefaultPlayBorderColor QColor("#444444")
+#define DefaultPlayMaskColor QColor(0, 0, 0, 150)
 
 #endif // GAMEINFO_H

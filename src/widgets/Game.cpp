@@ -9,6 +9,7 @@ Game::Game(GameInfo info, QWidget *parent) :
     QPushButton(parent),
     m_info(info),
     m_selectionMask(this),
+    m_playIcon(this),
     m_selected(false) {
 
     this->setFlat(true);
@@ -19,11 +20,20 @@ Game::Game(GameInfo info, QWidget *parent) :
 
     m_selectionMask.setGeometry(0, 0, this->width(), this->height());
     m_selectionMask.setStyleSheet(
-        QString("background-color: rgba(%1, %2, %3, 75);")
-                .arg(DefaultSelectionColor.red())
-                .arg(DefaultSelectionColor.green())
-                .arg(DefaultSelectionColor.blue()));
+        QString("background-color: rgba(%1, %2, %3, %4);")
+                .arg(DefaultPlayMaskColor.red())
+                .arg(DefaultPlayMaskColor.green())
+                .arg(DefaultPlayMaskColor.blue())
+                .arg(DefaultPlayMaskColor.alpha()));
     m_selectionMask.hide();
+
+    m_playIcon.setPixmap(QPixmap(":/PlayIcon"));
+    m_playIcon.setScaledContents(true);
+    m_playIcon.resize(DefaultPlaySize);
+    m_playIcon.move(((this->width() - DefaultPlaySize.width()) / 2),
+                    ((this->height() - DefaultPlaySize.height()) / 2));
+
+    m_playIcon.hide();
 
     QObject::connect(this, SIGNAL(clicked()), this, SLOT(invertSelection()));
 }
@@ -59,8 +69,12 @@ void Game::changeSelection(bool mode) {
             m_selectionMask.show();
             m_selectionMask.raise();
 
+            m_playIcon.show();
+            m_playIcon.raise();
+
             emit selected(this);
         } else {
+            m_playIcon.hide();
             m_selectionMask.hide();
 
             emit unselected(this);
@@ -80,5 +94,8 @@ void Game::showEvent(QShowEvent* event) {
 
 void Game::resizeEvent(QResizeEvent* event) {
     m_selectionMask.resize(event->size());
+    m_playIcon.move(((this->width() - DefaultPlaySize.width()) / 2),
+                    ((this->height() - DefaultPlaySize.height()) / 2));
+
     QPushButton::resizeEvent(event);
 }

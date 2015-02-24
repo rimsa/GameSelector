@@ -404,7 +404,7 @@ void GameScroller::animateScroller() {
 
 void GameScroller::updateGameSelection() {
     Game* currentGame = this->currentGame();
-    QColor color = (currentGame && currentGame->isSelected() ? DefaultSelectionColor : QColor(Qt::white));
+    QColor color = (currentGame && currentGame->isSelected() ? DefaultPlayBorderColor : QColor(Qt::white));
     m_selectionBox.setStyleSheet(QString("border: %1px solid rgba(%2, %3, %4, %5);")
                                     .arg(DefaultBorderSize)
                                     .arg(color.red())
