@@ -22,6 +22,7 @@ public:
     Game* gameAt(int index) const;
     int gameIndex(Game* game) const;
 
+    bool hasCurrent() const { return (m_index >= 0 && m_index < this->count()); }
     int currentGameIndex() const { return m_index; }
     Game* currentGame() const;
 

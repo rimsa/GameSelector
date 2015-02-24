@@ -84,6 +84,12 @@ bool GameScroller::eventFilter(QObject* watched, QEvent* event) {
         case QEvent::KeyPress:
             if (QKeyEvent* keyEvent = static_cast<QKeyEvent*>(event)) {
                 switch (keyEvent->key()) {
+                    case Qt::Key_Enter:
+                    case Qt::Key_Return:
+                        if (Game* game = this->currentGame())
+                            QMetaObject::invokeMethod(game, "invertSelection", Qt::QueuedConnection);
+
+                        break;
                     case Qt::Key_Left:
                         QMetaObject::invokeMethod(this, "previousGame", Qt::QueuedConnection);
                         break;
