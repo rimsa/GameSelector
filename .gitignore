@@ -1,2 +1,9 @@
 *.pro.user
 *.pro.user*
+*.o
+ui_*.h
+moc_*.cpp
+qrc_*.cpp
+Makefile
+.qmake.stash
+GameSelector.app
