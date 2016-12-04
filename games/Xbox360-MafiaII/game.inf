@@ -1,0 +1,10 @@
+[Game]
+Name = "Mafia II"
+DiskName = "MafiaII"
+Cover = "mafiaii.png"
+Arcade = No
+Genre = "Third-person shooter, action-adventure"
+Developer = "2K Czech"
+Publisher = "2K Games"
+Year = 2010
+Size = 5.62

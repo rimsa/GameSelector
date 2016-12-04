@@ -1,0 +1,10 @@
+[Game]
+Name = "Sacred Citadel"
+DiskName = "SacredCitadel"
+Cover = "sacredcitadel.png"
+Arcade = Yes
+Genre = "Action, beat 'em up"
+Developer = "Southend Interactive"
+Publisher = "Deep Silver"
+Year = 2013
+Size = 0.44

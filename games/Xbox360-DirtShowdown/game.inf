@@ -1,0 +1,10 @@
+[Game]
+Name = "Dirt: Showdown"
+DiskName = "DirtShowdown"
+Cover = "dirtshowdown.png"
+Arcade = No
+Genre = "Racing"
+Developer = "Codemasters Southam"
+Publisher = "Codemasters"
+Year = 2012
+Size = 4.08

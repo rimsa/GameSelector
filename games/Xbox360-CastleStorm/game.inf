@@ -1,0 +1,10 @@
+[Game]
+Name = "CastleStorm"
+DiskName = "CastleStorm"
+Cover = "castlestorm.png"
+Arcade = Yes
+Genre = "Tower defense"
+Developer = "Zen Studios"
+Publisher = "Zen Studios"
+Year = 2013
+Size = 0.28

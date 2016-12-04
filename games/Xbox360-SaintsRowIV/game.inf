@@ -1,0 +1,10 @@
+[Game]
+Name = "Saints Row IV"
+DiskName = "SaintsRowIV"
+Cover = "saintsrowiv.png"
+Arcade = No
+Genre = "Action-adventure"
+Developer = "Volition"
+Publisher = "Deep Silver"
+Year = 2013
+Size = 6.95

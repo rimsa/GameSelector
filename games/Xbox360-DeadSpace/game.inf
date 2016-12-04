@@ -1,0 +1,10 @@
+[Game]
+Name = "Dead Space"
+DiskName = "DeadSpace"
+Cover = "deadspace.png"
+Arcade = No
+Genre = "Third-person shooter, survival horror"
+Developer = "EA Redwood Shores"
+Publisher = "Electronic Arts"
+Year = 2008
+Size = 6.40

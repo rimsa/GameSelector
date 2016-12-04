@@ -1,0 +1,10 @@
+[Game]
+Name = "The Walking Dead: 400 Days"
+DiskName = "TheWalkingDead400Days"
+Cover = "thewalkingdead400days.png"
+Arcade = Yes
+Genre = "Graphic adventure, interactive drama"
+Developer = "Telltale Games"
+Publisher = "Telltale Games"
+Year = 2013
+Size = 0.43

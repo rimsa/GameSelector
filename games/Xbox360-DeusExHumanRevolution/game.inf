@@ -1,0 +1,10 @@
+[Game]
+Name = "Deus Ex: Human Revolution"
+DiskName = "DeusExHumanRevolution"
+Cover = "deusexhumanrevolution.png"
+Arcade = No
+Genre = "Action role-playing, first person shooter, stealth"
+Developer = "Eidos Montreal"
+Publisher = "Square Enix"
+Year = 2011
+Size = 6.79

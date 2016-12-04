@@ -1,0 +1,10 @@
+[Game]
+Name = "The Walking Dead"
+DiskName = "TheWalkingDead"
+Cover = "thewalkingdead.png"
+Arcade = No
+Genre = "Graphic adventure, interactive drama"
+Developer = "Telltale Games"
+Publisher = "Telltale Games"
+Year = 2012
+Size = 0.42

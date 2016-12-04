@@ -1,0 +1,10 @@
+[Game]
+Name = "Gears of War: Judgment"
+DiskName = "GearsOfWarJudgment"
+Cover = "gearsofwarjudgment.png"
+Arcade = No
+Genre = "Third-person shooter"
+Developer = "Epic Games"
+Publisher = "Microsoft Studios"
+Year = 2013
+Size = 6.98

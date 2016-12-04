@@ -1,0 +1,10 @@
+[Game]
+Name = "Operation Flashpoint: Dragon Rising"
+DiskName = "OperationFlashpointDragonRising"
+Cover = "operationflashpointdragonrising.png"
+Arcade = No
+Genre = "Tactical shooter, military simulation"
+Developer = "Codemasters"
+Publisher = "Codemasters"
+Year = 2009
+Size = 6.28

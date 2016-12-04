@@ -1,0 +1,10 @@
+[Game]
+Name = "Terraria"
+DiskName = "Terraria"
+Cover = "terraria.png"
+Arcade = Yes
+Genre = "Action-adventure, survival"
+Developer = "Re-Logic"
+Publisher = "505 Games"
+Year = 2011
+Size = 0.34

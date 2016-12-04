@@ -1,0 +1,10 @@
+[Game]
+Name = "Plants vs. Zombies"
+DiskName = "PlantsVsZombies"
+Cover = "plantsvszombies.png"
+Arcade = Yes
+Genre = "Tower defense"
+Developer = "PopCap Games"
+Publisher = "PopCap Games"
+Year = 2010
+Size = 0.84

@@ -1,0 +1,10 @@
+[Game]
+Name = "Metro: Last Light"
+DiskName = "MetroLastLight"
+Cover = "metrolastlight.png"
+Arcade = No
+Genre = "First-person shooter"
+Developer = "4A Games"
+Publisher = "Deep Silver"
+Year = 2013
+Size = 5.96

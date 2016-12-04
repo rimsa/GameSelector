@@ -1,0 +1,10 @@
+[Game]
+Name = "Thief"
+DiskName = "Thief"
+Cover = "thief.png"
+Arcade = No
+Genre = "Stealth, Horror"
+Developer = "Eidos Montreal"
+Publisher = "Eidos Interactive, Square Enix"
+Year = 2014
+Size = 5.55

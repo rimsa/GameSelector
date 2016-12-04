@@ -1,0 +1,10 @@
+[Game]
+Name = "BioShock Infinite"
+DiskName = "BioShockInfinity"
+Cover = "bioshockinfinity.png"
+Arcade = No
+Genre = "First-person shooter"
+Developer = "Irrational Games"
+Publisher = "2K Games"
+Year = 2013
+Size = 6.49

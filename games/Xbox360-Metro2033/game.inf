@@ -1,0 +1,10 @@
+[Game]
+Name = "Metro 2033"
+DiskName = "Metro2033"
+Cover = "metro2033.png"
+Arcade = No
+Genre = "First-person shooter, survival horror"
+Developer = "4A Games"
+Publisher = "THQ, Deep Silver"
+Year = 2010
+Size = 5.42

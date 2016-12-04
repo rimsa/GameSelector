@@ -1,0 +1,10 @@
+[Game]
+Name = "Sacred 3"
+DiskName = "Sacred3"
+Cover = "sacred3.png"
+Arcade = No
+Genre = "Hack and slash, brawler"
+Developer = "Keen Games"
+Publisher = "Deep Silver"
+Year = 2014
+Size = 6.89

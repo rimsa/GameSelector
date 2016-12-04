@@ -1,0 +1,10 @@
+[Game]
+Name = "Gears of War 2"
+DiskName = "GearsOfWar2"
+Cover = "gearsofwar2.png"
+Arcade = No
+Genre = "Third-person shooter"
+Developer = "Epic Games"
+Publisher = "Microsoft Game Studios"
+Year = 2008
+Size = 6.29

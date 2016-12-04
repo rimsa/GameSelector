@@ -1,0 +1,10 @@
+[Game]
+Name = "Supreme Commander 2"
+DiskName = "SupremeCommander2"
+Cover = "supremecommander2.png"
+Arcade = No
+Genre = "Real-time strategy"
+Developer = "Gas Powered Games"
+Publisher = "Square Enix"
+Year = 2010
+Size = 2.02

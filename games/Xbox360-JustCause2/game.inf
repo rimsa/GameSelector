@@ -1,0 +1,10 @@
+[Game]
+Name = "Just Cause 2"
+DiskName = "JustCause2"
+Cover = "justcause2.png"
+Arcade = No
+Genre = "Action-adventure"
+Developer = "Avalanche Studios"
+Publisher = "Eidos Interactive"
+Year = 2010
+Size = 4.06

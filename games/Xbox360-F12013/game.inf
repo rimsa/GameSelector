@@ -1,0 +1,10 @@
+[Game]
+Name = "F1 2013"
+DiskName = "F12013"
+Cover = "f12013.png"
+Arcade = No
+Genre = "Racing"
+Developer = "Codemasters Birmingham"
+Publisher = "Codemasters"
+Year = 2013
+Size = 6.33
