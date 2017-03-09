@@ -1,0 +1,10 @@
+[Game]
+Name = "I Am Alive"
+DiskName = "IAmAlive"
+Cover = "iamalive.png"
+Arcade = Yes
+Genre = "Action-adventure, Survival"
+Developer = "Darkworks"
+Publisher = "Ubisoft"
+Year = 2012
+Size = 1.86

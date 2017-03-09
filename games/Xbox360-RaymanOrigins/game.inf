@@ -1,0 +1,10 @@
+[Game]
+Name = "Rayman Origins"
+DiskName = "RaymanOrigins"
+Cover = "raymanorigins.png"
+Arcade = No
+Genre = "Platform"
+Developer = "Ubisoft Montpellier/Paris/Casablanca"
+Publisher = "Ubisoft"
+Year = 2011
+Size = 5.46

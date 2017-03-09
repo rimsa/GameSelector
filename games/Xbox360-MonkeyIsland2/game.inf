@@ -1,0 +1,10 @@
+[Game]
+Name = "Monkey Island 2: LeChuck's Revenge"
+DiskName = "MonkeyIsland2"
+Cover = "monkeyisland2.png"
+Arcade = Yes
+Genre = "Graphic adventure"
+Developer = "LucasArts"
+Publisher = "LucasArts"
+Year = 2010
+Size = 0.99

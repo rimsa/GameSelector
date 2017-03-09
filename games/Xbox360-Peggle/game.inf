@@ -1,0 +1,10 @@
+[Game]
+Name = "Peggle"
+DiskName = "Peggle"
+Cover = "peggle.png"
+Arcade = Yes
+Genre = "Puzzle"
+Developer = "PopCap Games"
+Publisher = "PopCap Games"
+Year = 2007
+Size = 0.10

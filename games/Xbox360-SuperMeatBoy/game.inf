@@ -1,0 +1,10 @@
+[Game]
+Name = "Super Meat Boy"
+DiskName = "SuperMeatBoy"
+Cover = "supermeatboy.png"
+Arcade = Yes
+Genre = "Platform"
+Developer = "Team Meat"
+Publisher = "Team Meat"
+Year = 2010
+Size = 0.11

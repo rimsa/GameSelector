@@ -1,0 +1,10 @@
+[Game]
+Name = "Beyond Good & Evil HD"
+DiskName = "BeyondGoodAndEvil"
+Cover = "beyondgoodandevil.png"
+Arcade = Yes
+Genre = "Action-adventure"
+Developer = "Ubisoft Montpellier/Milan"
+Publisher = "Ubisoft"
+Year = 2011
+Size = 1.68

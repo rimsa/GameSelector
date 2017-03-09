@@ -1,0 +1,10 @@
+[Game]
+Name = "Star Wars: The Force Unleashed"
+DiskName = "StarWarsTheForceUnleashed"
+Cover = "starwarstheforceunleashed.png"
+Arcade = No
+Genre = "Action-adventure, Hack and slash"
+Developer = "LucasArts"
+Publisher = "LucasArts"
+Year = 2008
+Size = 6.36

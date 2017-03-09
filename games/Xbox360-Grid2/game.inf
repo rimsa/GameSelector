@@ -1,0 +1,10 @@
+[Game]
+Name = "Grid 2"
+DiskName = "Grid2"
+Cover = "grid2.png"
+Arcade = No
+Genre = "Racing"
+Developer = "Codemasters"
+Publisher = "Codemasters"
+Year = 2013
+Size = 5.42

@@ -1,0 +1,10 @@
+[Game]
+Name = "Tron: Evolution"
+DiskName = "TronEvolution"
+Cover = "tronevolution.png"
+Arcade = No
+Genre = "Action-adventure"
+Developer = "Propaganda Games"
+Publisher = "Disney Interactive Studios"
+Year = 2010
+Size = 5.86

@@ -1,0 +1,10 @@
+[Game]
+Name = "Forza Horizon"
+DiskName = "ForzaHorizon"
+Cover = "forzahorizon.png"
+Arcade = No
+Genre = "Racing"
+Developer = "Playground Games"
+Publisher = "Microsoft Studios"
+Year = 2012
+Size = 6.90

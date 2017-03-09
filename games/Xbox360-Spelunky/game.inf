@@ -1,0 +1,10 @@
+[Game]
+Name = "Spelunky"
+DiskName = "Spelunky"
+Cover = "spelunky.png"
+Arcade = Yes
+Genre = "Action-adventure, Platformer"
+Developer = "Mossmouth, LLC"
+Publisher = "Microsoft Studios"
+Year = 2012
+Size = 0.16

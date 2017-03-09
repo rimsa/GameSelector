@@ -1,0 +1,10 @@
+[Game]
+Name = "Outland"
+DiskName = "Outland"
+Cover = "outland.png"
+Arcade = Yes
+Genre = "Platform, Metroidvania"
+Developer = "Housemarque"
+Publisher = "Ubisoft"
+Year = 2011
+Size = 0.53

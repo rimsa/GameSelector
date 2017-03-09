@@ -1,0 +1,10 @@
+[Game]
+Name = "Burnout Paradise"
+DiskName = "BurnoutParadise"
+Cover = "burnoutparadise.png"
+Arcade = No
+Genre = "Racing"
+Developer = "Criterion Games"
+Publisher = "Electronic Arts"
+Year = 2008
+Size = 2.81

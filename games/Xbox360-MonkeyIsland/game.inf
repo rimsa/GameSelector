@@ -1,0 +1,10 @@
+[Game]
+Name = "Monkey Island: Special Edition"
+DiskName = "MonkeyIsland"
+Cover = "monkeyisland.png"
+Arcade = Yes
+Genre = "Graphic adventure"
+Developer = "Lucasfilm Games"
+Publisher = "Lucasfilm Games"
+Year = 2009
+Size = 0.53
