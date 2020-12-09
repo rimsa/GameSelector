@@ -1,6 +1,6 @@
 [Game]
 Name = "Ascend: Hand of Kul"
-DiskName = "AscendHandofKul"
+DiskName = "AscendHandOfKul"
 Cover = "ascendhandofkul.png"
 Arcade = Yes
 Genre = "RPG"

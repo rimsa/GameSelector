@@ -1,6 +1,6 @@
 [Game]
 Name = "Lego The Lord of the Rings"
-DiskName = "LegoTheLordoftheRings"
+DiskName = "LegoTheLordOfTheRings"
 Cover = "legothelordoftherings.png"
 Arcade = No
 Genre = "Action-Adventure"

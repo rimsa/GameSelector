@@ -1,6 +1,6 @@
 [Game]
-Name = "Darksiders 2"
-DiskName = "Darksiders2"
+Name = "Darksiders II"
+DiskName = "DarksidersII"
 Cover = "darksiders2.png"
 Arcade = No
 Genre = "RPG"

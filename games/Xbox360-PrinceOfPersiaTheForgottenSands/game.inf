@@ -1,6 +1,6 @@
 [Game]
 Name = "Prince of Persia: The Forgotten Sands"
-DiskName = "PrinceofPersiaTheForgottenSands"
+DiskName = "PrinceOfPersiaTheForgottenSands"
 Cover = "princeofpersiatheforgottensands.png"
 Arcade = No
 Genre = "Platform"

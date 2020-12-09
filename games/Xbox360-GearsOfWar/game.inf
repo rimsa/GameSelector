@@ -1,6 +1,6 @@
 [Game]
 Name = "Gears of War"
-DiskName = "GearsofWar"
+DiskName = "GearsOfWar"
 Cover = "gearsofwar.png"
 Arcade = No
 Genre = "Third-Person Shooter"

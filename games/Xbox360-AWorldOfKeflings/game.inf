@@ -1,6 +1,6 @@
 [Game]
 Name = "A World of Keflings"
-DiskName = "AWorldofKeflings"
+DiskName = "AWorldOfKeflings"
 Cover = "aworldofkeflings.png"
 Arcade = Yes
 Genre = "City Building"

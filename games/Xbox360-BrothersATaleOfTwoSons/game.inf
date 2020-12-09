@@ -1,6 +1,6 @@
 [Game]
 Name = "Brothers: A Tale of Two Sons"
-DiskName = "BrothersATaleofTwoSons"
+DiskName = "BrothersATaleOfTwoSons"
 Cover = "brothersataleoftwosons.png"
 Arcade = Yes
 Genre = "Adventure"
