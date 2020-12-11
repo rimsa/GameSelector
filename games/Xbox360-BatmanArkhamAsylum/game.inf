@@ -1,0 +1,11 @@
+[Game]
+Name = "Batman: Arkham Asylum"
+DiskName = "BatmanArkhamAsylum"
+Cover = "batmanarkhamasylum.png"
+Media = "Disc"
+Arcade = No
+Genre = "Action, Adventure"
+Developer = "Rocksteady Studios"
+Publisher = "Eidos Interactive"
+Year = 2009
+Size = 0.00

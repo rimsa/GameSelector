@@ -1,0 +1,11 @@
+[Game]
+Name = "The Beatles: Rock Band"
+DiskName = "TheBeatlesRockBand"
+Cover = "thebeatlesrockband.png"
+Media = "Disc"
+Arcade = No
+Genre = "Rhythm"
+Developer = "Harmonix"
+Publisher = "MTV Games"
+Year = 2009
+Size = 0.00

@@ -1,0 +1,11 @@
+[Game]
+Name = "Red Dead Redemption"
+DiskName = "RedDeadRedemption"
+Cover = "reddeadredemption.png"
+Media = "Disc"
+Arcade = No
+Genre = "Action, Adventure, Open world"
+Developer = "Rockstar San Diego"
+Publisher = "Rockstar Games"
+Year = 2010
+Size = 0.00

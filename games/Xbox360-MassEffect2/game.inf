@@ -1,0 +1,11 @@
+[Game]
+Name = "Mass Effect 2"
+DiskName = "MassEffect2"
+Cover = "masseffect2.png"
+Media = "Disc"
+Arcade = No
+Genre = "Third-person shooter"
+Developer = "BioWare"
+Publisher = "Electronic Arts"
+Year = 2010
+Size = 0.00

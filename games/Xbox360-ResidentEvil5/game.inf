@@ -1,0 +1,11 @@
+[Game]
+Name = "Resident Evil 5"
+DiskName = "ResidentEvil5"
+Cover = "residentevil5.png"
+Media = "Disc"
+Arcade = No
+Genre = "Third-person shooter"
+Developer = "Capcom"
+Publisher = "Capcom"
+Year = 2009
+Size = 0.00

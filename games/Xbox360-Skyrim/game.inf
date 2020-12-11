@@ -1,0 +1,11 @@
+[Game]
+Name = "The Elder Scrolls V: Skyrim"
+DiskName = "Skyrim"
+Cover = "skyrim.png"
+Media = "Disc"
+Arcade = No
+Genre = "Open world, RPG"
+Developer = "Bethesda Game Studios"
+Publisher = "Bethesda Softworks"
+Year = 2011
+Size = 0.00

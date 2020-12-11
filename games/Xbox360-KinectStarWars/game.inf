@@ -1,0 +1,11 @@
+[Game]
+Name = "Kinect Star Wars"
+DiskName = "KinectStarWars"
+Cover = "kinectstarwars.png"
+Media = "Disc"
+Arcade = No
+Genre = "Action"
+Developer = "Terminal Reality"
+Publisher = "LucasArts"
+Year = 2012
+Size = 0.00

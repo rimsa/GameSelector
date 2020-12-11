@@ -1,0 +1,11 @@
+[Game]
+Name = "FIFA 13"
+DiskName = "FIFA13"
+Cover = "fifa13.png"
+Media = "Disc"
+Arcade = No
+Genre = "Sports"
+Developer = "EA Canada"
+Publisher = "EA Sports"
+Year = 2012
+Size = 0.00

@@ -1,0 +1,11 @@
+[Game]
+Name = "Kinect Sports Ultimate Collection"
+DiskName = "KinectSportsUC"
+Cover = "kinectsportsuc.png"
+Media = "Disc"
+Arcade = No
+Genre = "Sports"
+Developer = "Rare"
+Publisher = "Microsoft Game Studios"
+Year = 2010
+Size = 0.00

@@ -1,0 +1,11 @@
+[Game]
+Name = "Kinect Adventures!"
+DiskName = "KinectAdventures"
+Cover = "kinectadventures.png"
+Media = "Disc"
+Arcade = No
+Genre = "Adventure, Sports"
+Developer = "Good Science Studio"
+Publisher = "Microsoft Game Studios"
+Year = 2010
+Size = 0.00

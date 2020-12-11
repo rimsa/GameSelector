@@ -1,0 +1,11 @@
+[Game]
+Name = "Halo 4"
+DiskName = "Halo4"
+Cover = "halo4.png"
+Media = "Disc"
+Arcade = No
+Genre = "First-person shooter"
+Developer = "343 Industries"
+Publisher = "Microsoft Game Studios"
+Year = 2012
+Size = 0.00

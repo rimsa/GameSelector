@@ -1,0 +1,11 @@
+[Game]
+Name = "Max Payne 3"
+DiskName = "MaxPayne3"
+Cover = "maxpayne3.png"
+Media = "Disc"
+Arcade = No
+Genre = "Third-person shooter"
+Developer = "Rockstar Studios"
+Publisher = "Rockstar Games"
+Year = 2012
+Size = 0.00

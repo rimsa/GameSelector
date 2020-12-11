@@ -1,0 +1,11 @@
+[Game]
+Name = "Ultimate Marvel vs. Capcom 3"
+DiskName = "UltimateMarvelVsCapcom3"
+Cover = "ultimatemarvelvscapcom3.png"
+Media = "Disc"
+Arcade = No
+Genre = "Fighting"
+Developer = "Capcom, Eighting"
+Publisher = "Capcom"
+Year = 2011
+Size = 0.00

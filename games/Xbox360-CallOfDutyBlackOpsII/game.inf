@@ -1,0 +1,11 @@
+[Game]
+Name = "Call of Duty: Black Ops II"
+DiskName = "CallOfDutyBlackOpsII"
+Cover = "callofdutyblackopsii.png"
+Media = "Disc"
+Arcade = No
+Genre = "First-person shooter"
+Developer = "Treyarch"
+Publisher = "Activision"
+Year = 2012
+Size = 0.00

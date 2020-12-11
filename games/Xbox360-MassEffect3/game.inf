@@ -1,0 +1,11 @@
+[Game]
+Name = "Mass Effect 3"
+DiskName = "MassEffect3"
+Cover = "masseffect3.png"
+Media = "Disc"
+Arcade = No
+Genre = "Third-person shooter"
+Developer = "BioWare"
+Publisher = "Electronic Arts"
+Year = 2012
+Size = 0.00

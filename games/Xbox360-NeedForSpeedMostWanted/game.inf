@@ -1,0 +1,11 @@
+[Game]
+Name = "Need for Speed: Most Wanted"
+DiskName = "NeedForSpeedMostWanted"
+Cover = "needforspeedmostwanted.png"
+Media = "Disc"
+Arcade = No
+Genre = "Open world, Racing"
+Developer = "Criterion Games"
+Publisher = "Electronic Arts"
+Year = 2012
+Size = 0.00

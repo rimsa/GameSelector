@@ -1,0 +1,11 @@
+[Game]
+Name = "Dance Central 3"
+DiskName = "DanceCentral3"
+Cover = "dancecentral3.png"
+Media = "Disc"
+Arcade = No
+Genre = "Rhythm"
+Developer = "Harmonix"
+Publisher = "Microsoft Studios"
+Year = 2012
+Size = 0.00

@@ -1,0 +1,11 @@
+[Game]
+Name = "Forza Motorsport 4"
+DiskName = "ForzaMotorsport4"
+Cover = "forzamotorsport4.png"
+Media = "Disc"
+Arcade = No
+Genre = "Racing"
+Developer = "Turn 10 Studios"
+Publisher = "Microsoft Studios"
+Year = 2011
+Size = 0.00

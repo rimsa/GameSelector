@@ -1,0 +1,11 @@
+[Game]
+Name = "Final Fantasy XIII-2"
+DiskName = "FinalFantasyXIII2"
+Cover = "finalfantasyxiii2.png"
+Media = "Disc"
+Arcade = No
+Genre = "RPG"
+Developer = "Square Enix"
+Publisher = "Square Enix"
+Year = 2012
+Size = 0.00

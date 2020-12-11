@@ -1,0 +1,11 @@
+[Game]
+Name = "Guitar Hero 5"
+DiskName = "GuitarHero5"
+Cover = "guitarhero5.png"
+Media = "Disc"
+Arcade = No
+Genre = "Rhythm"
+Developer = "Neversoft"
+Publisher = "Activision"
+Year = 2009
+Size = 0.00

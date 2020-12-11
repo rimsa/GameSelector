@@ -1,0 +1,11 @@
+[Game]
+Name = "Nike+ Kinect Training"
+DiskName = "NikeKinectTraining"
+Cover = "nikekinecttraining.png"
+Media = "Disc"
+Arcade = No
+Genre = "Fitness"
+Developer = "Sumo Digital"
+Publisher = "Microsoft Studios"
+Year = 2012
+Size = 0.00

@@ -1,0 +1,11 @@
+[Game]
+Name = "Midnight Club: Los Angeles"
+DiskName = "MidnightClub"
+Cover = "midnightclub.png"
+Media = "Disc"
+Arcade = No
+Genre = "Open world, Racing"
+Developer = "Rockstar San Diego"
+Publisher = "Rockstar Games"
+Year = 2009
+Size = 0.00

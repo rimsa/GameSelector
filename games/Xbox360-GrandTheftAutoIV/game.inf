@@ -1,0 +1,11 @@
+[Game]
+Name = "Grand Theft Auto IV"
+DiskName = "GrandTheftAutoIV"
+Cover = "grandtheftautoiv.png"
+Media = "Disc"
+Arcade = No
+Genre = "Action, Adventure"
+Developer = "Rockstar North"
+Publisher = "Rockstar Games"
+Year = 2008
+Size = 0.00

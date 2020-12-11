@@ -1,0 +1,11 @@
+[Game]
+Name = "Kinect: Disneyland Adventures"
+DiskName = "KinectDisneylandAdventures"
+Cover = "kinectdisneylandadventures.png"
+Media = "Disc"
+Arcade = No
+Genre = "Adventure, Open world"
+Developer = "Frontier Developments"
+Publisher = "Microsoft Studios"
+Year = 2011
+Size = 0.00

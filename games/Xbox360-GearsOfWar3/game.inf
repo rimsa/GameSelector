@@ -1,0 +1,11 @@
+[Game]
+Name = "Gears of War 3"
+DiskName = "GearsOfWar3"
+Cover = "gearsofwar3.png"
+Media = "Disc"
+Arcade = No
+Genre = "Third-person shooter"
+Developer = "Epic Games"
+Publisher = "Microsoft Game Studios"
+Year = 2011
+Size = 0.00

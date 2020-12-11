@@ -1,0 +1,11 @@
+[Game]
+Name = "Dragon Age II"
+DiskName = "DragonAgeII"
+Cover = "dragonageii.png"
+Media = "Disc"
+Arcade = No
+Genre = "RPG"
+Developer = "BioWare"
+Publisher = "Electronic Arts"
+Year = 2011
+Size = 0.00

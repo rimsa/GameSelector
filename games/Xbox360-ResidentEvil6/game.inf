@@ -1,0 +1,11 @@
+[Game]
+Name = "Resident Evil 6"
+DiskName = "ResidentEvil6"
+Cover = "residentevil6.png"
+Media = "Disc"
+Arcade = No
+Genre = "Third-person shooter"
+Developer = "Capcom"
+Publisher = "Capcom"
+Year = 2012
+Size = 0.00
