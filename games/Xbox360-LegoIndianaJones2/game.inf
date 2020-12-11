@@ -1,0 +1,10 @@
+[Game]
+Name = "Lego Indiana Jones 2: The Adventure Continues"
+DiskName = "LegoIndianaJones2"
+Cover = "legoindianajones2.png"
+Arcade = No
+Genre = "Action, Adventure"
+Developer = "Traveller's Tales"
+Publisher = "LucasArts"
+Year = 2016
+Size = 5.60

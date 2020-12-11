@@ -1,0 +1,10 @@
+[Game]
+Name = "Castlevania: Lords of Shadow"
+DiskName = "CastlevaniaLordsOfShadow"
+Cover = "castlevanialordsofshadow.png"
+Arcade = No
+Genre = "Action, Adventure, Hack and slash"
+Developer = "MercurySteam, Kojima Productions"
+Publisher = "Konami"
+Year = 2019
+Size = 11.95

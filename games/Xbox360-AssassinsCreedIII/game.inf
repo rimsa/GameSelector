@@ -1,0 +1,10 @@
+[Game]
+Name = "Assassin's Creed III"
+DiskName = "AssassinsCreedIII"
+Cover = "assassinscreediii.png"
+Arcade = No
+Genre = "Action, Adventure, Stealth"
+Developer = "Ubisoft Montreal"
+Publisher = "Ubisoft"
+Year = 2013
+Size = 7.63

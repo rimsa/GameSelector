@@ -1,0 +1,10 @@
+[Game]
+Name = "Vanquish"
+DiskName = "Vanquish"
+Cover = "vanquish.png"
+Arcade = No
+Genre = "Action, Third-person shooter"
+Developer = "PlatinumGames"
+Publisher = "Sega"
+Year = 2017
+Size = 6.54

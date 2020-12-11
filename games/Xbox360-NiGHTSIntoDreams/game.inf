@@ -1,0 +1,10 @@
+[Game]
+Name = "NiGHTS into dreams..."
+DiskName = "NiGHTSIntoDreams"
+Cover = "nightsintodreams.png"
+Arcade = No
+Genre = "Action"
+Developer = "Sonic Team"
+Publisher = "Sega"
+Year = 2012
+Size = 2.01

@@ -1,0 +1,10 @@
+[Game]
+Name = "Star Wars: Battlefront II"
+DiskName = "StarWarsBattlefrontII"
+Cover = "starwarsbattlefrontii.png"
+Arcade = No
+Genre = "Action, First-person shooter, Third-person shooter"
+Developer = "Pandemic Studios"
+Publisher = "LucasArts"
+Year = 2018
+Size = 3.56

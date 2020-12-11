@@ -1,0 +1,10 @@
+[Game]
+Name = "Star Wars: Republic Commando"
+DiskName = "StarWarsRepublicCommando"
+Cover = "starwarsrepubliccommando.png"
+Arcade = No
+Genre = "First-person shooter, Tactical shooter"
+Developer = "LucasArts"
+Publisher = "LucasArts"
+Year = 2018
+Size = 3.65

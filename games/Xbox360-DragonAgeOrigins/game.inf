@@ -1,0 +1,10 @@
+[Game]
+Name = "Dragon Age: Origins"
+DiskName = "DragonAgeOrigins"
+Cover = "dragonageorigins.png"
+Arcade = No
+Genre = "RPG"
+Developer = "BioWare"
+Publisher = "Electronic Arts"
+Year = 2010
+Size = 6.44

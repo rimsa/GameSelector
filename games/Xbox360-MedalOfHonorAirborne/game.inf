@@ -1,0 +1,10 @@
+[Game]
+Name = "Medal of Honor Airborne"
+DiskName = "MedalOfHonorAirborne"
+Cover = "medalofhonorairborne.png"
+Arcade = No
+Genre = "First-person shooter"
+Developer = "EA Los Angeles"
+Publisher = "Electronic Arts"
+Year = 2017
+Size = 4.72

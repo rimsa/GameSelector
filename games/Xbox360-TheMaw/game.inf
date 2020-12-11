@@ -1,0 +1,10 @@
+[Game]
+Name = "The Maw"
+DiskName = "TheMaw"
+Cover = "themaw.png"
+Arcade = Yes
+Genre = "Action, Adventure"
+Developer = "Twisted Pixel Games"
+Publisher = "Microsoft Game Studios"
+Year = 2009
+Size = 0.15

@@ -1,0 +1,10 @@
+[Game]
+Name = "Hydro Thunder"
+DiskName = "HydroThunder"
+Cover = "hydrothunder.png"
+Arcade = Yes
+Genre = "Racing"
+Developer = "Vector Unit"
+Publisher = "Microsoft Game Studios"
+Year = 2010
+Size = 0.46

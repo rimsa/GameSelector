@@ -1,0 +1,10 @@
+[Game]
+Name = "Earth Defense Force 2017"
+DiskName = "EarthDefenseForce2017"
+Cover = "earthdefenseforce2017.png"
+Arcade = No
+Genre = "Third-person shooter"
+Developer = "Sandlot"
+Publisher = "D3 Publisher"
+Year = 2019
+Size = 1.64

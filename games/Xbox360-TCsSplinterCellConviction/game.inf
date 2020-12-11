@@ -1,0 +1,10 @@
+[Game]
+Name = "Tom Clancy's Splinter Cell: Conviction"
+DiskName = "TCsSplinterCellConviction"
+Cover = "splintercellconviction.png"
+Arcade = No
+Genre = "Action, Adventure, Stealth"
+Developer = "Ubisoft Montreal"
+Publisher = "Ubisoft Montreal"
+Year = 2011
+Size = 6.76

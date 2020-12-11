@@ -1,0 +1,10 @@
+[Game]
+Name = "Star Wars Jedi Knight: Jedi Academy"
+DiskName = "StarWarsJediKnight"
+Cover = "starwarsjediknight.png"
+Arcade = No
+Genre = "First-person shooter, Hack and slash, Third-person shooter"
+Developer = "Raven Software"
+Publisher = "LucasArts"
+Year = 2018
+Size = 1.58

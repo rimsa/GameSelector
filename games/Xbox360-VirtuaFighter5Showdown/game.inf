@@ -1,0 +1,10 @@
+[Game]
+Name = "Virtua Fighter 5 Showdown"
+DiskName = "VirtuaFighter5Showdown"
+Cover = "virtuafighter5showdown.png"
+Arcade = Yes
+Genre = "Fighting"
+Developer = "Sega AM2"
+Publisher = "Sega"
+Year = 2012
+Size = 1.91

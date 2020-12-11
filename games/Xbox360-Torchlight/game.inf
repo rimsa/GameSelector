@@ -1,0 +1,10 @@
+[Game]
+Name = "Torchlight"
+DiskName = "Torchlight"
+Cover = "torchlight.png"
+Arcade = Yes
+Genre = "Action, Hack and slash, RPG"
+Developer = "Runic Games"
+Publisher = "Runic Games"
+Year = 2011
+Size = 0.20

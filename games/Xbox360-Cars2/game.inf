@@ -1,0 +1,10 @@
+[Game]
+Name = "Cars 2"
+DiskName = "Cars2"
+Cover = "cars2.png"
+Arcade = No
+Genre = "Racing"
+Developer = "Avalanche Software"
+Publisher = "Disney Interactive Studios"
+Year = 2012
+Size = 2.89

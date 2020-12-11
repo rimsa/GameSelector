@@ -1,0 +1,10 @@
+[Game]
+Name = "Tekken Tag Tournament 2"
+DiskName = "TekkenTagTournament2"
+Cover = "tekkentagtournament.png"
+Arcade = No
+Genre = "Fighting"
+Developer = "Bandai Namco Games"
+Publisher = "Namco"
+Year = 2013
+Size = 7.77

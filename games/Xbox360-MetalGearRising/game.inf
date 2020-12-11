@@ -1,0 +1,10 @@
+[Game]
+Name = "Metal Gear Rising: Revengeance"
+DiskName = "MetalGearRising"
+Cover = "metalgearrising.png"
+Arcade = No
+Genre = "Action, Hack and slash"
+Developer = "PlatinumGames"
+Publisher = "Konami Digital Entertainment"
+Year = 2013
+Size = 7.34

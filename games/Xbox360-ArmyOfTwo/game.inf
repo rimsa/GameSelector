@@ -1,0 +1,10 @@
+[Game]
+Name = "Army of Two"
+DiskName = "ArmyOfTwo"
+Cover = "armyoftwo.png"
+Arcade = No
+Genre = "Third-person shooter"
+Developer = "EA Montreal"
+Publisher = "Electronic Arts"
+Year = 2011
+Size = 5.01

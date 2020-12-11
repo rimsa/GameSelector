@@ -1,0 +1,10 @@
+[Game]
+Name = "Dead Space 3"
+DiskName = "DeadSpace3"
+Cover = "deadspace3.png"
+Arcade = No
+Genre = "Third-person shooter, Survival"
+Developer = "Visceral Games"
+Publisher = "Electronic Arts"
+Year = 2017
+Size = 14.92

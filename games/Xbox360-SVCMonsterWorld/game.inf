@@ -1,0 +1,10 @@
+[Game]
+Name = "Sega Vintage Collection: Monster World"
+DiskName = "SVCMonsterWorld"
+Cover = "monsterworld.png"
+Arcade = Yes
+Genre = "Action, Platform, RPG, Shoot 'em up"
+Developer = "Sega AM7"
+Publisher = "Sega"
+Year = 2012
+Size = 0.25

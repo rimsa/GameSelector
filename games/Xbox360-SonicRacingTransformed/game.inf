@@ -1,0 +1,10 @@
+[Game]
+Name = "Sonic & All-Stars Racing Transformed"
+DiskName = "SonicRacingTransformed"
+Cover = "sonicracingtransformed.png"
+Arcade = No
+Genre = "Racing"
+Developer = "Sumo Digital"
+Publisher = "Sega"
+Year = 2013
+Size = 4.64

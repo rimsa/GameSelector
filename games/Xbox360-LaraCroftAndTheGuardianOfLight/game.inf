@@ -1,0 +1,10 @@
+[Game]
+Name = "Lara Croft and the Guardian of Light"
+DiskName = "LaraCroftAndTheGuardianOfLight"
+Cover = "laracroftandtheguardianoflight.png"
+Arcade = No
+Genre = "Action, Adventure"
+Developer = "Crystal Dynamics"
+Publisher = "Square Enix"
+Year = 2018
+Size = 2.02

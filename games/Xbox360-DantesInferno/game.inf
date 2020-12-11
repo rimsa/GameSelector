@@ -1,0 +1,10 @@
+[Game]
+Name = "Dante's Inferno"
+DiskName = "DantesInferno"
+Cover = "dantesinferno.png"
+Arcade = No
+Genre = "Action, Adventure, Hack and slash"
+Developer = "Visceral Games"
+Publisher = "Electronic Arts"
+Year = 2011
+Size = 5.53

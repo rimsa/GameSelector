@@ -1,0 +1,10 @@
+[Game]
+Name = "Child of Eden"
+DiskName = "ChildOfEden"
+Cover = "childofeden.png"
+Arcade = No
+Genre = "Rail shooter"
+Developer = "Q Entertainment"
+Publisher = "Ubisoft"
+Year = 2011
+Size = 2.30

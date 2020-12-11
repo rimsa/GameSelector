@@ -1,0 +1,10 @@
+[Game]
+Name = "Marlow Briggs"
+DiskName = "MarlowBriggs"
+Cover = "marlowbriggs.png"
+Arcade = Yes
+Genre = "Action, Adventure, Hack and slash"
+Developer = "ZootFly"
+Publisher = "505 Games"
+Year = 2017
+Size = 2.03

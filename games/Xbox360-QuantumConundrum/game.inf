@@ -1,0 +1,10 @@
+[Game]
+Name = "Quantum Conundrum"
+DiskName = "QuantumConundrum"
+Cover = "quantumconundrum.png"
+Arcade = Yes
+Genre = "Platform, Puzzle"
+Developer = "Airtight Games"
+Publisher = "Square Enix"
+Year = 2012
+Size = 1.47

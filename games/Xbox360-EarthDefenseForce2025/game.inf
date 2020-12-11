@@ -1,0 +1,10 @@
+[Game]
+Name = "Earth Defense Force 2025"
+DiskName = "EarthDefenseForce2025"
+Cover = "earthdefenseforce2025.png"
+Arcade = No
+Genre = "Third-person shooter"
+Developer = "Sandlot"
+Publisher = "D3 Publisher"
+Year = 2019
+Size = 4.82

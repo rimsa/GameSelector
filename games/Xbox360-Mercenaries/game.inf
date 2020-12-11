@@ -1,0 +1,10 @@
+[Game]
+Name = "Mercenaries: Playground of Destruction"
+DiskName = "Mercenaries"
+Cover = "mercenaries.png"
+Arcade = No
+Genre = "Action, Adventure"
+Developer = "Pandemic Studios"
+Publisher = "LucasArts"
+Year = 2018
+Size = 2.40

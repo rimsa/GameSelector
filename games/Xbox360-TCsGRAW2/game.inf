@@ -1,0 +1,10 @@
+[Game]
+Name = "Tom Clancy's Ghost Recon Advanced Warfighter 2"
+DiskName = "TCsGRAW2"
+Cover = "graw2.png"
+Arcade = No
+Genre = "Tactical shooter"
+Developer = "Ubisoft Paris"
+Publisher = "Ubisoft"
+Year = 2019
+Size = 6.77

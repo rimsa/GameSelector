@@ -1,0 +1,10 @@
+[Game]
+Name = "Meet the Robinsons"
+DiskName = "MeetTheRobinsons"
+Cover = "meettherobinsons.png"
+Arcade = No
+Genre = "Action, Adventure"
+Developer = "Avalanche Software"
+Publisher = "Disney Interactive Studios"
+Year = 2019
+Size = 5.72

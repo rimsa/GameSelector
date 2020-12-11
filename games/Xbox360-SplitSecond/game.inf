@@ -1,0 +1,10 @@
+[Game]
+Name = "Split/Second"
+DiskName = "SplitSecond"
+Cover = "splitsecond.png"
+Arcade = Yes
+Genre = "Racing"
+Developer = "Black Rock Studio"
+Publisher = "Disney Interactive Studios"
+Year = 2011
+Size = 6.61

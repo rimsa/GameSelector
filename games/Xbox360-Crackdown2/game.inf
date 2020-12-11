@@ -1,0 +1,10 @@
+[Game]
+Name = "Crackdown 2"
+DiskName = "Crackdown2"
+Cover = "crackdown2.png"
+Arcade = No
+Genre = "Third-person shooter"
+Developer = "Ruffian Games"
+Publisher = "Microsoft Game Studios"
+Year = 2011
+Size = 3.39

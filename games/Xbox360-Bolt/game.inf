@@ -1,0 +1,10 @@
+[Game]
+Name = "Bolt"
+DiskName = "Bolt"
+Cover = "bolt.png"
+Arcade = No
+Genre = "Beat 'em up, Platform"
+Developer = "Avalanche Software"
+Publisher = "Disney Interactive Studios"
+Year = 2019
+Size = 5.31

@@ -1,0 +1,10 @@
+[Game]
+Name = "Crazy Taxi"
+DiskName = "CrazyTaxi"
+Cover = "crazytaxi.png"
+Arcade = Yes
+Genre = "Racing"
+Developer = "Hitmaker"
+Publisher = "Sega"
+Year = 2017
+Size = 0.21

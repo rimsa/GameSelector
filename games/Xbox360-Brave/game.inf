@@ -1,0 +1,10 @@
+[Game]
+Name = "Brave"
+DiskName = "Brave"
+Cover = "brave.png"
+Arcade = No
+Genre = "Action, Adventure"
+Developer = "Behaviour Interactive"
+Publisher = "Disney Interactive Studios"
+Year = 2012
+Size = 2.36

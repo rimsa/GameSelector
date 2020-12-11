@@ -1,0 +1,10 @@
+[Game]
+Name = "Hitman: Blood Money"
+DiskName = "HitmanBloodMoney"
+Cover = "hitmanbloodmoney.png"
+Arcade = No
+Genre = "Stealth"
+Developer = "IO Interactive"
+Publisher = "Eidos Interactive"
+Year = 2011
+Size = 4.94

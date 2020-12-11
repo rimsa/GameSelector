@@ -1,0 +1,10 @@
+[Game]
+Name = "Tomb Raider"
+DiskName = "TombRaider"
+Cover = "tombraider.png"
+Arcade = No
+Genre = "Action, Adventure"
+Developer = "Crystal Dynamics"
+Publisher = "Square Enix"
+Year = 2013
+Size = 6.57

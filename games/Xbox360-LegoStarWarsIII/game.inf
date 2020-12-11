@@ -1,0 +1,10 @@
+[Game]
+Name = "Lego Star Wars III: The Clone Wars"
+DiskName = "LegoStarWarsIII"
+Cover = "legostarwars3.png"
+Arcade = No
+Genre = "Action, Adventure"
+Developer = "Traveller's Tales"
+Publisher = "LucasArts"
+Year = 2012
+Size = 6.03

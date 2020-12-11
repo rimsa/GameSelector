@@ -1,0 +1,10 @@
+[Game]
+Name = "Red Faction: Armageddon"
+DiskName = "RedFactionArmageddon"
+Cover = "redfactionarmageddon.png"
+Arcade = No
+Genre = "Third-person shooter"
+Developer = "Volition, Inc."
+Publisher = "THQ"
+Year = 2016
+Size = 5.91

@@ -1,0 +1,10 @@
+[Game]
+Name = "Portal: Still Alive"
+DiskName = "PortalStillAlive"
+Cover = "portalstillalive.png"
+Arcade = Yes
+Genre = "Platform, Puzzle"
+Developer = "Valve"
+Publisher = "Valve"
+Year = 2010
+Size = 0.63

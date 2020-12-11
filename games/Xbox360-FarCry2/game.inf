@@ -1,0 +1,10 @@
+[Game]
+Name = "Far Cry 2"
+DiskName = "FarCry2"
+Cover = "farcry2.png"
+Arcade = No
+Genre = "Action, Adventure, First-person shooter"
+Developer = "Ubisoft Montreal"
+Publisher = "Ubisoft"
+Year = 2011
+Size = 3.61

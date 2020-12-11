@@ -1,0 +1,10 @@
+[Game]
+Name = "Ninja Gaiden 3: Razor's Edge"
+DiskName = "NinjaGaiden3RE"
+Cover = "ninjagaiden3re.png"
+Arcade = No
+Genre = "Action, Adventure, Hack and slash"
+Developer = "Team Ninja"
+Publisher = "Tecmo Koei"
+Year = 2013
+Size = 4.32

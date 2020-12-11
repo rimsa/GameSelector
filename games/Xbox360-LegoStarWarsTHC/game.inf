@@ -1,0 +1,10 @@
+[Game]
+Name = "Lego Star Wars: The Complete Saga"
+DiskName = "LegoStarWarsTHC"
+Cover = "legostarwarsthc.png"
+Arcade = No
+Genre = "Action, Adventure"
+Developer = "Traveller's Tales"
+Publisher = "LucasArts"
+Year = 2011
+Size = 5.71
