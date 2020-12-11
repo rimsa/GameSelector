@@ -2,6 +2,7 @@
 Name = "Monkey Island 2: LeChuck's Revenge"
 DiskName = "MonkeyIsland2"
 Cover = "monkeyisland2.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Adventure"
 Developer = "LucasArts"

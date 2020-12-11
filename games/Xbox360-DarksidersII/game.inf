@@ -2,6 +2,7 @@
 Name = "Darksiders II"
 DiskName = "DarksidersII"
 Cover = "darksiders2.png"
+Media = "Digital"
 Arcade = No
 Genre = "RPG"
 Developer = "Vigil Games"

@@ -2,6 +2,7 @@
 Name = "DiRT 3"
 DiskName = "DiRT3"
 Cover = "dirt3.png"
+Media = "Digital"
 Arcade = No
 Genre = "Racing"
 Developer = "Codemasters Southam"

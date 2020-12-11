@@ -2,6 +2,7 @@
 Name = "Insanely Twisted Shadow Planet"
 DiskName = "InsanelyTwistedShadowPlanet"
 Cover = "insanelytwistedshadowplanet.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Multi-directional shooter"
 Developer = "Shadow Planet Productions"

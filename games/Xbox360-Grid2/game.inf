@@ -2,6 +2,7 @@
 Name = "Grid 2"
 DiskName = "Grid2"
 Cover = "grid2.png"
+Media = "Digital"
 Arcade = No
 Genre = "Racing"
 Developer = "Codemasters"

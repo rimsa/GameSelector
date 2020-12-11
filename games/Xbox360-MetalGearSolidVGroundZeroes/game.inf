@@ -2,6 +2,7 @@
 Name = "Metal Gear Solid V: Ground Zeroes"
 DiskName = "MetalGearSolidVGroundZeroes"
 Cover = "metalgearsolidvgroundzeroes.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure, Stealth"
 Developer = "Kojima Productions"

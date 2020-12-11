@@ -2,6 +2,7 @@
 Name = "Red Dead Redemption: Undead Nightmare"
 DiskName = "RDRUndeadNightmare"
 Cover = "rdrundeadnightmare.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure"
 Developer = "Rockstar San Diego/North"

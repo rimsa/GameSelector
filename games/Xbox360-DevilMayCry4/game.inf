@@ -2,6 +2,7 @@
 Name = "Devil May Cry 4"
 DiskName = "DevilMayCry4"
 Cover = "devilmaycry4.png"
+Media = "Digital"
 Arcade = No
 Genre = "Hack and slash"
 Developer = "Capcom"

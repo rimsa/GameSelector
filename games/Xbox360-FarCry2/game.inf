@@ -2,6 +2,7 @@
 Name = "Far Cry 2"
 DiskName = "FarCry2"
 Cover = "farcry2.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure, First-person shooter"
 Developer = "Ubisoft Montreal"

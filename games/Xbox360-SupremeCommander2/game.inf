@@ -2,6 +2,7 @@
 Name = "Supreme Commander 2"
 DiskName = "SupremeCommander2"
 Cover = "supremecommander2.png"
+Media = "Digital"
 Arcade = No
 Genre = "Real-time strategy"
 Developer = "Gas Powered Games"

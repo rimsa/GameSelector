@@ -2,6 +2,7 @@
 Name = "Monkey Island: Special Edition"
 DiskName = "MonkeyIsland"
 Cover = "monkeyisland.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Adventure"
 Developer = "Lucasfilm Games"

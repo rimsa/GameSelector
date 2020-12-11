@@ -2,6 +2,7 @@
 Name = "Hitman: Blood Money"
 DiskName = "HitmanBloodMoney"
 Cover = "hitmanbloodmoney.png"
+Media = "Digital"
 Arcade = No
 Genre = "Stealth"
 Developer = "IO Interactive"

@@ -2,6 +2,7 @@
 Name = "The Orange Box"
 DiskName = "TheOrangeBox"
 Cover = "theorangebox.png"
+Media = "Digital"
 Arcade = No
 Genre = "First-person shooter, Puzzle"
 Developer = "Valve Corporation"

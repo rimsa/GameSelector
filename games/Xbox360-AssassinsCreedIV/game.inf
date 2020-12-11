@@ -2,6 +2,7 @@
 Name = "Assassin's Creed IV: Black Flag"
 DiskName = "AssassinsCreedIV"
 Cover = "assassinscreediv.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure, Stealth"
 Developer = "Ubisoft Montreal"

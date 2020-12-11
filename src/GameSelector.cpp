@@ -190,6 +190,7 @@ void GameSelector::showError(const QString& msg) {
 void GameSelector::updateGameInfo(Game* game) {
     if (game) {
         ui->nameValue->setText(game->name());
+        ui->mediaValue->setText(game->hasMedia() ? game->media() : "");
         ui->arcadeValue->setText(game->arcade() ? trUtf8("Yes") : trUtf8("No"));
         ui->genreValue->setText(game->hasGenre() ? game->genre() : "");
         ui->developerValue->setText(game->hasDeveloper() ? game->developer() : "");
@@ -198,6 +199,7 @@ void GameSelector::updateGameInfo(Game* game) {
         ui->sizeValue->setText(game->hasSize() ? QString("%1 GB").arg(game->size()) : "");
     } else {
         ui->nameValue->setText("");
+        ui->mediaValue->setText("");
         ui->arcadeValue->setText("");
         ui->genreValue->setText("");
         ui->developerValue->setText("");

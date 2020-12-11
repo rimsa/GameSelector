@@ -2,6 +2,7 @@
 Name = "Crimson Alliance"
 DiskName = "CrimsonAlliance"
 Cover = "crimsonalliance.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "RPG"
 Developer = "Certain Affinity"

@@ -2,6 +2,7 @@
 Name = "I Am Alive"
 DiskName = "IAmAlive"
 Cover = "iamalive.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Action, Adventure, Survival"
 Developer = "Darkworks"

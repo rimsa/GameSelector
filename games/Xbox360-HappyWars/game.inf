@@ -2,6 +2,7 @@
 Name = "Happy Wars"
 DiskName = "HappyWars"
 Cover = "happywars.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Action"
 Developer = "Toylogic"

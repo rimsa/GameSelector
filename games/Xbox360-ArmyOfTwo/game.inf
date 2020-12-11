@@ -2,6 +2,7 @@
 Name = "Army of Two"
 DiskName = "ArmyOfTwo"
 Cover = "armyoftwo.png"
+Media = "Digital"
 Arcade = No
 Genre = "Third-person shooter"
 Developer = "EA Montreal"

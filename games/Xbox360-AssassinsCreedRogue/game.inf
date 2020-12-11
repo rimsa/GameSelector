@@ -2,6 +2,7 @@
 Name = "Assassin's Creed Rogue"
 DiskName = "AssassinsCreedRogue"
 Cover = "assassinscreedrogue.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure, Stealth"
 Developer = "Ubisoft Sofia"

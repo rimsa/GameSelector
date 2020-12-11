@@ -2,6 +2,7 @@
 Name = "Metro 2033"
 DiskName = "Metro2033"
 Cover = "metro2033.png"
+Media = "Digital"
 Arcade = No
 Genre = "First-person shooter, Survival"
 Developer = "4A Games"

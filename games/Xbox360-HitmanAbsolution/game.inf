@@ -2,6 +2,7 @@
 Name = "Hitman: Absolution"
 DiskName = "HitmanAbsolution"
 Cover = "hitmanabsolution.png"
+Media = "Digital, Disc"
 Arcade = No
 Genre = "Stealth"
 Developer = "IO Interactive"

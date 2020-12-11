@@ -2,6 +2,7 @@
 Name = "Banjo-Tooie"
 DiskName = "BanjoTooie"
 Cover = "banjotooie.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Platform"
 Developer = "4J Studios"

@@ -2,6 +2,7 @@
 Name = "Vanquish"
 DiskName = "Vanquish"
 Cover = "vanquish.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Third-person shooter"
 Developer = "PlatinumGames"

@@ -2,6 +2,7 @@
 Name = "Metal Gear Rising: Revengeance"
 DiskName = "MetalGearRising"
 Cover = "metalgearrising.png"
+Media = "Digital, Disc"
 Arcade = No
 Genre = "Action, Hack and slash"
 Developer = "PlatinumGames"

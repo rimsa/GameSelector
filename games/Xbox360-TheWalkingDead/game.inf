@@ -2,6 +2,7 @@
 Name = "The Walking Dead"
 DiskName = "TheWalkingDead"
 Cover = "thewalkingdead.png"
+Media = "Digital, Disc"
 Arcade = No
 Genre = "Adventure, Survival"
 Developer = "Telltale Games"

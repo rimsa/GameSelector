@@ -2,6 +2,7 @@
 Name = "Outland"
 DiskName = "Outland"
 Cover = "outland.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Platform"
 Developer = "Housemarque"

@@ -2,6 +2,7 @@
 Name = "Tom Clancy's Rainbow Six: Vegas 2"
 DiskName = "TCsRainbowSixVegas2"
 Cover = "tcsrainbowsixvegas2.png"
+Media = "Digital"
 Arcade = No
 Genre = "First-person shooter, Tactical shooter"
 Developer = "Ubisoft Montreal"

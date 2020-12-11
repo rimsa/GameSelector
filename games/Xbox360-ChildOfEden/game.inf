@@ -2,6 +2,7 @@
 Name = "Child of Eden"
 DiskName = "ChildOfEden"
 Cover = "childofeden.png"
+Media = "Digital"
 Arcade = No
 Genre = "Rail shooter"
 Developer = "Q Entertainment"

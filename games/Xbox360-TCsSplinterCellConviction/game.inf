@@ -2,6 +2,7 @@
 Name = "Tom Clancy's Splinter Cell: Conviction"
 DiskName = "TCsSplinterCellConviction"
 Cover = "splintercellconviction.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure, Stealth"
 Developer = "Ubisoft Montreal"

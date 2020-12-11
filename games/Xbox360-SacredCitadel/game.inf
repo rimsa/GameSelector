@@ -2,6 +2,7 @@
 Name = "Sacred Citadel"
 DiskName = "SacredCitadel"
 Cover = "sacredcitadel.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Action, Beat 'em up"
 Developer = "Southend Interactive"

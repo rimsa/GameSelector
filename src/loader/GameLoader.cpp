@@ -49,6 +49,7 @@ void GameLoader::loadGame(QString dirName) {
         { "Name", Q_ARG(QString, info.name), true, 0 },
         { "DiskName", Q_ARG(QString, info.diskName), true, 0 },
         { "Cover", Q_ARG(QPixmap, info.cover), true, 0 },
+        { "Media", Q_ARG(QString, info.media), false, HAS_MEDIA },
         { "Arcade", Q_ARG(bool, info.arcade), true, 0 },
         { "Genre", Q_ARG(QString, info.genre), false, HAS_GENRE },
         { "Developer", Q_ARG(QString, info.developer), false, HAS_DEVELOPER },

@@ -2,6 +2,7 @@
 Name = "Soul Calibur V"
 DiskName = "SoulCaliburV"
 Cover = "soulcaliburv.png"
+Media = "Digital"
 Arcade = No
 Genre = "Fighting"
 Developer = "Project Soul"

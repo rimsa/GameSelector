@@ -2,6 +2,7 @@
 Name = "Shoot Many Robots"
 DiskName = "ShootManyRobots"
 Cover = "shootmanyrobots.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Third-person shooter"
 Developer = "Demiurge Studios"

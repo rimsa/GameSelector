@@ -2,6 +2,7 @@
 Name = "Star Wars: Republic Commando"
 DiskName = "StarWarsRepublicCommando"
 Cover = "starwarsrepubliccommando.png"
+Media = "Digital"
 Arcade = No
 Genre = "First-person shooter, Tactical shooter"
 Developer = "LucasArts"

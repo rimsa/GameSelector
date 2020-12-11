@@ -2,6 +2,7 @@
 Name = "Virtua Fighter 5 Showdown"
 DiskName = "VirtuaFighter5Showdown"
 Cover = "virtuafighter5showdown.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Fighting"
 Developer = "Sega AM2"

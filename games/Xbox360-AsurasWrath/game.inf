@@ -2,6 +2,7 @@
 Name = "Asura's Wrath"
 DiskName = "AsurasWrath"
 Cover = "asuraswrath.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action"
 Developer = "CyberConnect2"

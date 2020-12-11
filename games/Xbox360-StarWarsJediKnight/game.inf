@@ -2,6 +2,7 @@
 Name = "Star Wars Jedi Knight: Jedi Academy"
 DiskName = "StarWarsJediKnight"
 Cover = "starwarsjediknight.png"
+Media = "Digital"
 Arcade = No
 Genre = "First-person shooter, Hack and slash, Third-person shooter"
 Developer = "Raven Software"

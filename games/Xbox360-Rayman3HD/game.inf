@@ -2,6 +2,7 @@
 Name = "Rayman 3: Hoodlum Havoc"
 DiskName = "Rayman3HD"
 Cover = "rayman3hd.png"
+Media = "Digital"
 Arcade = No
 Genre = "Platform"
 Developer = "Ubi Pictures"

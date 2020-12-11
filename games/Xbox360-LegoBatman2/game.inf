@@ -2,6 +2,7 @@
 Name = "Lego Batman 2: DC Super Heroes"
 DiskName = "LegoBatman2"
 Cover = "legobatman2.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure"
 Developer = "Traveller's Tales"

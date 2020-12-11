@@ -2,6 +2,7 @@
 Name = "Peggle"
 DiskName = "Peggle"
 Cover = "peggle.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Puzzle"
 Developer = "PopCap Games"

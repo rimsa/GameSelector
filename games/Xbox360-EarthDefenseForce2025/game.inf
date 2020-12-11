@@ -2,6 +2,7 @@
 Name = "Earth Defense Force 2025"
 DiskName = "EarthDefenseForce2025"
 Cover = "earthdefenseforce2025.png"
+Media = "Digital"
 Arcade = No
 Genre = "Third-person shooter"
 Developer = "Sandlot"

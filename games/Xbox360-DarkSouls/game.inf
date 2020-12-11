@@ -2,6 +2,7 @@
 Name = "Dark Souls"
 DiskName = "DarkSouls"
 Cover = "darksouls.png"
+Media = "Digital, Disc"
 Arcade = No
 Genre = "RPG"
 Developer = "From Software"

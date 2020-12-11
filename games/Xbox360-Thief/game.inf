@@ -2,6 +2,7 @@
 Name = "Thief"
 DiskName = "Thief"
 Cover = "thief.png"
+Media = "Digital"
 Arcade = No
 Genre = "Stealth"
 Developer = "Eidos Montreal"

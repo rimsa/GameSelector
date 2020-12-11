@@ -2,6 +2,7 @@
 Name = "Civilization Revolution"
 DiskName = "CivilizationRevolution"
 Cover = "civilizationrevolution.png"
+Media = "Digital"
 Arcade = No
 Genre = "Strategy"
 Developer = "Firaxis Games"

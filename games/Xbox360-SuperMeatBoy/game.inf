@@ -2,6 +2,7 @@
 Name = "Super Meat Boy"
 DiskName = "SuperMeatBoy"
 Cover = "supermeatboy.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Platform"
 Developer = "Team Meat"

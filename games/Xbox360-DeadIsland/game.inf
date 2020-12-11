@@ -2,6 +2,7 @@
 Name = "Dead Island"
 DiskName = "DeadIsland"
 Cover = "deadisland.png"
+Media = "Digital"
 Arcade = No
 Genre = "Survival"
 Developer = "Techland"

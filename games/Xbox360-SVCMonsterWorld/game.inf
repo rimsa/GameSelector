@@ -2,6 +2,7 @@
 Name = "Sega Vintage Collection: Monster World"
 DiskName = "SVCMonsterWorld"
 Cover = "monsterworld.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Action, Platform, RPG, Shoot 'em up"
 Developer = "Sega AM7"

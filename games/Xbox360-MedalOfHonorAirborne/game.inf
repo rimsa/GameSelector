@@ -2,6 +2,7 @@
 Name = "Medal of Honor Airborne"
 DiskName = "MedalOfHonorAirborne"
 Cover = "medalofhonorairborne.png"
+Media = "Digital"
 Arcade = No
 Genre = "First-person shooter"
 Developer = "EA Los Angeles"

@@ -2,6 +2,7 @@
 Name = "The Walking Dead: 400 Days"
 DiskName = "TheWalkingDead400Days"
 Cover = "thewalkingdead400days.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Adventure, Survival"
 Developer = "Telltale Games"

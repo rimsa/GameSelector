@@ -2,6 +2,7 @@
 Name = "Iron Brigade"
 DiskName = "IronBrigade"
 Cover = "ironbrigade.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Tower defense"
 Developer = "Double Fine Productions"

@@ -2,6 +2,7 @@
 Name = "Crackdown"
 DiskName = "Crackdown"
 Cover = "crackdown.png"
+Media = "Digital"
 Arcade = No
 Genre = "Third-person shooter"
 Developer = "Realtime Worlds"

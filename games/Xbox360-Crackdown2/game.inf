@@ -2,6 +2,7 @@
 Name = "Crackdown 2"
 DiskName = "Crackdown2"
 Cover = "crackdown2.png"
+Media = "Digital"
 Arcade = No
 Genre = "Third-person shooter"
 Developer = "Ruffian Games"

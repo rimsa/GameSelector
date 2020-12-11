@@ -2,6 +2,7 @@
 Name = "Deadlight"
 DiskName = "Deadlight"
 Cover = "deadlight.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Survival"
 Developer = "Tequila Works"

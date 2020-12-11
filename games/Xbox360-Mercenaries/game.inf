@@ -2,6 +2,7 @@
 Name = "Mercenaries: Playground of Destruction"
 DiskName = "Mercenaries"
 Cover = "mercenaries.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure"
 Developer = "Pandemic Studios"

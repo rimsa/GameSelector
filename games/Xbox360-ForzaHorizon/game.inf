@@ -2,6 +2,7 @@
 Name = "Forza Horizon"
 DiskName = "ForzaHorizon"
 Cover = "forzahorizon.png"
+Media = "Digital, Disc"
 Arcade = No
 Genre = "Racing"
 Developer = "Playground Games"

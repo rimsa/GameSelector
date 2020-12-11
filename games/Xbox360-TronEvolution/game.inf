@@ -2,6 +2,7 @@
 Name = "Tron: Evolution"
 DiskName = "TronEvolution"
 Cover = "tronevolution.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure"
 Developer = "Propaganda Games"

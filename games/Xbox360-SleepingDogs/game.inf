@@ -2,6 +2,7 @@
 Name = "Sleeping Dogs"
 DiskName = "SleepingDogs"
 Cover = "sleepingdogs.png"
+Media = "Digital"
 Arcade = No
 Genre = "Adventure"
 Developer = "United Front Games"

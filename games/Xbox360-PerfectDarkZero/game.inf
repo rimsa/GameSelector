@@ -2,6 +2,7 @@
 Name = "Perfect Dark Zero"
 DiskName = "PerfectDarkZero"
 Cover = "perfectdarkzero.png"
+Media = "Digital"
 Arcade = No
 Genre = "First-person shooter"
 Developer = "Rare"

@@ -2,6 +2,7 @@
 Name = "Quantum Conundrum"
 DiskName = "QuantumConundrum"
 Cover = "quantumconundrum.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Platform, Puzzle"
 Developer = "Airtight Games"

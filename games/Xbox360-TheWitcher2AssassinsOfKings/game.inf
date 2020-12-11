@@ -2,6 +2,7 @@
 Name = "The Witcher 2: Assassins of Kings"
 DiskName = "TheWitcher2AssassinsOfKings"
 Cover = "thewitcher2assassinsofkings.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, RPG, Hack and slash"
 Developer = "CD Projekt RED"

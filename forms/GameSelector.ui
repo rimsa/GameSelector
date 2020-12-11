@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>850</width>
-    <height>513</height>
+    <height>555</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -319,7 +319,7 @@ QListView {
        <property name="minimumSize">
         <size>
          <width>400</width>
-         <height>300</height>
+         <height>350</height>
         </size>
        </property>
        <property name="styleSheet">
@@ -443,6 +443,50 @@ QListView {
            </item>
            <item>
             <widget class="QLabel" name="nameValue">
+             <property name="indent">
+              <number>20</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="mediaDesc" native="true">
+          <property name="styleSheet">
+           <string notr="true">#mediaDesc { border-bottom: 1px solid rgba(0, 0, 0, 10); }</string>
+          </property>
+          <layout class="QVBoxLayout" name="mediaLayout">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="mediaLabel">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Media</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="mediaValue">
              <property name="indent">
               <number>20</number>
              </property>

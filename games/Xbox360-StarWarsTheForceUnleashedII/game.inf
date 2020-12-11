@@ -2,6 +2,7 @@
 Name = "Star Wars: The Force Unleashed II"
 DiskName = "StarWarsTheForceUnleashedII"
 Cover = "starwarstheforceunleashedii.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure, Hack and slash"
 Developer = "LucasArts"

@@ -2,6 +2,7 @@
 Name = "Lego The Lord of the Rings"
 DiskName = "LegoTheLordOfTheRings"
 Cover = "legothelordoftherings.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure"
 Developer = "Traveller's Tales"

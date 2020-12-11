@@ -2,6 +2,7 @@
 Name = "Lego Star Wars: The Complete Saga"
 DiskName = "LegoStarWarsTHC"
 Cover = "legostarwarsthc.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure"
 Developer = "Traveller's Tales"

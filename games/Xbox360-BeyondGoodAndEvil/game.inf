@@ -2,6 +2,7 @@
 Name = "Beyond Good & Evil HD"
 DiskName = "BeyondGoodAndEvil"
 Cover = "beyondgoodandevil.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Action, Adventure"
 Developer = "Ubisoft Montpellier/Milan"

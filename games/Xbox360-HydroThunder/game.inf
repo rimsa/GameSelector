@@ -2,6 +2,7 @@
 Name = "Hydro Thunder"
 DiskName = "HydroThunder"
 Cover = "hydrothunder.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Racing"
 Developer = "Vector Unit"

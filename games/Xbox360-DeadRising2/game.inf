@@ -2,6 +2,7 @@
 Name = "Dead Rising 2"
 DiskName = "DeadRising2"
 Cover = "deadrising2.png"
+Media = "Digital"
 Arcade = No
 Genre = "Survival"
 Developer = "Blue Castle Games"

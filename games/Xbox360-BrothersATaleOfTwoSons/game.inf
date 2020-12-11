@@ -2,6 +2,7 @@
 Name = "Brothers: A Tale of Two Sons"
 DiskName = "BrothersATaleOfTwoSons"
 Cover = "brothersataleoftwosons.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Adventure"
 Developer = "Starbreeze Studios"

@@ -2,6 +2,7 @@
 Name = "Dust: An Elysian Tail"
 DiskName = "DustAnElysianTail"
 Cover = "dustanelysiantail.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "RPG"
 Developer = "Humble Hearts"

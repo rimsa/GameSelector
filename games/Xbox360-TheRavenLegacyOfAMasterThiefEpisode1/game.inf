@@ -2,6 +2,7 @@
 Name = "The Raven: Legacy of a Master Thief (Episode 1)"
 DiskName = "TheRavenLegacyOfAMasterThiefEpisode1"
 Cover = "theravenlegacyofamasterthiefepisode1.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Adventure"
 Developer = "King Art"

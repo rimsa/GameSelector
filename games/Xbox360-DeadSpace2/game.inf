@@ -2,6 +2,7 @@
 Name = "Dead Space 2"
 DiskName = "DeadSpace2"
 Cover = "deadspace2.png"
+Media = "Digital"
 Arcade = No
 Genre = "Third-person shooter, Survival"
 Developer = "Visceral Games"

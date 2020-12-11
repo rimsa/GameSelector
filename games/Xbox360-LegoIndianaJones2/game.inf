@@ -2,6 +2,7 @@
 Name = "Lego Indiana Jones 2: The Adventure Continues"
 DiskName = "LegoIndianaJones2"
 Cover = "legoindianajones2.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure"
 Developer = "Traveller's Tales"

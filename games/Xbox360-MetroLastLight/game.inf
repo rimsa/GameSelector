@@ -2,6 +2,7 @@
 Name = "Metro: Last Light"
 DiskName = "MetroLastLight"
 Cover = "metrolastlight.png"
+Media = "Digital"
 Arcade = No
 Genre = "First-person shooter, Survival"
 Developer = "4A Games"

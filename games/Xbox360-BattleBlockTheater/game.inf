@@ -2,6 +2,7 @@
 Name = "BattleBlock Theater"
 DiskName = "BattleBlockTheater"
 Cover = "battleblocktheater.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Platform"
 Developer = "The Behemoth"

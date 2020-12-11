@@ -2,6 +2,7 @@
 Name = "XCOM: Enemy Unknown"
 DiskName = "XCOMEnemyUnknown"
 Cover = "xcomenemyunknown.png"
+Media = "Digital"
 Arcade = No
 Genre = "RPG"
 Developer = "Firaxis Games"

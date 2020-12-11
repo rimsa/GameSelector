@@ -2,6 +2,7 @@
 Name = "Plants vs. Zombies"
 DiskName = "PlantsVsZombies"
 Cover = "plantsvszombies.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Tower defense"
 Developer = "PopCap Games"

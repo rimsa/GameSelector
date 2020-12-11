@@ -2,6 +2,7 @@
 Name = "Dante's Inferno"
 DiskName = "DantesInferno"
 Cover = "dantesinferno.png"
+Media = "Digital, Disc"
 Arcade = No
 Genre = "Action, Adventure, Hack and slash"
 Developer = "Visceral Games"

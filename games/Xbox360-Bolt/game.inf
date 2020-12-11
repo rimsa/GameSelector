@@ -2,6 +2,7 @@
 Name = "Bolt"
 DiskName = "Bolt"
 Cover = "bolt.png"
+Media = "Digital"
 Arcade = No
 Genre = "Beat 'em up, Platform"
 Developer = "Avalanche Software"

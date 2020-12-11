@@ -2,6 +2,7 @@
 Name = "Castlevania: Lords of Shadow"
 DiskName = "CastlevaniaLordsOfShadow"
 Cover = "castlevanialordsofshadow.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure, Hack and slash"
 Developer = "MercurySteam, Kojima Productions"

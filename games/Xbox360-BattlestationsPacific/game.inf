@@ -2,6 +2,7 @@
 Name = "Battlestations: Pacific"
 DiskName = "BattlestationsPacific"
 Cover = "battlestationspacific.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Real-time strategy"
 Developer = "Eidos Hungary"

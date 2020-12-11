@@ -2,6 +2,7 @@
 Name = "Doritos Crash Course 2"
 DiskName = "DoritosCrashCourse2"
 Cover = "doritoscrashcourse2.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Platform"
 Developer = "Behaviour Santiago"

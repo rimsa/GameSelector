@@ -2,6 +2,7 @@
 Name = "Halo: Reach"
 DiskName = "HaloReach"
 Cover = "haloreach.png"
+Media = "Digital, Disc"
 Arcade = No
 Genre = "First-person shooter"
 Developer = "Bungie"

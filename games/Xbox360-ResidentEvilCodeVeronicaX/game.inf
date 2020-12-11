@@ -2,6 +2,7 @@
 Name = "Resident Evil Code: Veronica X"
 DiskName = "ResidentEvilCodeVeronicaX"
 Cover = "residentevilcodeveronicax.png"
+Media = "Digital"
 Arcade = No
 Genre = "Survival"
 Developer = "Capcom Production Studio 4"

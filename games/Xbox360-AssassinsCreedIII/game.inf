@@ -2,6 +2,7 @@
 Name = "Assassin's Creed III"
 DiskName = "AssassinsCreedIII"
 Cover = "assassinscreediii.png"
+Media = "Digital, Disc"
 Arcade = No
 Genre = "Action, Adventure, Stealth"
 Developer = "Ubisoft Montreal"

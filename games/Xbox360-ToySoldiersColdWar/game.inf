@@ -2,6 +2,7 @@
 Name = "Toy Soldiers: Cold War"
 DiskName = "ToySoldiersColdWar"
 Cover = "toysoldierscoldwar.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Action, Strategy"
 Developer = "Signal Studios"

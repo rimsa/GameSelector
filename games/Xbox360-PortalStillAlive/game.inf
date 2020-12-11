@@ -2,6 +2,7 @@
 Name = "Portal: Still Alive"
 DiskName = "PortalStillAlive"
 Cover = "portalstillalive.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Platform, Puzzle"
 Developer = "Valve"

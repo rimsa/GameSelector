@@ -2,6 +2,7 @@
 Name = "F1 2013"
 DiskName = "F12013"
 Cover = "f12013.png"
+Media = "Digital"
 Arcade = No
 Genre = "Racing"
 Developer = "Codemasters Birmingham"

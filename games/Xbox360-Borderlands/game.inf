@@ -2,6 +2,7 @@
 Name = "Borderlands"
 DiskName = "Borderlands"
 Cover = "borderlands.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, RPG, First-person shooter"
 Developer = "Gearbox Software"

@@ -2,6 +2,7 @@
 Name = "Deus Ex: Human Revolution"
 DiskName = "DeusExHumanRevolution"
 Cover = "deusexhumanrevolution.png"
+Media = "Digital, Disc"
 Arcade = No
 Genre = "Action, RPG, First-person shooter, Stealth"
 Developer = "Eidos Montreal"

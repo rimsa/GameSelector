@@ -2,6 +2,7 @@
 Name = "Mirror's Edge"
 DiskName = "MirrorsEdge"
 Cover = "mirrorsedge.png"
+Media = "Digital"
 Arcade = No
 Genre = "Platform"
 Developer = "EA Digital Illusions CE"

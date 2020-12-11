@@ -2,6 +2,7 @@
 Name = "CastleStorm"
 DiskName = "CastleStorm"
 Cover = "castlestorm.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Tower defense"
 Developer = "Zen Studios"

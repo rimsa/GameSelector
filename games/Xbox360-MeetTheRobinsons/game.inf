@@ -2,6 +2,7 @@
 Name = "Meet the Robinsons"
 DiskName = "MeetTheRobinsons"
 Cover = "meettherobinsons.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure"
 Developer = "Avalanche Software"

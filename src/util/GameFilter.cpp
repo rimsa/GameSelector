@@ -28,6 +28,23 @@ void GameFilter::unsetName() {
     }
 }
 
+void GameFilter::setMedia(const QString& media) {
+    if (!media.isEmpty() && m_media != media) {
+        m_media = media;
+        m_options |= HAS_MEDIA;
+
+        emit filterChanged();
+    }
+}
+
+void GameFilter::unsetMedia() {
+    if (m_options & HAS_MEDIA) {
+        m_options &= ~HAS_MEDIA;
+
+        emit filterChanged();
+    }
+}
+
 void GameFilter::setArcade(bool arcade) {
     if (m_arcade != arcade || !(m_options & HAS_ARCADE)) {
         m_arcade = arcade;

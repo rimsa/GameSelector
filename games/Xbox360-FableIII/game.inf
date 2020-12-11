@@ -2,6 +2,7 @@
 Name = "Fable III"
 DiskName = "FableIII"
 Cover = "fableiii.png"
+Media = "Digital, Disc"
 Arcade = No
 Genre = "RPG"
 Developer = "Lionhead Studios"

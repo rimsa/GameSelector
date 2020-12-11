@@ -11,12 +11,13 @@ enum GameInfoOption {
     HAS_NAME      = 0x0001,
     HAS_DISKNAME  = 0x0002,
     HAS_COVER     = 0x0004,
-    HAS_ARCADE    = 0x0008,
-    HAS_GENRE     = 0x0010,
-    HAS_DEVELOPER = 0x0020,
-    HAS_PUBLISHER = 0x0040,
-    HAS_YEAR      = 0x0080,
-    HAS_SIZE      = 0x0100
+    HAS_MEDIA     = 0x0008,
+    HAS_ARCADE    = 0x0010,
+    HAS_GENRE     = 0x0020,
+    HAS_DEVELOPER = 0x0040,
+    HAS_PUBLISHER = 0x0080,
+    HAS_YEAR      = 0x0100,
+    HAS_SIZE      = 0x0200
 };
 
 Q_DECLARE_FLAGS(GameInfoOptions, GameInfoOption)
@@ -28,6 +29,7 @@ struct GameInfo {
     QString name;
     QString diskName;
     QPixmap cover;
+    QString media;
     bool arcade;
     QString genre;
     QString developer;

@@ -2,6 +2,7 @@
 Name = "Burnout Paradise"
 DiskName = "BurnoutParadise"
 Cover = "burnoutparadise.png"
+Media = "Digital"
 Arcade = No
 Genre = "Racing"
 Developer = "Criterion Games"

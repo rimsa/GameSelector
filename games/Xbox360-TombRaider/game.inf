@@ -2,6 +2,7 @@
 Name = "Tomb Raider"
 DiskName = "TombRaider"
 Cover = "tombraider.png"
+Media = "Digital, Disc"
 Arcade = No
 Genre = "Action, Adventure"
 Developer = "Crystal Dynamics"

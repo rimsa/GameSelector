@@ -2,6 +2,7 @@
 Name = "Mass Effect"
 DiskName = "MassEffect"
 Cover = "masseffect.png"
+Media = "Digital"
 Arcade = No
 Genre = "Third-person shooter"
 Developer = "BioWare"

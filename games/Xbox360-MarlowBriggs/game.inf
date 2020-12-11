@@ -2,6 +2,7 @@
 Name = "Marlow Briggs"
 DiskName = "MarlowBriggs"
 Cover = "marlowbriggs.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Action, Adventure, Hack and slash"
 Developer = "ZootFly"

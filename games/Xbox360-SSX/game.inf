@@ -2,6 +2,7 @@
 Name = "SSX"
 DiskName = "SSX"
 Cover = "ssx.png"
+Media = "Digital"
 Arcade = No
 Genre = "Sports"
 Developer = "EA Canada"

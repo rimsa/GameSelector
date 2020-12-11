@@ -2,6 +2,7 @@
 Name = "Alan Wake"
 DiskName = "AlanWake"
 Cover = "alanwake.png"
+Media = "Digital"
 Arcade = No
 Genre = "Survival"
 Developer = "Remedy"

@@ -2,6 +2,7 @@
 Name = "MX vs. ATV Alive"
 DiskName = "MXvsATVAlive"
 Cover = "mxvsatvalive.png"
+Media = "Digital"
 Arcade = No
 Genre = "Racing"
 Developer = "Rainbow Studios"

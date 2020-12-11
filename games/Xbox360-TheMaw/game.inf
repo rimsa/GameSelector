@@ -2,6 +2,7 @@
 Name = "The Maw"
 DiskName = "TheMaw"
 Cover = "themaw.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Action, Adventure"
 Developer = "Twisted Pixel Games"

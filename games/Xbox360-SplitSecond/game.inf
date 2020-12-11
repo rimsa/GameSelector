@@ -2,6 +2,7 @@
 Name = "Split/Second"
 DiskName = "SplitSecond"
 Cover = "splitsecond.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Racing"
 Developer = "Black Rock Studio"

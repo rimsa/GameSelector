@@ -2,6 +2,7 @@
 Name = "Dragon Age: Origins"
 DiskName = "DragonAgeOrigins"
 Cover = "dragonageorigins.png"
+Media = "Digital"
 Arcade = No
 Genre = "RPG"
 Developer = "BioWare"

@@ -2,6 +2,7 @@
 Name = "Sniper Elite V2"
 DiskName = "SniperEliteV2"
 Cover = "sniperelitev2.png"
+Media = "Digital"
 Arcade = No
 Genre = "Stealth, Tactical shooter"
 Developer = "Rebellion Oxford"

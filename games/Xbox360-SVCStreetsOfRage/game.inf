@@ -2,6 +2,7 @@
 Name = "Sega Vintage Collection: Streets of Rage"
 DiskName = "SVCStreetsOfRage"
 Cover = "streetsofrage.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Beat 'em up"
 Developer = "Sega AM7"

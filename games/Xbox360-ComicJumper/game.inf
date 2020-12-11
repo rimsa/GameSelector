@@ -2,6 +2,7 @@
 Name = "Comic Jumper: The Adventures of Captain Smiley"
 DiskName = "ComicJumper"
 Cover = "comicjumper.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Beat 'em up"
 Developer = "Twisted Pixel Games"

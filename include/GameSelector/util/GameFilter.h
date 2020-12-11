@@ -17,6 +17,9 @@ public:
     bool hasName() const { return m_options & HAS_NAME; }
     const QString& name() const { return m_name; }
 
+    bool hasMedia() const { return m_options & HAS_MEDIA; }
+    const QString& media() const { return m_media; }
+
     bool hasArcade() const { return m_options & HAS_ARCADE; }
     bool arcade() const { return m_arcade; }
 
@@ -38,6 +41,9 @@ public:
 public slots:
     void setName(const QString& name);
     void unsetName();
+
+    void setMedia(const QString& media);
+    void unsetMedia();
 
     void setArcade(bool arcade);
     void unsetArcade();
@@ -64,6 +70,7 @@ signals:
 
 private:
     QString m_name;
+    QString m_media;
     bool m_arcade;
     QString m_genre;
     QString m_developer;

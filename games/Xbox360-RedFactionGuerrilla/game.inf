@@ -2,6 +2,7 @@
 Name = "Red Faction: Guerrilla"
 DiskName = "RedFactionGuerrilla"
 Cover = "redfactionguerrilla.png"
+Media = "Digital"
 Arcade = No
 Genre = "Third-person shooter"
 Developer = "Volition, Inc."

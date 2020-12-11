@@ -2,6 +2,7 @@
 Name = "BioShock Infinite"
 DiskName = "BioShockInfinity"
 Cover = "bioshockinfinity.png"
+Media = "Digital, Disc"
 Arcade = No
 Genre = "First-person shooter"
 Developer = "Irrational Games"

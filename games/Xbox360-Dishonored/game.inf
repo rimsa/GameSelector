@@ -2,6 +2,7 @@
 Name = "Dishonored"
 DiskName = "Dishonored"
 Cover = "dishonored.png"
+Media = "Digital"
 Arcade = No
 Genre = "Stealth"
 Developer = "Arkane Studios"

@@ -2,6 +2,7 @@
 Name = "Gears of War"
 DiskName = "GearsOfWar"
 Cover = "gearsofwar.png"
+Media = "Digital"
 Arcade = No
 Genre = "Third-person shooter"
 Developer = "Epic Games"

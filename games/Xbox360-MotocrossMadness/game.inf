@@ -2,6 +2,7 @@
 Name = "Motocross Madness"
 DiskName = "MotocrossMadness"
 Cover = "motocrossmadness.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Racing"
 Developer = "Bongfish"

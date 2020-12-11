@@ -2,6 +2,7 @@
 Name = "Terraria"
 DiskName = "Terraria"
 Cover = "terraria.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Action, Adventure, Survival"
 Developer = "Re-Logic"

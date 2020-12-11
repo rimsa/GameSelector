@@ -2,6 +2,7 @@
 Name = "Lara Croft and the Guardian of Light"
 DiskName = "LaraCroftAndTheGuardianOfLight"
 Cover = "laracroftandtheguardianoflight.png"
+Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure"
 Developer = "Crystal Dynamics"

@@ -2,6 +2,7 @@
 Name = "Torchlight"
 DiskName = "Torchlight"
 Cover = "torchlight.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Action, Hack and slash, RPG"
 Developer = "Runic Games"

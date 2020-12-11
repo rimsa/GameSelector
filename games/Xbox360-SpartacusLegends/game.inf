@@ -2,6 +2,7 @@
 Name = "Spartacus Legends"
 DiskName = "SpartacusLegends"
 Cover = "spartacuslegends.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Fighting"
 Developer = "Kung Fu Factory"

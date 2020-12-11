@@ -2,6 +2,7 @@
 Name = "Charlie Murder"
 DiskName = "CharlieMurder"
 Cover = "charliemurder.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "RPG"
 Developer = "Ska Studios"

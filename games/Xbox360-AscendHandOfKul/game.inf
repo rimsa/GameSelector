@@ -2,6 +2,7 @@
 Name = "Ascend: Hand of Kul"
 DiskName = "AscendHandOfKul"
 Cover = "ascendhandofkul.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "RPG"
 Developer = "Signal Studios"

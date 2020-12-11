@@ -2,6 +2,7 @@
 Name = "World Series of Poker: Full House Pro"
 DiskName = "WSOPFullHousePro"
 Cover = "wsopfullhousepro.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Card game"
 Developer = "Pipeworks Software"

@@ -2,6 +2,7 @@
 Name = "Crazy Taxi"
 DiskName = "CrazyTaxi"
 Cover = "crazytaxi.png"
+Media = "Digital"
 Arcade = Yes
 Genre = "Racing"
 Developer = "Hitmaker"

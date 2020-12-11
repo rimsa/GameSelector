@@ -2,6 +2,7 @@
 Name = "Mortal Kombat"
 DiskName = "MortalKombat"
 Cover = "mortalkombat.png"
+Media = "Digital"
 Arcade = No
 Genre = "Fighting"
 Developer = "NetherRealm Studios"
