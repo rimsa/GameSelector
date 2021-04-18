@@ -1,0 +1,11 @@
+[Game]
+Name = "Defense Grid: The Awakening"
+DiskName = "DefenseGrid"
+Cover = "defensegrid.png"
+Media = "Digital"
+Arcade = Yes
+Genre = "Tower defense"
+Developer = "Hidden Path Entertainment"
+Publisher = "Microsoft Studios"
+Year = 2010
+Size = 0.3

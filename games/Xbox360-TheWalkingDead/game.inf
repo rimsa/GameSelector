@@ -1,9 +1,9 @@
 [Game]
-Name = "The Walking Dead"
+Name = "The Walking Dead: The Complete First Season and 400 Days"
 DiskName = "TheWalkingDead"
 Cover = "thewalkingdead.png"
 Media = "Digital, Disc"
-Arcade = No
+Arcade = Yes
 Genre = "Adventure, Survival"
 Developer = "Telltale Games"
 Publisher = "Telltale Games"

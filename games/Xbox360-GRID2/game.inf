@@ -1,6 +1,6 @@
 [Game]
-Name = "Grid 2"
-DiskName = "Grid2"
+Name = "GRID 2"
+DiskName = "GRID2"
 Cover = "grid2.png"
 Media = "Digital"
 Arcade = No

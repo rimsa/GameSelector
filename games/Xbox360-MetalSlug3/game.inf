@@ -1,0 +1,11 @@
+[Game]
+Name = "Metal Slug 3"
+DiskName = "MetalSlug3"
+Cover = "metalslug3.png"
+Media = "Digital"
+Arcade = Yes
+Genre = "Run and gun"
+Developer = "SNK"
+Publisher = "SNK"
+Year = 2008
+Size = 0.05

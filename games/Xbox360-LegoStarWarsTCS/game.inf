@@ -1,7 +1,7 @@
 [Game]
 Name = "Lego Star Wars: The Complete Saga"
-DiskName = "LegoStarWarsTHC"
-Cover = "legostarwarsthc.png"
+DiskName = "LegoStarWarsTCS"
+Cover = "legostarwarstcs.png"
 Media = "Digital"
 Arcade = No
 Genre = "Action, Adventure"
