@@ -1,0 +1,11 @@
+[Game]
+Name = "Injustice: Gods Among Us"
+DiskName = "InjusticeGodsAmongUs"
+Cover = "injusticegodsamongus.png"
+Media = "Digital"
+Arcade = No
+Genre = "Fighting"
+Developer = "NetherRealm Studios"
+Publisher = "Warner Bros. Interactive Entertainment"
+Year = 2013
+Size = 7.80

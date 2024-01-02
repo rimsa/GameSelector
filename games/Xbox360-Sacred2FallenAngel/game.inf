@@ -1,0 +1,11 @@
+[Game]
+Name = "Sacred 2: Fallen Angel"
+DiskName = "Sacred2FallenAngel"
+Cover = "sacred2fa.png"
+Media = "Digital"
+Arcade = No
+Genre = "Action"
+Developer = "Ascaron"
+Publisher = "cdv Software Entertainment"
+Year = 2009
+Size = 6.34

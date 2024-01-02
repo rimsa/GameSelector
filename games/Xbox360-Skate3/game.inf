@@ -1,0 +1,11 @@
+[Game]
+Name = "Skate 3"
+DiskName = "Skate3"
+Cover = "skate3.png"
+Media = "Digital"
+Arcade = No
+Genre = "Sports"
+Developer = "EA Black Box"
+Publisher = "Electronic Arts"
+Year = 2010
+Size = 6.00
