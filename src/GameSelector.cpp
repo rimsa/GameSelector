@@ -191,7 +191,7 @@ void GameSelector::updateGameInfo(Game* game) {
     if (game) {
         ui->nameValue->setText(game->name());
         ui->mediaValue->setText(game->hasMedia() ? game->media() : "");
-        ui->arcadeValue->setText(game->arcade() ? trUtf8("Yes") : trUtf8("No"));
+        ui->arcadeValue->setText(game->arcade() ? tr("Yes") : tr("No"));
         ui->genreValue->setText(game->hasGenre() ? game->genre() : "");
         ui->developerValue->setText(game->hasDeveloper() ? game->developer() : "");
         ui->publisherValue->setText(game->hasPublisher() ? game->publisher() : "");

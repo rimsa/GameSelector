@@ -3,6 +3,7 @@
 *.o
 ui_*.h
 moc_*.cpp
+moc_*.h
 qrc_*.cpp
 Makefile
 .qmake.stash

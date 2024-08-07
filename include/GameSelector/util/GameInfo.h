@@ -8,6 +8,7 @@
 #include <QPixmap>
 
 enum GameInfoOption {
+    NO_OPTION     = 0x0000,
     HAS_NAME      = 0x0001,
     HAS_DISKNAME  = 0x0002,
     HAS_COVER     = 0x0004,

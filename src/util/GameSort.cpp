@@ -1,4 +1,4 @@
-#include <QtAlgorithms>
+#include <algorithm>
 
 #include <GameSelector/util/GameComparator.h>
 #include <GameSelector/util/GameSort.h>
@@ -31,5 +31,5 @@ void GameSort::setOrder(Qt::SortOrder order) {
 
 void GameSort::sort(QList<Game*>& games) {
     // Ordering using Quick Sort.
-    qSort(games.begin(), games.end(), GameComparator(m_type, m_order));
+    std::sort(games.begin(), games.end(), GameComparator(m_type, m_order));
 }

@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
         rootDir = QString(argv[1]);
     } else {
         QDir current(qApp->applicationDirPath());
-#ifdef Q_OS_OSX
+#ifdef Q_OS_MACOS
         current.cdUp();
         current.cdUp();
 #endif

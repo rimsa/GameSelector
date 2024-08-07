@@ -8,6 +8,8 @@
 #include <GameSelector/loader/GameLoader.h>
 #include <GameSelector/util/GameInfo.h>
 
+#define Q_ARG_OLD(type, data) QArgument<type >(#type, data)
+
 GameLoader::GameLoader(QDir& root, QObject *parent) :
     QObject(parent), m_root(root) {
 }
@@ -35,7 +37,7 @@ void GameLoader::loadGame(QString dirName) {
 
     struct GameInfo info;
     info.dirName = dirName;
-    info.options = 0;
+    info.options = NO_OPTION;
 
     QSettings inf(gameDesc.fileName(), QSettings::IniFormat, this);
     inf.beginGroup("Game");
@@ -46,16 +48,16 @@ void GameLoader::loadGame(QString dirName) {
         bool required;
         GameInfoOptions option;
     } fields[] = {
-        { "Name", Q_ARG(QString, info.name), true, 0 },
-        { "DiskName", Q_ARG(QString, info.diskName), true, 0 },
-        { "Cover", Q_ARG(QPixmap, info.cover), true, 0 },
-        { "Media", Q_ARG(QString, info.media), false, HAS_MEDIA },
-        { "Arcade", Q_ARG(bool, info.arcade), true, 0 },
-        { "Genre", Q_ARG(QString, info.genre), false, HAS_GENRE },
-        { "Developer", Q_ARG(QString, info.developer), false, HAS_DEVELOPER },
-        { "Publisher", Q_ARG(QString, info.publisher), false, HAS_PUBLISHER },
-        { "Year", Q_ARG(int, info.year), false, HAS_YEAR },
-        { "Size", Q_ARG(float, info.size), false, HAS_SIZE },
+        { "Name", Q_ARG_OLD(QString, info.name), true, NO_OPTION },
+        { "DiskName", Q_ARG_OLD(QString, info.diskName), true, NO_OPTION },
+        { "Cover", Q_ARG_OLD(QPixmap, info.cover), true, NO_OPTION },
+        { "Media", Q_ARG_OLD(QString, info.media), false, HAS_MEDIA },
+        { "Arcade", Q_ARG_OLD(bool, info.arcade), true, NO_OPTION },
+        { "Genre", Q_ARG_OLD(QString, info.genre), false, HAS_GENRE },
+        { "Developer", Q_ARG_OLD(QString, info.developer), false, HAS_DEVELOPER },
+        { "Publisher", Q_ARG_OLD(QString, info.publisher), false, HAS_PUBLISHER },
+        { "Year", Q_ARG_OLD(int, info.year), false, HAS_YEAR },
+        { "Size", Q_ARG_OLD(float, info.size), false, HAS_SIZE },
     };
 
     for (unsigned i = 0; i < (sizeof(fields) / sizeof(struct Field)); i++) {
